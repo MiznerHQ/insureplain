@@ -1,188 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What Does EOB Mean on My Insurance Statement? | InsurePlain</title>
-  <meta name="description" content="Got a confusing EOB in the mail? Learn what Explanation of Benefits means, how to read it, and what to do if the numbers don't look right." />
-  <link rel="canonical" href="https://insureplain.com/eob-explained.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EOB Explained: What Is an Explanation of Benefits? – InsurePlain</title>
+  <meta name="description" content="Your EOB is not a bill — here's exactly what every section means, why the numbers don't match what you owe, and what to do if something looks wrong.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/eob-explained">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Georgia', serif; background: #f9f9f6; color: #1a1a1a; line-height: 1.75; }
-    header { background: #1a3a5c; padding: 18px 24px; }
-    header a { color: #fff; text-decoration: none; font-size: 1.4rem; font-weight: bold; letter-spacing: 0.5px; }
-    .hero { background: #1a3a5c; color: #fff; text-align: center; padding: 52px 20px 44px; }
-    .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); max-width: 720px; margin: 0 auto 16px; line-height: 1.3; }
-    .hero p { font-size: 1.1rem; opacity: 0.88; max-width: 580px; margin: 0 auto; }
-    .container { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
-    h2 { font-size: 1.4rem; color: #1a3a5c; margin: 36px 0 12px; }
-    p { margin-bottom: 16px; font-size: 1.05rem; }
-    .highlight-box { background: #eaf2fb; border-left: 4px solid #1a3a5c; border-radius: 6px; padding: 18px 22px; margin: 28px 0; }
-    .highlight-box p { margin: 0; font-size: 1rem; }
-    table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.97rem; }
-    th { background: #1a3a5c; color: #fff; text-align: left; padding: 10px 14px; }
-    td { padding: 10px 14px; border-bottom: 1px solid #ddd; vertical-align: top; }
-    tr:nth-child(even) td { background: #f2f6fb; }
-    .warning-box { background: #fff8e1; border-left: 4px solid #f0a500; border-radius: 6px; padding: 18px 22px; margin: 28px 0; }
-    .warning-box p { margin: 0; font-size: 1rem; }
-    .cta-box { background: #1a3a5c; color: #fff; text-align: center; border-radius: 10px; padding: 36px 24px; margin: 48px 0 0; }
-    .cta-box h2 { color: #fff; margin: 0 0 12px; font-size: 1.3rem; }
-    .cta-box p { opacity: 0.88; margin: 0 0 20px; }
-    .cta-box a { background: #fff; color: #1a3a5c; font-weight: bold; padding: 12px 28px; border-radius: 6px; text-decoration: none; display: inline-block; font-size: 1rem; }
-    footer { text-align: center; padding: 28px 20px; font-size: 0.85rem; color: #888; border-top: 1px solid #e0e0e0; }
-    footer a { color: #1a3a5c; text-decoration: none; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
-
-<header>
-  <a href="/">InsurePlain</a>
-</header>
-
-<div class="hero">
-  <h1>What Does EOB Mean on My Insurance Statement?</h1>
-  <p>It's not a bill — but it's telling you something important. Here's how to read it.</p>
-</div>
-
-<div class="container">
-
-  <p>You open the mail and find a document from your insurance company. At the top it says <strong>Explanation of Benefits</strong> — or just <strong>EOB</strong>. It's full of confusing columns, codes, and dollar amounts. And somewhere it might say "This is not a bill."</p>
-
-  <p>So what is it? And should you care?</p>
-
-  <p>Yes — you should care. An EOB is one of the most important documents your insurer sends you, and a lot of people throw it away without reading it. That's a mistake.</p>
-
-  <h2>What Is an EOB?</h2>
-
-  <p>An EOB is a summary that your insurance company sends you after you receive medical care. It explains how a claim was processed — what your provider billed, what your insurance agreed to pay, and what (if anything) you owe.</p>
-
-  <div class="highlight-box">
-    <p>💡 Think of it like a receipt from your insurance company. It's showing you the math behind your claim — not asking you for money (yet).</p>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; EOB Explained</p>
+    <h1>What Is an EOB?<br><em style="font-style:italic;color:var(--accent)">Your Explanation of Benefits, Decoded</em></h1>
+    <span class="category-tag">Health Insurance</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You go to the doctor, get treated, and a few weeks later a confusing document shows up in your mailbox or patient portal. It lists charges, adjustments, and amounts — and none of the numbers match what you thought you'd owe.</p>
+      <p>That document is your Explanation of Benefits, or EOB. It is not a bill. It's a summary from your insurance company showing what your provider charged, what your insurer paid, what was adjusted off, and what — if anything — you still owe. Understanding it is the key to catching billing errors before you pay them.</p>
+    </div>
+    <div class="card">
+      <div class="section-label">The key sections of every EOB</div>
+      <h2>What each line means</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Amount Billed</strong> — The full price your provider charged before any discounts or insurance adjustments. This number is almost always inflated and is rarely what anyone actually pays.</li>
+        <li><strong>Allowed Amount</strong> — The negotiated rate your insurer has agreed to pay for that service. In-network providers have agreed to accept this lower amount as payment in full.</li>
+        <li><strong>Plan Paid</strong> — What your insurance company actually paid your provider after applying your deductible, copay, and coinsurance rules.</li>
+        <li><strong>Adjustment / Discount</strong> — The difference between the billed amount and the allowed amount. This gets written off — you never owe it.</li>
+        <li><strong>Your Responsibility</strong> — The amount you actually owe. This is what matters. It reflects your deductible, copay, or coinsurance portion of the allowed amount.</li>
+        <li><strong>Deductible Applied</strong> — How much of this claim was applied toward your annual deductible. Once your deductible is met, your share of future claims drops significantly.</li>
+        <li><strong>Remark / Reason Codes</strong> — Short codes explaining why the claim was processed the way it was. If you see a denial or reduction here, these codes tell you why.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="section-label">Common confusion points</div>
+      <h2>Why the numbers look wrong</h2>
+      <div class="two-col" style="margin-top: 12px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Not a bill</div>
+          <p>The EOB arrives before your provider's bill. Do not pay anything until you receive an actual invoice from the provider — and compare it to your EOB first.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Numbers don't match</div>
+          <p>If your provider's bill is higher than the "Your Responsibility" amount on your EOB, call your provider. They may have billed you for an amount your insurer already adjusted off.</p>
+        </div>
+      </div>
+      <div class="timing-box" style="margin-top: 16px;">
+        <h3>⚠️ Watch for this</h3>
+        <p>If a service shows as denied on your EOB but your doctor said it was covered, don't pay the bill yet. Call your insurer first — it may be a billing code error that can be resubmitted and paid.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-label">How to read it — step by step</div>
+      <h2>What to do when your EOB arrives</h2>
+      <ol class="step-list">
+        <li><strong>Confirm the service is yours.</strong> Check the date, provider name, and procedure. Medical identity theft shows up on EOBs first.</li>
+        <li><strong>Find the "Your Responsibility" line.</strong> That's the only number you may owe — not the billed amount.</li>
+        <li><strong>Check the deductible applied line.</strong> Track this against your annual deductible so you know how close you are to full coverage kicking in.</li>
+        <li><strong>Look for denial or remark codes.</strong> If anything was denied or reduced, find the code and look it up — or paste it into the InsurePlain decoder below.</li>
+        <li><strong>Wait for the provider bill before paying anything.</strong> Compare the bill to your EOB. They should match on the "Your Responsibility" line.</li>
+        <li><strong>If numbers don't match, call your provider first.</strong> Most discrepancies are billing errors, not coverage disputes.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull out your most recent EOB and find the "Your Responsibility" line. That's the only amount you owe — ignore the billed amount entirely. If you see any denial codes, look them up before paying anything. If your provider's bill doesn't match your EOB, call the provider's billing department and read them the allowed amount from your EOB. Most overcharges get corrected immediately.
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Is an EOB the same as a bill?</div>
+        <div class="faq-a">No. An EOB is a summary from your insurance company — it shows what was processed but it is not a request for payment. Your actual bill comes separately from your doctor or hospital. Always wait for the provider bill before paying anything.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if my EOB shows a service as denied?</div>
+        <div class="faq-a">A denial on your EOB doesn't mean you automatically owe the full amount. Call your insurer and ask for the specific reason. Many denials are caused by billing code errors that can be corrected and resubmitted — and then paid.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long do I have to dispute something on my EOB?</div>
+        <div class="faq-a">Most plans give you 180 days from the date of service to file an appeal. Don't wait — if something looks wrong on your EOB, call your insurer as soon as possible to start the dispute process.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
+        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
+        <a href="/surprise-medical-bill" class="related-chip">Surprise Bills →</a>
+      </div>
+    </div>
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
   </div>
-
-  <p>You usually receive an EOB within a few weeks of a doctor's visit, hospital stay, lab test, or prescription. Most insurers also let you view them online through your member portal.</p>
-
-  <h2>What Are the Key Columns on an EOB?</h2>
-
-  <table>
-    <tr>
-      <th>Column</th>
-      <th>What It Means</th>
-    </tr>
-    <tr>
-      <td><strong>Billed Amount</strong></td>
-      <td>What your provider originally charged — often an inflated "sticker price"</td>
-    </tr>
-    <tr>
-      <td><strong>Allowed Amount</strong></td>
-      <td>The negotiated rate your insurer agreed to pay — almost always lower than billed</td>
-    </tr>
-    <tr>
-      <td><strong>Plan Paid</strong></td>
-      <td>What your insurance company actually paid the provider</td>
-    </tr>
-    <tr>
-      <td><strong>Your Responsibility</strong></td>
-      <td>What you owe — this is what you'll see on the actual bill from your provider</td>
-    </tr>
-    <tr>
-      <td><strong>Deductible Applied</strong></td>
-      <td>How much of this claim counted toward your annual deductible</td>
-    </tr>
-    <tr>
-      <td><strong>Copay / Coinsurance</strong></td>
-      <td>Your fixed or percentage share of the allowed amount</td>
-    </tr>
-    <tr>
-      <td><strong>Not Covered</strong></td>
-      <td>Any charges your plan refused to pay — check the reason code</td>
-    </tr>
-  </table>
-
-  <h2>Why Does the Billed Amount Look So High?</h2>
-
-  <p>Hospitals and providers often charge far more than they expect to receive. It's a negotiating strategy — the "sticker price" is rarely what anyone actually pays. Your insurer has a contract with in-network providers that sets the <strong>allowed amount</strong>, which is the real number that matters.</p>
-
-  <p>If your provider billed $900 but the allowed amount is $310, your insurer essentially wiped out $590. You only owe your share of the $310.</p>
-
-  <h2>Why Does the EOB Say "This Is Not a Bill"?</h2>
-
-  <p>Because it isn't one. The EOB comes from your insurer. The actual bill comes from your doctor or hospital separately. They'll send you a statement showing what you owe after insurance has been applied.</p>
-
-  <div class="highlight-box">
-    <p>📋 The EOB tells you what's coming. The provider bill is the actual request for payment. Match them up — the "Your Responsibility" column on your EOB should match what your doctor bills you.</p>
-  </div>
-
-  <h2>What Are Reason Codes?</h2>
-
-  <p>If a claim was denied or only partially paid, your EOB will include a <strong>reason code</strong> — a short code that explains why. Common ones include:</p>
-
-  <table>
-    <tr>
-      <th>Code Type</th>
-      <th>What It Usually Means</th>
-    </tr>
-    <tr>
-      <td>Not medically necessary</td>
-      <td>Insurer decided the service wasn't required for your condition</td>
-    </tr>
-    <tr>
-      <td>Out-of-network</td>
-      <td>Provider wasn't in your plan's network — you may owe more</td>
-    </tr>
-    <tr>
-      <td>Prior authorization required</td>
-      <td>Your doctor needed approval before the service</td>
-    </tr>
-    <tr>
-      <td>Duplicate claim</td>
-      <td>Same service was billed twice</td>
-    </tr>
-    <tr>
-      <td>Benefit maximum reached</td>
-      <td>You've hit your plan's coverage limit for this type of service</td>
-    </tr>
-  </table>
-
-  <p>If you see a reason you don't understand, call your insurer. The number is on the back of your insurance card.</p>
-
-  <h2>When Should You Be Concerned About an EOB?</h2>
-
-  <div class="warning-box">
-    <p>⚠️ Red flags to watch for: services you don't recognize, a billed amount that looks wrong, a denial that surprises you, or a "Your Responsibility" amount that's way higher than you expected. These are worth investigating — billing errors are more common than people think.</p>
-  </div>
-
-  <p>Steps to take if something looks off:</p>
-
-  <p><strong>1. Compare your EOB to your actual provider bill.</strong> They should match. If the numbers differ, call the provider's billing department first.</p>
-
-  <p><strong>2. Check the date and service description.</strong> Make sure the service listed matches what you actually received and when.</p>
-
-  <p><strong>3. Look up the reason code.</strong> Your insurer's website usually has a full glossary. Or just call and ask them to explain it in plain English.</p>
-
-  <p><strong>4. If you were denied and disagree, appeal.</strong> You have the right to appeal any denied claim. The EOB will usually explain how.</p>
-
-  <h2>Does Every Insurance Type Send an EOB?</h2>
-
-  <p>Health insurance always sends EOBs. Dental and vision insurance usually do too. Auto and homeowners insurance work differently — they send claims summaries, but they're typically called something else.</p>
-
-  <p>Some Medicare Advantage and Medicaid plans send EOBs. Original Medicare sends a similar document called a <strong>Medicare Summary Notice (MSN)</strong>.</p>
-
-  <h2>Should You Save Your EOBs?</h2>
-
-  <p>Yes — at least until you've paid the corresponding provider bill and confirmed the amounts match. If you have ongoing treatment or a complex claim, keep EOBs for the full year in case you need them for taxes or a dispute.</p>
-
-  <div class="cta-box">
-    <h2>Got an Insurance Document You Don't Understand?</h2>
-    <p>Paste it into InsurePlain and get a plain-English explanation in seconds.</p>
-    <a href="/">Decode It Now →</a>
-  </div>
-
-</div>
-
-<footer>
-  <p>&copy; 2025 InsurePlain &nbsp;|&nbsp; <a href="/">Home</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy Policy</a></p>
-</footer>
-
 </body>
 </html>
