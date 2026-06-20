@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Did My Health Insurance Drop Me? – InsurePlain</title>
+  <meta name="description" content="Your health insurance ended without warning — here's why coverage gets dropped, how to check if it's reversible, and exactly what to do next.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/health-insurance-dropped">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Coverage Loss</p>
+    <h1>Why Did My Health Insurance<br><em style="font-style:italic;color:var(--accent)">Drop Me?</em></h1>
+    <span class="category-tag">Coverage Loss</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You went to use your health insurance and found out it's gone — maybe a pharmacy said your card was invalid, or you got a letter saying your coverage ended. No warning, no explanation you understood, just suddenly uninsured.</p>
+      <p>Here's the truth: insurance companies can't drop you for getting sick or filing too many claims — that's been illegal since 2014 under federal law. When coverage actually ends, it's almost always one of a handful of specific, fixable reasons.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">The most common reasons coverage gets dropped</div>
+      <h2>Why this happens</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Missed premium payment</strong> — The single most common reason. Most plans allow a grace period (often 30-90 days depending on your state and whether you receive subsidies), and if payment isn't made by the end of it, coverage is terminated retroactively.</li>
+        <li><strong>Job loss or reduced hours</strong> — If your coverage came through an employer, losing the job or dropping below the hours threshold for benefits ends your eligibility immediately.</li>
+        <li><strong>Aged off a parent's plan</strong> — Adult children can stay on a parent's plan until age 26. Turning 26 ends that eligibility automatically.</li>
+        <li><strong>Income change on a subsidized Marketplace plan</strong> — If your reported income changed and you didn't update it, your subsidy and sometimes your plan can be affected or cancelled.</li>
+        <li><strong>Insurer exited your market</strong> — Sometimes an insurance company stops offering plans in your state or county entirely, which ends everyone's coverage on that plan.</li>
+        <li><strong>Paperwork or verification issue</strong> — Marketplace plans sometimes require document verification (proof of income, citizenship, etc.) within a deadline. Missing it can trigger cancellation.</li>
+        <li><strong>You were enrolled in error or by someone else</strong> — Unfortunately, fraudulent Marketplace enrollments do happen. If you never selected a plan, this may be what occurred.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How to find out what happened — step by step</div>
+      <h2>Get your coverage back on track</h2>
+      <ol class="step-list">
+        <li><strong>Find the termination notice.</strong> Check mail and email (including spam) for a letter from your insurer or the Marketplace stating the exact reason and termination date.</li>
+        <li><strong>Call your insurer directly.</strong> Ask for the specific reason code and termination date. Document the representative's name and the call time.</li>
+        <li><strong>If it's a missed payment, ask about reinstatement.</strong> Many insurers will reinstate coverage if you pay the past-due amount within a short window — ask directly if this option exists.</li>
+        <li><strong>If you have Marketplace coverage, log into healthcare.gov (or your state exchange).</strong> Check your account for any pending verification requests or messages you may have missed.</li>
+        <li><strong>Check if you qualify for a Special Enrollment Period.</strong> Losing coverage — even due to cancellation — typically opens a 60-day window to enroll in a new plan without waiting for open enrollment.</li>
+        <li><strong>If your coverage was employer-based, ask about COBRA.</strong> COBRA lets you keep your exact same plan temporarily, though you'll pay the full premium yourself.</li>
+        <li><strong>File a complaint if something seems wrong.</strong> If you believe you were dropped improperly or never actually enrolled, contact your state insurance commissioner or the Marketplace directly.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Don't wait — a gap in coverage means any medical bill during that gap is fully out of pocket. Find your termination letter or call your insurer today to get the exact reason, then act immediately: pay any past-due balance if that's the cause, or use your Special Enrollment Period to get a new plan started, since that window typically closes 60 days after the loss of coverage.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Can my insurance drop me for getting sick or filing claims?</div>
+        <div class="faq-a">No. Since 2014, federal law (the ACA) prohibits insurers from cancelling individual or group health coverage based on your health status or how many claims you've filed. Coverage can only end for reasons like nonpayment, fraud, or the plan/employer relationship ending.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long do I have to get new coverage after losing mine?</div>
+        <div class="faq-a">Losing health coverage typically triggers a 60-day Special Enrollment Period, allowing you to enroll in a new Marketplace plan without waiting for the annual open enrollment window. This clock usually starts from your coverage end date, so don't delay.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between cancelled and non-renewed?</div>
+        <div class="faq-a">Cancelled typically means coverage ended mid-term, often due to nonpayment or fraud. Non-renewed means the insurer chose not to offer you a new policy at the end of your term, which is a different process with different consumer protections depending on your state.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/cobra-insurance-cost" class="related-chip">COBRA Coverage →</a>
+        <a href="/special-enrollment-period" class="related-chip">Special Enrollment →</a>
+        <a href="/policy-cancelled-vs-non-renewed" class="related-chip">Cancelled vs Non-Renewed →</a>
+        <a href="/marketplace-insurance" class="related-chip">Marketplace Insurance →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
