@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is an Out-of-Pocket Maximum — and What Happens Once You Hit It? – InsurePlain</title>
+  <meta name="description" content="Your out-of-pocket maximum is the most important number in your health plan. Here's what it means, what counts toward it, and what actually happens once you hit it.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/out-of-pocket-maximum">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Costs & Billing</p>
+    <h1>What Is an Out-of-Pocket Maximum —<br><em style="font-style:italic;color:var(--accent)">and What Happens Once You Hit It?</em></h1>
+    <span class="category-tag">Costs & Billing</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <p class="section-label">The Short Answer</p>
+      <h2>What It Actually Means</h2>
+      <p>Your out-of-pocket maximum is the most your insurance plan will ever make you pay in a single plan year. Once you hit that number, your insurance covers 100% of covered services for the rest of the year — no more deductibles, no more copays, no more coinsurance.</p>
+      <p>Think of it as a financial ceiling. It exists to protect you from catastrophic medical costs. Without it, a major illness or surgery could bankrupt you even with insurance.</p>
+    </div>
+
+    <div class="card">
+      <p class="section-label">What Counts — and What Doesn't</p>
+      <h2>What Counts Toward Your Out-of-Pocket Maximum?</h2>
+      <div class="two-col" style="margin-bottom: 16px;">
+        <div class="range-box green">
+          <p class="range-box-label">✓ Counts Toward It</p>
+          <p>Your deductible payments, copays, and coinsurance — as long as they're for covered in-network services.</p>
+        </div>
+        <div class="range-box warn">
+          <p class="range-box-label">✗ Does NOT Count</p>
+          <p>Monthly premiums, out-of-network costs, non-covered services, and balance billing charges from providers.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>IMPORTANT: IN-NETWORK ONLY</h3>
+        <p>Most plans have a separate — usually higher — out-of-pocket maximum for out-of-network care, or no cap at all for it. Always confirm whether a provider is in-network before assuming your maximum applies.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-label">Once You Hit It</p>
+      <h2>What Actually Happens After You Hit Your Maximum</h2>
+      <p>Once your out-of-pocket spending reaches the maximum, your insurer pays 100% of covered in-network costs for the rest of your plan year. That means no copay at the doctor, no coinsurance after surgery, nothing — until your plan resets on January 1st.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li>Doctor visits: $0 out of pocket for covered services</li>
+        <li>Prescriptions: $0 for formulary drugs at in-network pharmacies</li>
+        <li>Surgery or hospital stays: $0 coinsurance for covered procedures</li>
+        <li>Specialist visits: $0 copay for in-network specialists</li>
+      </ul>
+      <div class="timing-box">
+        <h3>WHY DO I STILL HAVE A COPAY?</h3>
+        <p>This is the most common confusion. If you're still being charged after hitting your maximum, check two things: (1) the service may be out-of-network, or (2) the charge may be for something your plan doesn't cover — like a specific drug tier or elective procedure. Your insurer's member portal will show your year-to-date accumulation.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-label">Individual vs Family</p>
+      <h2>Individual vs. Family Out-of-Pocket Maximum</h2>
+      <div class="two-col">
+        <div class="range-box blue">
+          <p class="range-box-label">Individual Maximum</p>
+          <p>Applies to one person's costs. Once one family member hits their individual maximum, insurance pays 100% for that person — even if the family hasn't hit the family maximum yet.</p>
+        </div>
+        <div class="range-box blue">
+          <p class="range-box-label">Family Maximum</p>
+          <p>The combined cap for your entire household. Once the family's total spending hits this number, insurance pays 100% for every covered member for the rest of the year.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-label">Frequently Asked Questions</p>
+      <h2>FAQ</h2>
+      <div class="faq-item">
+        <p class="faq-q">Does my out-of-pocket maximum reset every year?</p>
+        <p class="faq-a">Yes — it resets on January 1st for most plans (or on your plan anniversary date for employer plans that don't follow the calendar year). Any progress you made toward your maximum in the previous year does not carry over.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Is the out-of-pocket maximum the same as the deductible?</p>
+        <p class="faq-a">No — they're two different numbers. Your deductible is what you pay before insurance starts sharing costs. Your out-of-pocket maximum is the total ceiling on everything you'll pay all year, including your deductible, copays, and coinsurance combined. Your deductible is always lower than your out-of-pocket maximum.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Does Medicare have an out-of-pocket maximum?</p>
+        <p class="faq-a">Traditional Medicare (Parts A and B) has no out-of-pocket maximum — your costs are theoretically unlimited. Medicare Advantage plans are required by law to have an out-of-pocket maximum, which is why many people choose them for the added financial protection.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I know how close I am to hitting my maximum?</p>
+        <p class="faq-a">Log into your insurance company's member portal — most show your year-to-date deductible and out-of-pocket accumulation in real time. Your Explanation of Benefits (EOB) after each claim also shows a running total.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="section-label">Related Guides</p>
+      <h2>Keep Learning</h2>
+      <div class="related">
+        <a href="/deductible-explained" class="related-chip">Deductible, Explained</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance</a>
+        <a href="/eob-explained" class="related-chip">EOB, Explained</a>
+        <a href="/insurance-premium-increase" class="related-chip">Why Premiums Go Up</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
