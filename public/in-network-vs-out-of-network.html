@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Does In-Network vs Out-of-Network Mean? – InsurePlain</title>
+  <meta name="description" content="In-network means your insurance has a deal with that doctor. Out-of-network means they don't — and you pay a lot more. Here's exactly what it costs and what to do.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/in-network-vs-out-of-network">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; In-Network vs Out-of-Network</p>
+    <h1>What Does In-Network vs<br><em style="font-style:italic;color:var(--accent)">Out-of-Network Mean?</em></h1>
+    <span class="category-tag">Coverage Basics</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">The plain-English answer</div>
+      <p>In-network means your insurance company has a contract with that doctor, hospital, or lab. They've agreed on discounted rates. You pay less because your insurer and the provider already have a deal.</p>
+      <p>Out-of-network means no contract exists. Your insurer hasn't agreed on rates with that provider. So you pay full price — or close to it — and your insurance may cover very little or nothing at all.</p>
+      <p>That's the whole thing. Network = contract = discount. No network = no contract = you pay.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What it actually costs you</div>
+      <h2>The real price difference</h2>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">In-Network</div>
+          <p>You pay your normal copay or coinsurance — typically $20–$50 for a visit, or 10–30% of the bill after your deductible. Your insurer pays the rest at the contracted rate.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Out-of-Network</div>
+          <p>You may pay 40–60% of the bill — or the entire thing. Many plans have a separate, higher out-of-network deductible. Some plans (HMO, EPO) pay $0 out-of-network.</p>
+        </div>
+      </div>
+      <div class="timing-box" style="margin-top: 16px;">
+        <h3>⚠️ The deductible trap</h3>
+        <p>Out-of-network charges usually go toward a separate out-of-network deductible — not your regular one. That means even if you've already met your in-network deductible for the year, you start over at zero for out-of-network costs.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Plan type changes everything</div>
+      <h2>HMO vs PPO vs EPO</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>HMO (Health Maintenance Organization)</strong> — Out-of-network coverage is $0 except in emergencies. You must stay in-network. Period.</li>
+        <li><strong>EPO (Exclusive Provider Organization)</strong> — Same as HMO for out-of-network: $0. No exceptions outside emergencies.</li>
+        <li><strong>PPO (Preferred Provider Organization)</strong> — Covers both in-network and out-of-network, but out-of-network costs significantly more. Most flexible plan type.</li>
+        <li><strong>POS (Point of Service)</strong> — Hybrid. You need a referral from your primary care doctor to see specialists, but out-of-network is covered at a higher cost.</li>
+      </ul>
+      <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">Check your insurance card or the summary of benefits to find your plan type before booking any appointment.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Dentist and dental plans</div>
+      <h2>In-network vs out-of-network for dental</h2>
+      <p>Dental insurance works the same way but the numbers are starker. In-network dentists have agreed to accept lower fees. Out-of-network dentists bill whatever they want — your plan may only reimburse up to a set "usual and customary" fee, leaving you responsible for the gap.</p>
+      <p style="margin-top: 14px;">Example: Your out-of-network dentist charges $300 for a cleaning. Your plan's usual and customary rate is $180. You pay the $120 difference plus your normal coinsurance on top of that.</p>
+      <div class="timing-box" style="margin-top: 16px;">
+        <h3>📋 Always verify before your appointment</h3>
+        <p>Call your dental insurance and ask: "Is [dentist name] in-network for my plan?" Don't rely on the dentist's office — they sometimes have outdated information about which plans they accept.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">If you accidentally went out-of-network</div>
+      <h2>What to do now</h2>
+      <ol class="step-list">
+        <li><strong>Check if the provider is truly out-of-network.</strong> Log into your insurance portal and search the provider's NPI number. Sometimes a doctor is in-network even if the hospital they work at is not.</li>
+        <li><strong>Ask for an in-network exception.</strong> If your in-network doctor referred you to an out-of-network specialist, your insurer may be required to apply in-network cost-sharing. This is called a "continuity of care" or "network gap" exception.</li>
+        <li><strong>Check if surprise billing protections apply.</strong> Under the No Surprises Act, you cannot be billed out-of-network rates for emergency care or for out-of-network providers at in-network facilities without your written consent.</li>
+        <li><strong>Negotiate the bill directly.</strong> Out-of-network providers are not bound to your insurer's contracted rates. You can often negotiate a lower amount or request the in-network rate, especially for planned procedures.</li>
+        <li><strong>File an appeal if your claim was denied.</strong> If your insurer denied coverage, appeal in writing with documentation showing why the out-of-network visit was necessary.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Before your next appointment, log into your insurance company's website and use their "Find a Doctor" tool to confirm your provider is in-network. If you're already dealing with an out-of-network bill, call your insurer first and ask about exceptions before you pay anything. If you have an HMO or EPO, staying in-network is not optional — it's the difference between a $30 copay and a $3,000 bill.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Does out-of-network care count toward my deductible?</div>
+        <div class="faq-a">Sometimes — but usually toward a separate, higher out-of-network deductible, not your regular one. Check your Summary of Benefits and Coverage (SBC) for the exact numbers. Some plans have a combined deductible that applies to both; most don't.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What does "out-of-network cost share" mean?</div>
+        <div class="faq-a">Cost share is the portion of the bill you're responsible for after insurance pays its part. Out-of-network cost share is almost always higher than in-network — often 40–60% versus 10–30%. Some plans set it at 100%, meaning they pay nothing out-of-network.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I be balance billed by an out-of-network provider?</div>
+        <div class="faq-a">Yes — with limits. Balance billing means the provider bills you for the difference between what your insurer paid and their full charge. The No Surprises Act (effective 2022) bans balance billing in emergencies and for out-of-network providers at in-network facilities, but it doesn't cover all situations. Scheduled out-of-network visits can still result in balance billing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I find out if my doctor is in-network?</div>
+        <div class="faq-a">Use your insurance company's online provider directory and search by the doctor's name and NPI number. Always call your insurer to confirm — directories can be outdated. Also ask the doctor's office to verify your specific plan, not just the insurance company name.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance →</a>
+        <a href="/out-of-pocket-maximum" class="related-chip">Out-of-Pocket Max →</a>
+        <a href="/surprise-medical-bill" class="related-chip">Surprise Bills →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any network term, EOB line item, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
