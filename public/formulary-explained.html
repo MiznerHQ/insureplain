@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is a Formulary and Why Is My Drug Not On It? – InsurePlain</title>
+  <meta name="description" content="A formulary is your insurance plan's approved drug list. Here's what it means, how tiers work, why your medication might not be covered, and how to fight back.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/formulary-explained">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    .tier-row { display: grid; grid-template-columns: 80px 1fr auto; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+    .tier-row:last-child { border-bottom: none; }
+    .tier-badge { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 20px; text-align: center; }
+    .tier-1 { background: var(--success-light); color: var(--success-text); }
+    .tier-2 { background: var(--accent-light); color: var(--accent); }
+    .tier-3 { background: var(--amber-light); color: var(--amber); }
+    .tier-4 { background: var(--warn-light); color: var(--warn); }
+    .tier-5 { background: #F3E8FF; color: #6B21A8; }
+    .tier-desc { font-size: 14px; color: var(--ink); line-height: 1.5; }
+    .tier-cost { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted); white-space: nowrap; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } .tier-row { grid-template-columns: 70px 1fr; } .tier-cost { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Formulary Explained</p>
+    <h1>What Is a Formulary and<br><em style="font-style:italic;color:var(--accent)">Why Is My Drug Not On It?</em></h1>
+    <span class="category-tag">Prescription Coverage</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or medical advice. Formularies change annually and vary by plan. Always verify your drug's coverage directly with your insurer or pharmacist.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>A formulary is simply your insurance plan's list of approved drugs. If your medication is on it, your insurance helps pay. If it's not, you're often paying the full retail price — which can be hundreds or thousands of dollars per month.</p>
+      <p>Insurance companies build formularies by negotiating with drug manufacturers. Drugs that get better deals end up on the list. Drugs that don't — including many newer brand-name medications — often get left off entirely, or placed in a high-cost tier where your share is still enormous.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How tiers work</div>
+      <h2>The tier system, explained</h2>
+      <p style="margin-bottom: 16px;">Most plans organize their formulary into tiers. Lower tier = lower cost to you. Here's how it typically breaks down:</p>
+      <div class="tier-row">
+        <span class="tier-badge tier-1">Tier 1</span>
+        <div class="tier-desc"><strong>Generic drugs</strong> — the cheapest option. Same active ingredient as brand-name, just no logo.</div>
+        <span class="tier-cost">$0–$15</span>
+      </div>
+      <div class="tier-row">
+        <span class="tier-badge tier-2">Tier 2</span>
+        <div class="tier-desc"><strong>Preferred brand-name drugs</strong> — brand drugs your insurer has negotiated a deal on.</div>
+        <span class="tier-cost">$20–$60</span>
+      </div>
+      <div class="tier-row">
+        <span class="tier-badge tier-3">Tier 3</span>
+        <div class="tier-desc"><strong>Non-preferred brand-name drugs</strong> — brand drugs without a special deal. Your share jumps significantly.</div>
+        <span class="tier-cost">$50–$100+</span>
+      </div>
+      <div class="tier-row">
+        <span class="tier-badge tier-4">Tier 4</span>
+        <div class="tier-desc"><strong>Specialty drugs</strong> — high-cost medications for complex conditions. Often 20–33% coinsurance instead of a flat copay.</div>
+        <span class="tier-cost">$100–$500+</span>
+      </div>
+      <div class="tier-row">
+        <span class="tier-badge tier-5">Tier 5</span>
+        <div class="tier-desc"><strong>Non-formulary / excluded</strong> — not covered at all. You pay full retail price unless you get an exception approved.</div>
+        <span class="tier-cost">Full price</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Why your drug might not be covered</div>
+      <h2>Common reasons drugs get excluded</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>No generic available yet</strong> — Brand-name drugs still under patent often land in Tier 3 or 4 because insurers can't substitute a cheaper version.</li>
+        <li><strong>No negotiated rebate</strong> — The drug manufacturer didn't give your insurer a discount, so they didn't include it.</li>
+        <li><strong>Newer medication</strong> — Drugs approved recently often haven't made it onto formularies yet. GLP-1 medications like Ozempic and Zepbound are a current example — many plans exclude them entirely for weight loss.</li>
+        <li><strong>Step therapy required</strong> — Your plan requires you to try a cheaper drug first before they'll cover the one your doctor prescribed.</li>
+        <li><strong>Prior authorization needed</strong> — The drug is technically on the formulary but requires pre-approval before your insurance will pay.</li>
+        <li><strong>Formulary changed mid-year</strong> — Your plan can update its formulary annually. A drug covered last year may not be covered this year.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">GLP-1 drugs specifically</div>
+      <div class="two-col">
+        <div class="range-box warn">
+          <div class="range-box-label">Ozempic / Wegovy</div>
+          <p>Most plans cover Ozempic for Type 2 diabetes but exclude Wegovy for weight loss. Same drug, different FDA approval — completely different coverage.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Zepbound / Mounjaro</div>
+          <p>Same situation. Mounjaro may be covered for diabetes. Zepbound for weight loss is frequently excluded. Always check which diagnosis code your doctor is billing.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ What to do if your GLP-1 is excluded</h3>
+        <p>Ask your doctor if your diagnosis qualifies for the diabetes-indicated version of the drug. If you have a documented diabetes or pre-diabetes diagnosis, coverage may apply even if the weight-loss version is excluded.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How to fight a formulary exclusion</div>
+      <h2>Requesting a formulary exception</h2>
+      <ol class="step-list">
+        <li><strong>Look up your plan's formulary first.</strong> Log into your insurer's website and search for your drug by name. Confirm it's actually excluded — not just in a high tier.</li>
+        <li><strong>Ask your doctor for a letter of medical necessity.</strong> This letter explains why the specific drug is required and why alternatives won't work for your condition.</li>
+        <li><strong>Submit a formulary exception request.</strong> This is a formal request asking your insurer to cover a non-formulary drug. Your doctor typically submits this directly.</li>
+        <li><strong>Ask about step therapy exceptions.</strong> If your plan requires you to try other drugs first, your doctor can sometimes get this waived by documenting you've already tried alternatives or that alternatives are medically inappropriate.</li>
+        <li><strong>Check the manufacturer's patient assistance program.</strong> Many drug companies offer coupons or assistance programs that reduce your cost to near zero — even without insurance coverage.</li>
+        <li><strong>Appeal if denied.</strong> A denied exception is not final. You have the right to an internal appeal and then an independent external review.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Log into your insurance plan's website and find the formulary lookup tool — every major insurer has one. Search your exact drug name. If it's not covered or it's in Tier 4 or 5, call your doctor's office today and ask them to start a formulary exception request. Don't just accept the pharmacy's "not covered" message as the final word — it almost never is.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">What does "non-formulary" mean?</div>
+        <div class="faq-a">Non-formulary means the drug is not on your insurance plan's approved list. Your plan either won't cover it at all, or will only cover it at a very high cost tier. You can request an exception to get it covered at a lower tier.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can my insurance change my drug's formulary tier mid-year?</div>
+        <div class="faq-a">Generally no — plans are restricted from moving a drug to a higher tier or removing it from the formulary mid-year except in specific circumstances like a drug being recalled or withdrawn from the market. However, your formulary resets every January 1 and can change significantly at renewal.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does a formulary exception take?</div>
+        <div class="faq-a">Standard exceptions must be decided within 72 hours. If your situation is urgent, request an expedited review — insurers are required to decide within 24 hours. Always ask your doctor to mark the request as urgent if you need the medication quickly.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is there a cheaper alternative if the exception is denied?</div>
+        <div class="faq-a">Often yes. GoodRx and similar discount programs sometimes price a drug lower than your insurance copay would be anyway. Mark Cuban's Cost Plus Drugs is another option for generics. Always compare the cash price against your insurance cost before assuming insurance is cheaper.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance →</a>
+        <a href="/not-medically-necessary" class="related-chip">Not Medically Necessary →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any formulary term, tier definition, or drug coverage question in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
