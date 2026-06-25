@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Does "Not Medically Necessary" Mean? – InsurePlain</title>
+  <meta name="description" content="Your insurance denied your claim as 'not medically necessary' — here's exactly what that means, why it happens, and the step-by-step process to appeal and win.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/not-medically-necessary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Claim Denial</p>
+
+    <h1>What Does "Not Medically Necessary"<br><em style="font-style:italic;color:var(--accent)">Actually Mean?</em></h1>
+    <span class="category-tag">Claim Denial</span>
+
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You went to the doctor. Your doctor ordered a test, procedure, or treatment. Insurance got the bill — and sent back a denial saying the service was "not medically necessary."</p>
+      <p>This doesn't mean your doctor was wrong. It means your insurance company applied their own internal criteria to your claim and decided it didn't meet their threshold for coverage. Those criteria often differ from your doctor's clinical judgment — and they can be challenged.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">The insurer's definition vs. your doctor's</div>
+      <h2>Two different standards</h2>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box warn">
+          <div class="range-box-label">Your insurer's view</div>
+          <p>Based on internal clinical guidelines, coverage policies, and cost criteria. The insurer decides if the service meets a standard they define — not what your doctor thinks is best for you.</p>
+        </div>
+        <div class="range-box blue">
+          <div class="range-box-label">Your doctor's view</div>
+          <p>Based on your specific symptoms, history, and clinical judgment. Your doctor ordered the service because they believe it is required for your care — full stop.</p>
+        </div>
+      </div>
+      <p style="margin-top: 16px;">The gap between these two standards is exactly where most "not medically necessary" denials live — and it's exactly where appeals win.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Why this denial happens</div>
+      <h2>Common reasons insurers use this code</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>The treatment is considered experimental</strong> — Your insurer's guidelines haven't yet approved a newer procedure your doctor recommends.</li>
+        <li><strong>A cheaper alternative exists</strong> — Insurers may require you to try a lower-cost treatment first before approving a more expensive one (step therapy).</li>
+        <li><strong>Wrong diagnosis code</strong> — A billing error by your provider's office made the service look unrelated to your condition.</li>
+        <li><strong>Frequency limits exceeded</strong> — You received a covered service more often than your plan allows (e.g., physical therapy sessions per year).</li>
+        <li><strong>Inpatient vs. outpatient mismatch</strong> — Your insurer decided the level of care (hospital stay vs. outpatient visit) wasn't justified by your condition.</li>
+        <li><strong>Missing documentation</strong> — Your provider didn't submit enough clinical notes to support the medical necessity of the service.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Your rights</div>
+      <h2>What the law says you can do</h2>
+      <p>Under the Affordable Care Act, you have a legal right to appeal any denied claim — including not medically necessary denials. You also have the right to request an external review by an independent organization. If the external reviewer overturns the denial, your insurer is legally required to pay.</p>
+      <div class="timing-box">
+        <h3>⏱ Deadline warning</h3>
+        <p>Most plans require you to file an internal appeal within 180 days of receiving the denial. Missing this window forfeits your right to contest. Check your denial letter for the exact deadline and don't wait.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How to fight back — step by step</div>
+      <h2>The appeal process</h2>
+      <ol class="step-list">
+        <li><strong>Get the denial in writing.</strong> Your insurer must send a written denial explaining the specific reason and the clinical criteria they used. If you only got a phone call, request the written notice.</li>
+        <li><strong>Request the clinical criteria used.</strong> Ask your insurer for a copy of the exact guidelines they applied to deny your claim. This is your legal right and often reveals the gap you need to close.</li>
+        <li><strong>Call your doctor's office.</strong> Tell them the claim was denied as not medically necessary. Ask if there's a documentation issue or billing code error — these are fixable without a formal appeal.</li>
+        <li><strong>Get a letter of medical necessity.</strong> Ask your doctor to write a formal letter explaining why the treatment was clinically required for your specific condition. This is the single most powerful document in any appeal.</li>
+        <li><strong>File a formal internal appeal.</strong> Submit your appeal in writing with the letter of medical necessity, your medical records, and any relevant test results. Send via certified mail and keep copies of everything.</li>
+        <li><strong>Request an expedited appeal if urgent.</strong> If the denial involves ongoing or urgent care, you can request an expedited review — insurers must respond within 72 hours.</li>
+        <li><strong>If the internal appeal fails, request external review.</strong> An independent organization will review your case with no financial ties to your insurer. Their decision is binding.</li>
+        <li><strong>File a complaint with your state insurance commissioner.</strong> This runs parallel to your appeal and often accelerates resolution. Find your state commissioner at naic.org.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Don't pay the bill yet. Find the denial code on your Explanation of Benefits (EOB), call your insurer to get the exact clinical criteria they used, and call your doctor's office to flag the denial. A letter of medical necessity from your doctor overturns these denials far more often than people realize. Act before your appeal deadline — it's printed on your denial letter.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Can my doctor override a not medically necessary denial?</div>
+        <div class="faq-a">Not directly — but a letter of medical necessity from your doctor is the strongest tool available. It documents their clinical reasoning in detail and is reviewed as part of your formal appeal. Many denials are overturned at this stage.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is a not medically necessary denial code?</div>
+        <div class="faq-a">The most common denial codes for this reason are CO-50 (not medically necessary) and CO-57 (no coverage for this diagnosis/procedure combination). Your EOB or remittance advice will show the specific code. You can look up any code using the decoder on our homepage.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What does "not medically necessary" mean in medical billing?</div>
+        <div class="faq-a">In billing terms, it means the payer reviewed the diagnosis code submitted alongside the procedure and determined the two don't meet their coverage criteria together. This is sometimes a billing error — the wrong diagnosis code was submitted — and can be corrected by your provider without a formal appeal.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I appeal a not medically necessary denial?</div>
+        <div class="faq-a">Follow the step-by-step process above. The key documents are: the written denial with the specific reason, your insurer's clinical criteria, your medical records, and a letter of medical necessity from your doctor. Submit everything together in writing, send certified mail, and keep copies.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
+        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
+        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
