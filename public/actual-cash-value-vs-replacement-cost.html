@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actual Cash Value vs Replacement Cost: What's the Difference? – InsurePlain</title>
+  <meta name="description" content="Your insurer says they'll pay actual cash value — but that's not what your stuff costs new. Here's exactly what ACV vs replacement cost means and which one you need.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/actual-cash-value-vs-replacement-cost">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Actual Cash Value vs Replacement Cost</p>
+    <h1>Actual Cash Value vs<br><em style="font-style:italic;color:var(--accent)">Replacement Cost</em></h1>
+    <span class="category-tag">Claims &amp; Coverage</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>Your roof gets destroyed in a hailstorm. You file a claim expecting your insurer to pay for a new roof. Instead they send you a check for a fraction of what a new roof costs — because your policy pays actual cash value, not replacement cost.</p>
+      <p>This single distinction — ACV vs replacement cost — is one of the most important things to understand about your homeowners, auto, or renters insurance policy. Most people don't know which one they have until they file a claim. By then, it's too late to change it.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">The core difference</div>
+      <h2>ACV vs replacement cost, explained simply</h2>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box warn">
+          <div class="range-box-label">Actual Cash Value (ACV)</div>
+          <p>What your damaged item is worth <strong>today</strong> — after depreciation. A 10-year-old roof that would cost $15,000 to replace might only have an ACV of $6,000. That's all your insurer pays.</p>
+        </div>
+        <div class="range-box green">
+          <div class="range-box-label">Replacement Cost Value (RCV)</div>
+          <p>What it costs to <strong>replace</strong> the damaged item with a new one of similar kind and quality. That same roof gets you the full $15,000 — minus your deductible.</p>
+        </div>
+      </div>
+      <div class="timing-box" style="margin-top: 16px;">
+        <h3>⚠️ The depreciation gap</h3>
+        <p>Depreciation is the difference between ACV and RCV. On a 10-year-old roof, that gap can be $8,000–$10,000 or more — money you have to pay out of pocket if you only have ACV coverage.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How depreciation works</div>
+      <h2>Why ACV pays so much less</h2>
+      <p>Insurers calculate ACV by taking the replacement cost of an item and subtracting depreciation based on its age, condition, and expected useful life. Every year your roof, appliances, or car ages, the ACV drops.</p>
+      <ul class="symptom-list" style="margin-top: 16px;">
+        <li><strong>Roof (20-year lifespan):</strong> A 10-year-old roof is considered 50% depreciated. A $15,000 replacement cost becomes a $7,500 ACV payment.</li>
+        <li><strong>HVAC system (15-year lifespan):</strong> A 10-year-old unit at $8,000 replacement cost might pay out only $2,700 ACV.</li>
+        <li><strong>Personal property:</strong> Electronics, furniture, and appliances depreciate fast. A 3-year-old TV worth $800 new might have an ACV of $200.</li>
+        <li><strong>Vehicle (auto insurance):</strong> ACV on a car is its fair market value at the time of the loss — not what you paid for it or what it would cost to replace it.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Which coverage do you have?</div>
+      <h2>How to find out right now</h2>
+      <p>Check your declarations page — it's the summary page at the front of your policy. Look for these terms:</p>
+      <ul class="symptom-list" style="margin-top: 16px;">
+        <li><strong>"Replacement cost" or "RCV"</strong> — you have the better coverage. Your insurer pays to replace damaged items with new equivalents.</li>
+        <li><strong>"Actual cash value" or "ACV"</strong> — your payout will be reduced for depreciation. You'll cover the gap out of pocket.</li>
+        <li><strong>"Extended replacement cost"</strong> — covers replacement cost plus a buffer (often 20–50%) if construction costs spike after a disaster.</li>
+        <li><strong>"Guaranteed replacement cost"</strong> — the highest tier. Pays whatever it actually costs to rebuild, no cap. Usually only available on homeowners policies.</li>
+      </ul>
+      <div class="timing-box">
+        <h3>📄 Can't find your declarations page?</h3>
+        <p>Log into your insurer's online portal, call your agent, or search your email for your policy documents. The declarations page is always the first or second page of your full policy document.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Where it matters most</div>
+      <h2>ACV vs replacement cost by insurance type</h2>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Homeowners Insurance</div>
+          <p>Replacement cost coverage is standard on the dwelling (your house structure) in most policies. Personal property coverage often defaults to ACV — check yours.</p>
+        </div>
+        <div class="range-box blue">
+          <div class="range-box-label">Auto Insurance</div>
+          <p>Auto policies always pay ACV for total losses. There's no replacement cost option for vehicles — which is why gap insurance exists for newer financed cars.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Renters Insurance</div>
+          <p>Many renters policies default to ACV for personal property. Upgrading to replacement cost is usually only a few dollars more per month — and worth it.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Roof Claims</div>
+          <p>Some homeowners policies pay ACV on roofs regardless of your overall coverage level. This is buried in the policy. Check specifically for "roof settlement" language.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">If you have ACV and filed a claim</div>
+      <h2>What you can do now</h2>
+      <ol class="step-list">
+        <li><strong>Request the depreciation worksheet.</strong> Your insurer is required to show you exactly how they calculated the depreciation on your claim. Get this in writing.</li>
+        <li><strong>Check for recoverable depreciation.</strong> Some ACV policies include a provision to recover depreciation once repairs are completed. Look for "recoverable depreciation" language in your policy.</li>
+        <li><strong>Get your own repair estimate.</strong> If the insurer's ACV calculation seems low, get an independent contractor estimate and dispute the valuation.</li>
+        <li><strong>File a supplement if costs increase.</strong> If your contractor finds additional damage during repairs, you can submit a supplemental claim for the difference.</li>
+        <li><strong>Ask about upgrading your coverage.</strong> If your claim is still open, call your agent about adding replacement cost coverage before renewal — it won't help this claim but protects you next time.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull up your declarations page today and find the word "replacement cost" or "actual cash value" next to your dwelling coverage and your personal property coverage — they can be different. If you have ACV on personal property, call your agent and ask what it costs to upgrade. On most renters and homeowners policies it's $10–$30 more per year. That upgrade can be worth thousands if you ever file a claim.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Can I upgrade from ACV to replacement cost after I file a claim?</div>
+        <div class="faq-a">Not for the current claim — coverage changes only apply going forward. But you can and should upgrade at renewal to protect yourself on future claims. Call your agent as soon as your current claim is settled.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is recoverable depreciation?</div>
+        <div class="faq-a">Some policies pay ACV upfront and then release the withheld depreciation once you complete repairs and submit receipts. This is called recoverable depreciation. Not all policies offer this — check your policy language or call your insurer to ask.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why do auto insurance policies only pay ACV?</div>
+        <div class="faq-a">Cars depreciate the moment you drive them off the lot. Insurers don't offer replacement cost on vehicles because the market value of a used car is easily verifiable. Gap insurance exists specifically to cover the difference between ACV and what you still owe on your car loan.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I dispute an ACV calculation I think is wrong?</div>
+        <div class="faq-a">Request the depreciation worksheet showing exactly how they calculated the value. Get independent contractor estimates. If you still disagree, invoke your policy's appraisal clause — this allows both sides to hire independent appraisers and reach a binding settlement without going to court.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/homeowners-claim-denied" class="related-chip">Homeowners Claim Denied →</a>
+        <a href="/gap-insurance-explained" class="related-chip">Gap Insurance →</a>
+        <a href="/claims-adjuster-explained" class="related-chip">Claims Adjuster →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied? →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up ACV, depreciation, or any policy term in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
