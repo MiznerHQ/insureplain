@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Long Does an Insurance Claim Take? – InsurePlain</title>
+  <meta name="description" content="How long your insurance claim takes depends on the type of claim — here are the real timelines for auto, home, and health claims, and what slows them down.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/how-long-insurance-claim-takes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    .timeline-row { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
+    .timeline-row:last-child { border-bottom: none; }
+    .timeline-type { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; color: var(--accent); min-width: 110px; padding-top: 2px; }
+    .timeline-detail { font-size: 14px; color: var(--ink); line-height: 1.6; }
+    .timeline-detail span { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } .timeline-row { flex-direction: column; gap: 4px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Claim Timelines</p>
+    <h1>How Long Does an<br><em style="font-style:italic;color:var(--accent)">Insurance Claim Take?</em></h1>
+    <span class="category-tag">Claims</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You filed a claim and now you're waiting. Nobody is telling you anything. You don't know if it's been a day too long or if this is completely normal.</p>
+      <p>Here's the reality: claim timelines vary a lot depending on the type of claim, how complicated it is, and how fast you respond to your insurer's requests. Most straightforward claims resolve in days to weeks — but complex or disputed claims can drag on for months. Knowing the real timelines puts you in control.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Real timelines by claim type</div>
+      <h2>How long each type of claim takes</h2>
+      <div style="margin-top: 16px;">
+        <div class="timeline-row">
+          <div class="timeline-type">Auto — Minor</div>
+          <div class="timeline-detail">3 to 10 days<span>Fender benders, minor damage with no injuries. Fast inspection, quick estimate, payment issued.</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-type">Auto — Major</div>
+          <div class="timeline-detail">2 to 6 weeks<span>Totaled vehicles, accidents with injuries, or disputed fault. Liability investigation adds time.</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-type">Home — Minor</div>
+          <div class="timeline-detail">1 to 3 weeks<span>Burst pipes, small fires, vandalism. Adjuster inspection required before any payout.</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-type">Home — Major</div>
+          <div class="timeline-detail">1 to 6 months<span>Catastrophic damage, storm events, total loss. Contractor estimates and extensive documentation required.</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-type">Health</div>
+          <div class="timeline-detail">7 to 30 days<span>Standard medical claims process quickly. Disputes, prior auth issues, or appeals add weeks.</span></div>
+        </div>
+        <div class="timeline-row">
+          <div class="timeline-type">Life Insurance</div>
+          <div class="timeline-detail">2 to 8 weeks<span>Requires death certificate and claim form. Contested claims or policy reviews can extend to months.</span></div>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ State Law Minimums</h3>
+        <p>Most states require insurers to acknowledge your claim within 10–15 days and make a coverage decision within 30–45 days. If your insurer misses these windows, file a complaint with your state insurance commissioner.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What slows claims down</div>
+      <h2>The most common causes of delays</h2>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Missing documentation</strong> — Your insurer is waiting on photos, receipts, police reports, or medical records you haven't submitted yet.</li>
+        <li><strong>Adjuster backlog</strong> — After major storms or disasters, adjusters are overwhelmed and inspections get backed up by weeks.</li>
+        <li><strong>Disputed liability</strong> — When fault isn't clear — especially in auto accidents — both insurers investigate before either pays.</li>
+        <li><strong>Coverage disputes</strong> — Your insurer is reviewing whether your policy actually covers the loss before committing to a payout.</li>
+        <li><strong>Low settlement offer</strong> — If you push back on the initial offer, the negotiation process adds time.</li>
+        <li><strong>Fraud investigation</strong> — Any claim flagged for review enters a slower process while investigators verify the details.</li>
+        <li><strong>Contractor delays</strong> — For property claims, getting repair estimates from busy contractors can hold up the timeline.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">How to speed up your claim</div>
+      <h2>What you can do right now</h2>
+      <ol class="step-list">
+        <li><strong>File immediately.</strong> Every day you wait is a day added to the timeline. File the same day the incident happens if possible.</li>
+        <li><strong>Submit complete documentation upfront.</strong> Photos, receipts, police report numbers, medical records — send everything at once, not piecemeal.</li>
+        <li><strong>Respond to every request same day.</strong> When your adjuster asks for something, get it back to them immediately. Delays on your end reset the clock.</li>
+        <li><strong>Follow up in writing weekly.</strong> Email your adjuster every 5–7 days asking for a status update. Creates a paper trail and keeps your claim visible.</li>
+        <li><strong>Get your own repair estimates fast.</strong> Don't wait for the insurer's contractor. Having your own estimates ready speeds up the damage assessment phase.</li>
+        <li><strong>Reference state deadlines.</strong> If your insurer blows past the legally required response window, mention it directly. It usually accelerates things quickly.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        If your claim feels stuck, send a written follow-up today — email is fine. Ask for a specific status update and expected decision date. If you've been waiting longer than 45 days without a decision, look up your state's insurance commissioner and file a complaint. Insurers take commissioner complaints seriously. You don't have to sit and wait — you have legal rights to a timely response.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">How long does it take for an insurance claim to pay out?</div>
+        <div class="faq-a">Once your claim is approved, payment typically arrives within 5 to 10 business days by check or direct deposit. The approval process itself is what takes the most time — anywhere from a few days to several weeks depending on claim complexity.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens if my insurance company takes too long?</div>
+        <div class="faq-a">Every state has laws requiring insurers to respond and decide within specific timeframes — usually 30 to 45 days. If your insurer misses these deadlines, you can file a complaint with your state's Department of Insurance. This often prompts faster action than any other approach.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I speed up my insurance claim?</div>
+        <div class="faq-a">Yes. The biggest factors you control are how fast you file, how complete your documentation is, and how quickly you respond to requests. Claims that stall almost always do so because something is missing or waiting on the policyholder's side.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does a home insurance claim take to settle?</div>
+        <div class="faq-a">Simple home claims — burst pipes, minor fire damage — typically resolve in 1 to 3 weeks. Major damage claims, especially after natural disasters, can take 1 to 6 months due to adjuster backlogs, contractor estimates, and extensive documentation requirements.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/claims-adjuster-explained" class="related-chip">Claims Adjuster →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">Appeal a Denial →</a>
+        <a href="/actual-cash-value-vs-replacement-cost" class="related-chip">ACV vs Replacement →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any claim term, timeline question, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
