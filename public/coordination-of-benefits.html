@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is Coordination of Benefits in Insurance? – InsurePlain</title>
+  <meta name="description" content="Coordination of benefits explained in plain English. Learn how COB works when you have two insurance plans, which plan pays first, and how to avoid claim problems.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/coordination-of-benefits">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is coordination of benefits in insurance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Coordination of benefits is the process insurance companies use to determine which plan pays first and how much each plan pays when you are covered by more than one health insurance policy. It prevents you from collecting more than 100% of your actual medical costs across multiple plans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does coordination of benefits work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When you have two insurance plans, one is designated the primary plan and pays first up to its coverage limits. The secondary plan then reviews what is left and may pay some or all of the remaining balance. The total paid by both plans combined will not exceed your actual medical bill."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which insurance is primary when you have two plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The primary plan is usually the one through your own employer. If you are also covered under a spouse's plan, that plan is secondary. For children covered by both parents, the birthday rule typically applies — the parent whose birthday falls earliest in the calendar year has the primary plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you make money from having two insurance plans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Coordination of benefits rules are specifically designed to prevent you from profiting from a medical claim. The combined payment from both plans cannot exceed your actual out-of-pocket costs. Insurance is meant to make you whole, not generate income."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Coordination of Benefits</p>
+    <h1>What Is Coordination<br><em style="font-style:italic;color:var(--accent)">of Benefits?</em></h1>
+    <span class="category-tag">Health Insurance</span>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You're covered by two health insurance plans — maybe one through your job and one through your spouse's employer — and you're not sure how they work together. Or you got a bill that seems higher than it should be given that you have double coverage. Or your insurer is asking you to fill out a coordination of benefits form and you have no idea what it means.</p>
+      <p>Coordination of benefits, often abbreviated as COB, is the set of rules that determines how two insurance plans share the cost of your medical care. When you have more than one plan, they don't both pay 100% — that would mean you profit from being sick, which insurance rules don't allow. Instead, one plan pays first and the other picks up some or all of what's left.</p>
+      <p>Understanding how COB works helps you use your coverage correctly, avoid claim delays, and make sure you're not leaving money on the table when you have two plans working in your favor.</p>
+    </div>
+
+    <!-- CARD 2: PAA -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">What is coordination of benefits in insurance?</div>
+          <div class="paa-a"><strong>It's the process that decides which of your two insurance plans pays first and how much each one covers.</strong> When you're on more than one plan, COB rules prevent both plans from overpaying and make sure the total reimbursement never exceeds your actual costs.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">How does coordination of benefits work?</div>
+          <div class="paa-a"><strong>Your primary plan pays first, up to its coverage limits. Your secondary plan then reviews the remaining balance and pays some or all of it.</strong> The two plans coordinate so the combined payout matches your actual bill — not more, not less.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Which insurance is primary when you have two plans?</div>
+          <div class="paa-a"><strong>Usually the plan through your own employer is primary.</strong> A spouse's plan covering you is secondary. For children on both parents' plans, the birthday rule applies — whichever parent has a birthday earlier in the calendar year has the primary plan for the child.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can having two insurance plans mean I pay nothing out of pocket?</div>
+          <div class="paa-a"><strong>Sometimes, but not always.</strong> If your secondary plan covers what the primary plan didn't, your out-of-pocket costs can drop significantly or reach zero. But it depends on what each plan covers, your deductibles, and how each plan's COB rules are written.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Primary vs secondary -->
+    <div class="card">
+      <div class="section-label">Primary vs secondary</div>
+      <h2>How insurers decide who pays first</h2>
+      <p style="margin-top: 12px;">The biggest question in any COB situation is which plan is primary. This is determined by standardized rules — not by you, and not by your preference. Here's how the determination is made for the most common situations.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Your own employer plan</strong> — If you're covered by your own job's insurance and also on a spouse's plan, your plan is always primary for your own claims.</li>
+        <li><strong>Spouse's plan as secondary</strong> — The plan covering you as a dependent — through a spouse or parent — is always secondary to your own coverage.</li>
+        <li><strong>The birthday rule for children</strong> — When a child is covered by both parents' plans, the parent whose birthday falls earliest in the calendar year (month and day, not year) has the primary plan. If birthdays fall on the same date, the plan that has covered the parent longer is primary.</li>
+        <li><strong>Divorced or separated parents</strong> — Court orders may override the birthday rule. The plan of the parent with legal custody is typically primary unless a court document specifies otherwise.</li>
+        <li><strong>Medicare and employer coverage</strong> — If you're 65 or older and still working, your employer plan is generally primary and <a href="/medicare-vs-medicaid" class="inline-link">Medicare</a> is secondary — unless your employer has fewer than 20 employees, in which case Medicare pays first.</li>
+        <li><strong>COBRA coverage</strong> — If you're on <a href="/cobra-insurance-cost" class="inline-link">COBRA</a> and also covered by a new employer's plan, the new employer plan is primary and COBRA is secondary.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: How the math works -->
+    <div class="card">
+      <div class="section-label">How the math works</div>
+      <h2>What double coverage actually pays</h2>
+      <p style="margin-top: 12px;">Having two plans doesn't mean your bills disappear — it means the cost-sharing is split differently. Here's a realistic example of how COB plays out on an actual claim.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Primary plan pays</div>
+          <p>Say your total bill is $1,000. Your primary plan covers 80% after your deductible — paying $800. You would normally owe $200 as your coinsurance share.</p>
+        </div>
+        <div class="range-box green">
+          <div class="range-box-label">Secondary plan pays</div>
+          <p>Your secondary plan reviews the remaining $200 balance. Depending on its rules, it may cover all or part of that amount — potentially bringing your out-of-pocket cost to zero.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ The secondary plan does not pay blindly</h3>
+        <p>Your secondary insurer will request the explanation of benefits from your primary plan before paying anything. Never skip submitting to your primary plan first — if you do, your secondary plan may deny the claim entirely or delay payment for weeks.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: COB form -->
+    <div class="card">
+      <div class="section-label">The COB form</div>
+      <h2>Why your insurer is asking you to fill this out</h2>
+      <p style="margin-top: 12px;">If your insurance company sent you a coordination of benefits form, it means they've detected — or suspect — that you may have more than one health insurance plan. They're required to ask before processing your claims.</p>
+      <ol class="step-list">
+        <li><strong>Fill it out completely and accurately.</strong> Do not ignore a COB form. If you leave it unanswered, your insurer may suspend processing all of your claims until you respond.</li>
+        <li><strong>Disclose all plans you're enrolled in.</strong> List every health insurance plan covering you, including your spouse's employer plan, a parent's plan if you're under 26, or any government coverage like Medicaid.</li>
+        <li><strong>Identify which plan is primary.</strong> Use the rules above to determine which plan should be listed as primary. When in doubt, call both insurers and ask — they deal with this every day.</li>
+        <li><strong>Return the form by the deadline.</strong> Most insurers give you 30 days. Missing the deadline can result in claim denials that are difficult to reverse.</li>
+        <li><strong>Update your COB status whenever it changes.</strong> If you lose a job, a spouse changes employers, or a child ages off a plan, notify your insurer immediately so the primary and secondary designations stay accurate.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        If you received a COB form, fill it out today and return it before the deadline — ignoring it will freeze your claims. If you have two plans and haven't told both insurers about each other, call them now and get the primary and secondary designations confirmed in writing. Always submit claims to your primary plan first and wait for the <a href="/eob-explained" class="inline-link">explanation of benefits</a> before submitting to your secondary plan. And if a claim was denied because of a COB issue, read our guide on appealing a denial — COB errors are fixable.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">What is coordination of benefits in insurance?</div>
+        <div class="faq-a">Coordination of benefits is the process insurance companies use to determine which plan pays first and how much each plan pays when you are covered by more than one health insurance policy. It prevents you from collecting more than 100% of your actual medical costs across multiple plans.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How does coordination of benefits work?</div>
+        <div class="faq-a">When you have two insurance plans, one is designated the primary plan and pays first up to its coverage limits. The secondary plan then reviews what is left and may pay some or all of the remaining balance. The total paid by both plans combined will not exceed your actual medical bill.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Which insurance is primary when you have two plans?</div>
+        <div class="faq-a">The primary plan is usually the one through your own employer. If you are also covered under a spouse's plan, that plan is secondary. For children covered by both parents, the birthday rule typically applies — the parent whose birthday falls earliest in the calendar year has the primary plan for the child.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can you make money from having two insurance plans?</div>
+        <div class="faq-a">No. Coordination of benefits rules are specifically designed to prevent you from profiting from a medical claim. The combined payment from both plans cannot exceed your actual out-of-pocket costs. Insurance is meant to make you whole, not generate income.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance →</a>
+        <a href="/medicare-vs-medicaid" class="related-chip">Medicare vs Medicaid →</a>
+        <a href="/insurance-exclusion-explained" class="related-chip">Policy Exclusions →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
