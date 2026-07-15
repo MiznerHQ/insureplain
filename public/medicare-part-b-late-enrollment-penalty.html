@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicare Part B Late Enrollment Penalty Explained (2026) – InsurePlain</title>
+  <meta name="description" content="Missed your Medicare Part B enrollment window? See how the penalty is calculated, use our example calculator, check exceptions, and learn how to appeal.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/medicare-part-b-late-enrollment-penalty">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How is the Medicare Part B late enrollment penalty calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Medicare adds 10% of the standard Part B premium for every full 12-month period you were eligible but didn't enroll and didn't have creditable coverage. In 2026, the standard premium is $202.90, so each 12-month delay adds about $20.29 to your monthly premium, permanently." } },
+      { "@type": "Question", "name": "Is there a Medicare Part B penalty calculator I can use?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — Medicare.gov and several licensed broker sites offer penalty calculators where you enter how many months you delayed enrollment. The math is straightforward enough to do yourself: count full 12-month periods of delay, multiply by 10%, then multiply that percentage by the current standard Part B premium." } },
+      { "@type": "Question", "name": "Can I appeal or get the Part B penalty waived?", "acceptedAnswer": { "@type": "Answer", "text": "Appeals are possible but uncommon. You can request an equitable relief review if you believe you received incorrect information from a federal employee (like Social Security) that caused you to miss your enrollment window. You'll need to submit a written request with supporting documentation to your local Social Security office." } },
+      { "@type": "Question", "name": "What are the exceptions to the Part B late enrollment penalty?", "acceptedAnswer": { "@type": "Answer", "text": "The main exception is having active, current employer group health coverage (through your own or a spouse's job at a company with 20+ employees) at the time you delayed enrollling. Retiree coverage and COBRA do not count as active coverage and won't protect you from the penalty." } },
+      { "@type": "Question", "name": "Does the Part B late enrollment penalty ever go away?", "acceptedAnswer": { "@type": "Answer", "text": "No. Unlike the Part A penalty, which is temporary, the Part B penalty is permanent in nearly all cases. It's recalculated each year based on the current standard premium, but the percentage surcharge you owe stays with you for as long as you have Part B." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Medicare Part B Penalty</p>
+    <h1>Medicare Part B Late<br><em style="font-style:italic;color:var(--accent)">Enrollment Penalty</em></h1>
+    <span class="category-tag">MEDICARE</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated July 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>If you missed your window to sign up for Medicare Part B and didn't have qualifying employer coverage to fall back on, Medicare adds a permanent penalty to your monthly premium. It isn't a one-time fine — it's baked into your premium for as long as you have Part B, in most cases for life.</p>
+      <p>The good news: the math behind the penalty is simple and predictable once you understand how it's calculated. The bad news: a lot of people don't find out they owe it until their first premium bill arrives, which is why understanding the rules ahead of time matters so much.</p>
+      <p>This guide breaks down exactly how the penalty is calculated, walks through real examples, covers the narrow exceptions that can protect you, and explains what a rare successful appeal actually looks like.</p>
+    </div>
+
+    <!-- CARD 2: PAA — People Also Ask, 3-4 boxes -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Is there a Part B penalty calculator?</div>
+          <div class="paa-a"><strong>Yes, and you can also do the math yourself.</strong> Count the full 12-month periods you delayed, multiply that number by 10%, then apply that percentage to the current standard Part B premium ($202.90 in 2026).</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">How is the penalty actually calculated?</div>
+          <div class="paa-a"><strong>10% of the standard premium per full year of delay.</strong> Medicare only counts complete 12-month periods — partial years don't add to the penalty, so timing your enrollment even a few months earlier can matter.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I appeal the penalty?</div>
+          <div class="paa-a"><strong>In limited cases, yes.</strong> If a federal employee gave you incorrect information that caused you to miss your window, you can request equitable relief. Most appeals require documentation and aren't guaranteed to succeed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">How it's calculated</div>
+      <h2>The math behind your penalty</h2>
+      <p style="margin-top: 12px;">Medicare's formula is straightforward once you see it laid out. For every full 12-month period you were eligible for Part B but didn't enroll — and didn't have creditable coverage — your premium goes up by 10%, permanently. Whether this applies to you often comes down to whether <a href="/do-i-need-medicare-if-i-have-employer-insurance.html" class="inline-link">your employer insurance</a> counted as active, creditable coverage during that gap.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Standard 2026 premium: $202.90/month</strong> — the baseline every penalty percentage is applied to.</li>
+        <li><strong>10% per full year</strong> — Medicare rounds down, so 23 months of delay counts as one full year, not two.</li>
+        <li><strong>1 year late</strong> — adds roughly $20.29/month, bringing your premium to about $223.19.</li>
+        <li><strong>2 years late</strong> — adds roughly $40.58/month, for a premium around $243.48.</li>
+        <li><strong>5 years late</strong> — adds roughly $101.45/month, more than half your base premium again.</li>
+        <li><strong>The percentage is permanent</strong> — but the dollar amount recalculates each year as the standard premium changes.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
+    <div class="card">
+      <div class="section-label">On time vs. late</div>
+      <h2>What timing actually costs you</h2>
+      <p style="margin-top: 12px;">The difference between enrolling during your Initial Enrollment Period and waiting even one extra year is more than just inconvenience — it compounds every single month you have Medicare.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Enroll on time</div>
+          <p>You pay the standard $202.90/month premium in 2026, with no surcharge added, ever, for Part B.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">2 years late</div>
+          <p>You pay $243.48/month for life — an extra $487.60 every year, indefinitely, for missing your window.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ EXCEPTIONS THAT PROTECT YOU</h3>
+        <p>You can delay Part B penalty-free only if you have active, current employer group health coverage — through your own job or a spouse's — at a company with 20 or more employees. Retiree coverage and COBRA do not qualify, which is one of the most common mistakes people make. If you're weighing <a href="/switch-from-medicare-advantage-to-medigap.html" class="inline-link">switching from Medicare Advantage to Medigap</a>, note that your Part B enrollment status and any penalty carry over regardless of which path you take.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: Step-by-step action -->
+    <div class="card">
+      <div class="section-label">If you've already been penalized</div>
+      <h2>Steps to take right now</h2>
+      <ol class="step-list">
+        <li><strong>STEP 1.</strong> Confirm the penalty on your Medicare premium bill or your Social Security benefit statement, since the exact percentage is disclosed there.</li>
+        <li><strong>STEP 2.</strong> Gather documentation of any employer coverage you had during the gap — this is the strongest evidence if you believe the penalty was applied incorrectly.</li>
+        <li><strong>STEP 3.</strong> If you believe you received incorrect guidance from Social Security or Medicare, request an equitable relief review in writing at your local Social Security office.</li>
+        <li><strong>STEP 4.</strong> If no exception or appeal applies, plan for the penalty as a permanent line item — it won't disappear on its own, and it recalculates (not disappears) each year.</li>
+        <li><strong>STEP 5.</strong> Compare your options during open enrollment to make sure the rest of your coverage still fits your needs — and if you've already <a href="/missed-open-enrollment.html" class="inline-link">missed open enrollment</a> entirely, know what alternate windows are still available to you.</li>
+        <li><strong>STEP 6.</strong> If you're helping a family member navigate Medigap alongside this, our <a href="/medigap-plan-g-vs-plan-n.html" class="inline-link">Plan G vs. Plan N comparison</a> covers how supplemental coverage interacts with Part B costs.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        If you're approaching your 65th birthday, mark your 7-month Initial Enrollment Period on a calendar now — 3 months before, your birthday month, and 3 months after. If you've already missed it, calculate your likely penalty using the formula above so there are no surprises on your first bill, and check whether you qualify for any of the narrow exceptions before assuming the penalty is unavoidable.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ — 5 questions, must match schema exactly -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">How is the Medicare Part B late enrollment penalty calculated?</div>
+        <div class="faq-a">Medicare adds 10% of the standard Part B premium for every full 12-month period you were eligible but didn't enroll and didn't have creditable coverage. In 2026, the standard premium is $202.90, so each 12-month delay adds about $20.29 to your monthly premium, permanently.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is there a Medicare Part B penalty calculator I can use?</div>
+        <div class="faq-a">Yes — Medicare.gov and several licensed broker sites offer penalty calculators where you enter how many months you delayed enrollment. The math is straightforward enough to do yourself: count full 12-month periods of delay, multiply by 10%, then multiply that percentage by the current standard Part B premium.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I appeal or get the Part B penalty waived?</div>
+        <div class="faq-a">Appeals are possible but uncommon. You can request an equitable relief review if you believe you received incorrect information from a federal employee (like Social Security) that caused you to miss your enrollment window. You'll need to submit a written request with supporting documentation to your local Social Security office.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What are the exceptions to the Part B late enrollment penalty?</div>
+        <div class="faq-a">The main exception is having active, current employer group health coverage (through your own or a spouse's job at a company with 20+ employees) at the time you delayed enrolling. Retiree coverage and COBRA do not count as active coverage and won't protect you from the penalty.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does the Part B late enrollment penalty ever go away?</div>
+        <div class="faq-a">No. Unlike the Part A penalty, which is temporary, the Part B penalty is permanent in nearly all cases. It's recalculated each year based on the current standard premium, but the percentage surcharge you owe stays with you for as long as you have Part B.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/medigap-plan-g-vs-plan-n.html" class="related-chip">Plan G vs. Plan N →</a>
+        <a href="/switch-from-medicare-advantage-to-medigap.html" class="related-chip">Advantage to Medigap Switch →</a>
+        <a href="/do-i-need-medicare-if-i-have-employer-insurance.html" class="related-chip">Medicare + Employer Insurance →</a>
+        <a href="/missed-open-enrollment.html" class="related-chip">Missed Open Enrollment →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
