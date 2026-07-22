@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicare Part D Explained: Coverage, Costs, and What It Doesn't Pay For – InsurePlain</title>
+  <meta name="description" content="Medicare Part D explained in plain English — what it covers, 2026 costs, the drug tiers, and what's still excluded. No jargon.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/medicare-part-d-explained">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What does Medicare Part D cover?", "acceptedAnswer": { "@type": "Answer", "text": "Part D covers outpatient prescription drugs — the medications you pick up at a pharmacy, not drugs given to you in a doctor's office or hospital. Each plan has its own formulary, or list of covered drugs, organized into cost tiers." } },
+      { "@type": "Question", "name": "How much does Medicare Part D cost in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "The average standalone Part D premium in 2026 is around $34.50 a month, though individual plans range from $0 to over $100. The maximum deductible any plan can charge is $615, and once you've spent $2,100 out-of-pocket on covered drugs, your plan pays 100% of covered drug costs for the rest of the year." } },
+      { "@type": "Question", "name": "What happens if I don't sign up for Part D on time?", "acceptedAnswer": { "@type": "Answer", "text": "If you go 63 or more days without Part D or other creditable drug coverage after your Initial Enrollment Period ends, you may owe a late enrollment penalty added to your premium for as long as you have Part D coverage." } },
+      { "@type": "Question", "name": "Is the Medicare Part D donut hole still a thing?", "acceptedAnswer": { "@type": "Answer", "text": "No. The coverage gap, or donut hole, was eliminated starting in 2025 under the Inflation Reduction Act. Part D now has a hard annual out-of-pocket cap instead — $2,100 in 2026 — after which your plan covers 100% of costs for covered drugs." } },
+      { "@type": "Question", "name": "Does Medicare Part D cover weight-loss drugs like Wegovy or Zepbound?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the diagnosis, not the drug itself. Medicare Part D is generally barred from covering a drug used solely for weight loss, but the same medication may be covered when prescribed for an approved condition like type 2 diabetes or obstructive sleep apnea. Check your plan's formulary and expect a prior authorization requirement." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Medicare Part D Explained</p>
+    <h1>Medicare Part D,<br><em style="font-style:italic;color:var(--accent)">Explained</em></h1>
+    <span class="category-tag">MEDICARE</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated July 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>Medicare Part D is the piece of Medicare that pays for prescription drugs you pick up at a pharmacy. Original Medicare (Parts A and B) doesn't cover most outpatient prescriptions on its own — Part D fills that gap.</p>
+      <p>Part D isn't run by the government directly. It's sold through private insurance companies that Medicare approves and regulates, either as a standalone drug plan (PDP) you pair with Original Medicare, or bundled into a Medicare Advantage plan (MA-PD).</p>
+      <p>Every Part D plan has its own list of covered drugs, called a formulary, and its own pricing. Two people on "Medicare Part D" can pay very different amounts depending on which plan they picked and which medications they take.</p>
+    </div>
+
+    <!-- CARD 2: PAA -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">IS MEDICARE PART D MANDATORY?</div>
+          <div class="paa-a"><strong>Not legally required, but skipping it usually costs you later.</strong> If you don't have Part D or other creditable drug coverage and go 63+ days without it, you'll likely face a permanent late enrollment penalty if you sign up later.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">WHAT'S THE DIFFERENCE BETWEEN PART D AND MEDICARE ADVANTAGE DRUG COVERAGE?</div>
+          <div class="paa-a"><strong>Where the drug benefit lives, not what it covers.</strong> A standalone Part D plan pairs with Original Medicare. Many Medicare Advantage plans (MA-PD) build drug coverage directly into the same plan as your medical benefits, often for less.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">CAN I SWITCH PART D PLANS ANYTIME?</div>
+          <div class="paa-a"><strong>Generally no — you're locked in outside of specific windows.</strong> The main window is the Annual Enrollment Period, October 15 through December 7 each year, with a few exceptions for qualifying life events.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer — costs -->
+    <div class="card">
+      <div class="section-label">The money side</div>
+      <h2>What Part D actually costs in 2026</h2>
+      <p style="margin-top: 12px;">Part D pricing has several separate pieces, and it helps to know what each one is doing:</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Monthly premium</strong> — the average standalone Part D premium in 2026 is around $34.50, though plans range from $0 to over $100 depending on coverage generosity.</li>
+        <li><strong>Deductible</strong> — the most any plan can charge is $615 in 2026. Plenty of plans set it lower or waive it for certain drug tiers, especially generics.</li>
+        <li><strong>Coinsurance/copays</strong> — after the deductible, you typically pay a percentage or flat copay per prescription, based on which tier your drug falls into on the plan's <a href="/formulary-explained" class="inline-link">formulary</a>.</li>
+        <li><strong>Annual out-of-pocket cap</strong> — once you've spent $2,100 out-of-pocket on covered drugs in 2026, your plan pays 100% of covered drug costs for the rest of the calendar year.</li>
+        <li><strong>IRMAA surcharge</strong> — higher earners pay an extra monthly amount on top of their plan's premium, ranging from about $14.50 to $91 in 2026 depending on income.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: Deeper explainer — no more donut hole + PDP vs MA-PD -->
+    <div class="card">
+      <div class="section-label">What changed</div>
+      <h2>The donut hole is gone — here's what replaced it</h2>
+      <p style="margin-top: 12px;">For years, Part D had a notorious "coverage gap" — the donut hole — where costs spiked in the middle of the year. Starting in 2025, the Inflation Reduction Act eliminated it entirely. There's now a hard annual cap instead.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">STANDALONE PDP</div>
+          <p>Pairs with Original Medicare. Average premium around $34.50/month in 2026. You choose it separately from your medical coverage.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">MA-PD (BUNDLED)</div>
+          <p>Built into a Medicare Advantage plan. Often $0 added premium, since insurers use rebate dollars to subsidize the drug benefit.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ ONE COVERAGE, TWO PATHS</h3>
+        <p>You can't have both a standalone PDP and separate MA-PD drug coverage at once — enrolling in one to a Medicare Advantage plan that includes drug coverage typically drops you from a standalone plan automatically.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: Step-by-step -->
+    <div class="card">
+      <div class="section-label">Choosing a plan</div>
+      <h2>How to pick a Part D plan without guessing</h2>
+      <ol class="step-list">
+        <li><strong>List your current medications.</strong> Include dosage and how often you refill — this is what actually drives your real-world cost, not the sticker premium.</li>
+        <li><strong>Check the formulary tier for each drug.</strong> The same medication can sit on a cheap tier with one plan and an expensive one with another.</li>
+        <li><strong>Watch for prior authorization flags.</strong> Some drugs, including many GLP-1 medications, require your doctor to justify medical necessity before the plan will pay — see what happens when a <a href="/prior-authorization-denied" class="inline-link">prior authorization gets denied</a>.</li>
+        <li><strong>Confirm your pharmacy is in-network.</strong> Out-of-network pharmacies can mean paying full price even with coverage.</li>
+        <li><strong>Compare total annual cost, not just premium.</strong> A $0 premium plan with a high deductible can cost more overall than a $40 premium plan with better drug tier pricing.</li>
+        <li><strong>Check if you already have creditable coverage.</strong> If you're still working and covered through an employer, confirm whether that plan counts as creditable before deciding whether you even <a href="/do-i-need-medicare-if-i-have-employer-insurance" class="inline-link">need Part D right now</a>.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull up your current medication list and check it against a couple of plan formularies side by side before Annual Enrollment closes. If you're new to Medicare, don't let your Initial Enrollment Period lapse without at least confirming you have creditable drug coverage somewhere — the penalty for waiting is permanent, and it only gets more expensive the longer you go without.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">What does Medicare Part D cover?</div>
+        <div class="faq-a">Part D covers outpatient prescription drugs — the medications you pick up at a pharmacy, not drugs given to you in a doctor's office or hospital. Each plan has its own formulary, or list of covered drugs, organized into cost tiers.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How much does Medicare Part D cost in 2026?</div>
+        <div class="faq-a">The average standalone Part D premium in 2026 is around $34.50 a month, though individual plans range from $0 to over $100. The maximum deductible any plan can charge is $615, and once you've spent $2,100 out-of-pocket on covered drugs, your plan pays 100% of covered drug costs for the rest of the year.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens if I don't sign up for Part D on time?</div>
+        <div class="faq-a">If you go 63 or more days without Part D or other creditable drug coverage after your Initial Enrollment Period ends, you may owe a late enrollment penalty added to your premium for as long as you have Part D coverage.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is the Medicare Part D donut hole still a thing?</div>
+        <div class="faq-a">No. The coverage gap, or donut hole, was eliminated starting in 2025 under the Inflation Reduction Act. Part D now has a hard annual out-of-pocket cap instead — $2,100 in 2026 — after which your plan covers 100% of costs for covered drugs.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does Medicare Part D cover weight-loss drugs like Wegovy or Zepbound?</div>
+        <div class="faq-a">It depends on the diagnosis, not the drug itself. Medicare Part D is generally barred from covering a drug used solely for weight loss, but the same medication may be covered when prescribed for an approved condition like type 2 diabetes or obstructive sleep apnea. Check your plan's formulary and expect a prior authorization requirement.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/medicare-advantage-vs-original-medicare" class="related-chip">Medicare Advantage vs Original Medicare →</a>
+        <a href="/medigap-plan-g-vs-plan-n" class="related-chip">Medigap Plan G vs Plan N →</a>
+        <a href="/medicare-part-b-late-enrollment-penalty" class="related-chip">Part B Late Enrollment Penalty →</a>
+        <a href="/missed-open-enrollment" class="related-chip">Missed Open Enrollment →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
