@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicare Part A vs Part B: Coverage, Costs, and Key Differences Explained – InsurePlain</title>
+  <meta name="description" content="Medicare Part A covers hospital stays. Part B covers doctor visits. Here's exactly what each one pays for, what they cost in 2026, and how they work together.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/medicare-part-a-vs-part-b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do I need both Medicare Part A and Part B?", "acceptedAnswer": { "@type": "Answer", "text": "Most people need both to have complete coverage. Part A alone won't pay for doctor visits or outpatient care, and Part B alone won't pay for a hospital stay. Together, they form Original Medicare." } },
+      { "@type": "Question", "name": "Is Medicare Part A free?", "acceptedAnswer": { "@type": "Answer", "text": "Part A is premium-free for most people if you or your spouse paid Medicare payroll taxes for at least 10 years (40 quarters). You'll still owe the $1,736 deductible per benefit period if you're hospitalized. If you have fewer than 40 quarters, you may pay a monthly premium of up to $565 in 2026." } },
+      { "@type": "Question", "name": "How much does Medicare Part B cost in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "The standard Part B premium is $202.90 per month in 2026, plus an annual deductible of $283. After you meet the deductible, you typically pay 20% coinsurance for most covered services. Higher earners pay an income-related surcharge on top of the standard premium." } },
+      { "@type": "Question", "name": "What does Medicare Part A not cover?", "acceptedAnswer": { "@type": "Answer", "text": "Part A doesn't cover doctor visits, outpatient procedures, lab work, durable medical equipment, or most preventive care — those fall under Part B. Part A also doesn't cover long-term custodial care, dental, vision, or hearing." } },
+      { "@type": "Question", "name": "Can I sign up for Part B later if I have employer coverage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if your employer coverage counts as creditable coverage, you can often delay Part B without a late penalty and enroll during a Special Enrollment Period once that coverage ends. Confirm creditable status with your employer's benefits office before your Initial Enrollment Period ends." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Medicare Part A vs Part B</p>
+    <h1>Medicare Part A vs Part B<br><em style="font-style:italic;color:var(--accent)">What Each One Actually Covers</em></h1>
+    <span class="category-tag">MEDICARE</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated July 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>Medicare Part A and Part B aren't two versions of the same coverage — they're two different halves of one system. Together, they make up what's called Original Medicare, and each half pays for a completely different type of care.</p>
+      <p>Part A is hospital insurance. It kicks in when you're admitted as an inpatient, need skilled nursing care after a hospital stay, or use hospice services. Part B is medical insurance. It covers the everyday stuff — doctor visits, outpatient procedures, preventive screenings, and durable medical equipment.</p>
+      <p>Most people get Part A automatically at 65 with no monthly premium. Part B usually requires active enrollment and comes with a monthly cost. Understanding where the line between them falls is the difference between assuming you're covered and finding out the hard way that you weren't.</p>
+      <p>The split exists because Medicare was designed around two separate funding sources. Part A is financed largely through the payroll taxes you paid during your working years — which is why it's premium-free for most people who've worked at least 10 years. Part B is funded differently, through a mix of general tax revenue and monthly premiums from enrollees, which is why it comes with an ongoing cost regardless of your work history.</p>
+      <p>Neither part is optional in the sense that you can pick one and skip the other and still have full coverage. They're complementary by design. A hospital stay without Part B still leaves you owing for every doctor who treated you during that stay. Ongoing doctor visits without Part A leave you fully exposed if you're ever admitted as an inpatient.</p>
+    </div>
+
+    <!-- CARD 2: PAA -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Which one covers a hospital stay?</div>
+          <div class="paa-a"><strong>Part A.</strong> It pays for inpatient hospital care, including your room, meals, nursing care, and hospital services. Part B would still cover any doctor services you receive while admitted, billed separately.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Which one covers doctor visits?</div>
+          <div class="paa-a"><strong>Part B.</strong> Office visits, specialist consultations, outpatient surgery, lab work, and preventive care like annual wellness visits and screenings all fall under Part B.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Do I have to pay for both?</div>
+          <div class="paa-a"><strong>Part A is usually free; Part B usually isn't.</strong> Most people qualify for premium-free Part A through work history, but Part B carries a standard monthly premium of $202.90 in 2026.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">Coverage breakdown</div>
+      <h2>What each part actually pays for</h2>
+      <p style="margin-top: 12px;">Here's the practical split, service by service. If you're also weighing <a href="/medicare-advantage-vs-original-medicare" class="inline-link">Medicare Advantage against Original Medicare</a>, this is the coverage baseline that Advantage plans are built on top of.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Part A covers:</strong> inpatient hospital stays, skilled nursing facility care (following a qualifying hospital stay), hospice care, and some home health services.</li>
+        <li><strong>Part B covers:</strong> doctor and specialist visits, outpatient hospital services, preventive care, durable medical equipment, and most lab and diagnostic testing.</li>
+        <li><strong>Part A does not cover:</strong> outpatient doctor visits, routine checkups, or long-term custodial care.</li>
+        <li><strong>Part B does not cover:</strong> inpatient hospital room and board, or most prescription drugs — that's what <a href="/medicare-part-d-explained" class="inline-link">Part D</a> is for.</li>
+        <li><strong>Neither part covers:</strong> routine dental, vision, or hearing care in most cases.</li>
+        <li><strong>Overlap point:</strong> if you're hospitalized, Part A covers the stay itself while Part B covers the doctors who treat you during that stay — two separate bills for one visit.</li>
+      </ul>
+      <p style="margin-top: 16px;">This overlap is one of the most common sources of confusion. A single hospital admission can generate a claim from Part A for the room and facility charges, and a separate claim from Part B for the surgeon, anesthesiologist, and any specialists who saw you. Both parts working correctly is what keeps that admission from becoming a financial surprise.</p>
+    </div>
+
+    <!-- CARD 4: Costs comparison -->
+    <div class="card">
+      <div class="section-label">2026 costs</div>
+      <h2>What Part A and Part B cost this year</h2>
+      <p style="margin-top: 12px;">Costs are set annually by CMS and typically change every January. Here's what applies for 2026.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Part A</div>
+          <p>Premium-free for most (40+ work quarters). Deductible: $1,736 per benefit period. No monthly premium for the majority of enrollees.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Part B</div>
+          <p>Standard premium: $202.90/month. Annual deductible: $283. After the deductible, typically 20% coinsurance on covered services.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ Higher earners pay more</h3>
+        <p>If your income exceeds certain thresholds, an Income-Related Monthly Adjustment Amount (IRMAA) applies to Part B, raising the monthly premium as high as $689.90 depending on income tier. IRMAA is based on your tax return from two years prior.</p>
+      </div>
+      <p style="margin-top: 16px;">One detail that catches people off guard: the Part A deductible applies per benefit period, not per year. A benefit period starts when you're admitted and ends once you've gone 60 consecutive days without inpatient or skilled nursing care. If you're readmitted after that window closes, a new benefit period — and a new deductible — begins. The Part B deductible, by contrast, is a single annual amount that applies once per calendar year no matter how many separate visits or claims you have.</p>
+    </div>
+
+    <!-- CARD 5: Enrollment steps -->
+    <div class="card">
+      <div class="section-label">Enrollment</div>
+      <h2>How and when to sign up</h2>
+      <ol class="step-list">
+        <li><strong>Check for automatic enrollment.</strong> If you're already receiving Social Security benefits when you turn 65, you're typically enrolled in both Part A and Part B automatically.</li>
+        <li><strong>Know your Initial Enrollment Period.</strong> This is a 7-month window centered on your 65th birthday month — 3 months before, your birthday month, and 3 months after.</li>
+        <li><strong>Decide whether to delay Part B.</strong> If you have <a href="/do-i-need-medicare-if-i-have-employer-insurance" class="inline-link">creditable employer coverage</a>, you may be able to delay Part B without a penalty.</li>
+        <li><strong>Watch the late enrollment penalty.</strong> Delaying Part B without qualifying coverage can trigger a permanent premium penalty — see our <a href="/medicare-part-b-late-enrollment-penalty" class="inline-link">late enrollment penalty guide</a> for the specifics.</li>
+        <li><strong>Enroll through Social Security.</strong> Sign-up happens through the Social Security Administration, not directly through Medicare.</li>
+        <li><strong>Confirm both parts are active</strong> before any scheduled procedures or provider visits, since coverage gaps can mean unexpected bills.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        If you're approaching 65, confirm whether you'll be auto-enrolled or need to sign up manually, and check whether any current employer coverage is creditable before you consider delaying Part B. If you're already enrolled, keep your Medicare card handy and know which part applies before every appointment — it'll save you a confusing bill later. And if you're weighing whether to add supplemental coverage on top of Original Medicare, it's worth understanding how Part A and Part B's cost-sharing structure works first, since that's exactly what a Medigap policy is designed to fill in around.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need both Medicare Part A and Part B?</div>
+        <div class="faq-a">Most people need both to have complete coverage. Part A alone won't pay for doctor visits or outpatient care, and Part B alone won't pay for a hospital stay. Together, they form Original Medicare.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is Medicare Part A free?</div>
+        <div class="faq-a">Part A is premium-free for most people if you or your spouse paid Medicare payroll taxes for at least 10 years (40 quarters). You'll still owe the $1,736 deductible per benefit period if you're hospitalized. If you have fewer than 40 quarters, you may pay a monthly premium of up to $565 in 2026.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How much does Medicare Part B cost in 2026?</div>
+        <div class="faq-a">The standard Part B premium is $202.90 per month in 2026, plus an annual deductible of $283. After you meet the deductible, you typically pay 20% coinsurance for most covered services. Higher earners pay an income-related surcharge on top of the standard premium.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What does Medicare Part A not cover?</div>
+        <div class="faq-a">Part A doesn't cover doctor visits, outpatient procedures, lab work, durable medical equipment, or most preventive care — those fall under Part B. Part A also doesn't cover long-term custodial care, dental, vision, or hearing.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I sign up for Part B later if I have employer coverage?</div>
+        <div class="faq-a">Yes, if your employer coverage counts as creditable coverage, you can often delay Part B without a late penalty and enroll during a Special Enrollment Period once that coverage ends. Confirm creditable status with your employer's benefits office before your Initial Enrollment Period ends.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/medicare-advantage-vs-original-medicare" class="related-chip">Medicare Advantage vs Original →</a>
+        <a href="/medicare-part-b-late-enrollment-penalty" class="related-chip">Part B Late Penalty →</a>
+        <a href="/medicare-part-d-explained" class="related-chip">Medicare Part D Explained →</a>
+        <a href="/medigap-plan-g-vs-plan-n" class="related-chip">Medigap Plan G vs Plan N →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
