@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicare vs. Medicaid: What's the Difference? – InsurePlain</title>
+  <meta name="description" content="Medicare and Medicaid sound alike but work completely differently. See who's eligible, what's covered, what it costs, and whether you can have both.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/medicare-vs-medicaid">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Can I have both Medicare and Medicaid?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. People who qualify for both are called dual eligibles. Medicare typically pays first, and Medicaid helps cover the costs Medicare leaves behind, like premiums, deductibles, and copays." } },
+      { "@type": "Question", "name": "Is Medicare or Medicaid free?", "acceptedAnswer": { "@type": "Answer", "text": "Medicare usually involves premiums, deductibles, and coinsurance, though Part A is often premium-free if you've paid Medicare taxes long enough. Medicaid is generally free or very low-cost for those who qualify, with only small copays in some states." } },
+      { "@type": "Question", "name": "Who is eligible for Medicaid?", "acceptedAnswer": { "@type": "Answer", "text": "Medicaid eligibility is based mainly on income and household size, with rules that vary by state. Some states extended eligibility further than others, so the exact income cutoff depends on where you live." } },
+      { "@type": "Question", "name": "Does Medicare cover nursing home care?", "acceptedAnswer": { "@type": "Answer", "text": "Medicare only covers short-term skilled nursing care after a qualifying hospital stay. It does not cover long-term custodial nursing home care. Medicaid, by contrast, is the primary payer for long-term nursing home care for those who qualify." } },
+      { "@type": "Question", "name": "Can I switch from Medicaid to Medicare, or vice versa?", "acceptedAnswer": { "@type": "Answer", "text": "You don't switch between them the way you'd switch plans — eligibility for each program is separate. Many people age into Medicare at 65 while keeping Medicaid if their income still qualifies, becoming dual eligible rather than switching." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .tagline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 32px; }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="tagline">Insurance, finally explained. No agent required.</p>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Medicare vs. Medicaid</p>
+    <h1>Medicare vs. Medicaid<br><em style="font-style:italic;color:var(--accent)">What's the Difference?</em></h1>
+    <span class="category-tag">Medicare</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated August 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>Medicare and Medicaid get confused constantly, and it's not just because the names rhyme. Both are government health insurance programs, both start with a six-letter word beginning with "Medi," and both show up in the same conversations about seniors, healthcare costs, and coverage gaps.</p>
+      <p>But they're built for completely different people and completely different problems. Medicare is an age-and-disability program run by the federal government. Medicaid is an income-based program run jointly by federal and state governments, which is why Medicaid rules can look different depending on where you live.</p>
+      <p>Some people qualify for one. Some qualify for the other. Some qualify for both at the same time — and that overlap is where most of the real confusion starts.</p>
+      <p>Understanding which program applies to you (or a parent, spouse, or family member) matters because the two programs cover different things, cost different amounts, and have completely different enrollment rules. Assuming Medicare will cover a long nursing home stay, or assuming Medicaid is available regardless of income, are two of the most common — and costly — misunderstandings people run into.</p>
+    </div>
+
+    <!-- CARD 2: PAA — People Also Ask -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">CAN YOU HAVE MEDICARE AND MEDICAID AT THE SAME TIME?</div>
+          <div class="paa-a"><strong>Yes — this is called dual eligibility.</strong> Millions of Americans qualify for both, usually because they're 65 or older (or disabled) and also have limited income. Medicare pays first, and Medicaid helps cover what's left.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">WHICH ONE COSTS MORE?</div>
+          <div class="paa-a"><strong>Medicare generally costs more out of pocket.</strong> It involves premiums, deductibles, and coinsurance. Medicaid is typically free or very low-cost for people who meet the income requirements.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">IS ONE "BETTER" THAN THE OTHER?</div>
+          <div class="paa-a"><strong>They're not competing options — they're built for different needs.</strong> Medicare exists for age and disability. Medicaid exists for financial need. Most people don't choose between them; their circumstances determine which one (or both) they qualify for.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer — what each program is -->
+    <div class="card">
+      <div class="section-label">The basics</div>
+      <h2>What each program actually covers</h2>
+      <p style="margin-top: 12px;">Medicare is federal health insurance mainly for people 65 and older, along with some younger people with qualifying disabilities. It's split into parts: Part A covers hospital stays, Part B covers doctor visits and outpatient care, and <a href="/medicare-part-d-explained" class="inline-link">Part D covers prescription drugs</a>. Many people also compare <a href="/medicare-advantage-vs-original-medicare" class="inline-link">Medicare Advantage against Original Medicare</a> to decide how they want their coverage structured.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Who it's for</strong> — people 65+, or younger people with certain disabilities or conditions like ESRD.</li>
+        <li><strong>Who runs it</strong> — the federal government, with consistent rules nationwide.</li>
+        <li><strong>What it costs</strong> — premiums, deductibles, and coinsurance, though Part A is often premium-free.</li>
+        <li><strong>Enrollment</strong> — tied to specific windows, like your Initial Enrollment Period or <a href="/special-enrollment-period" class="inline-link">a Special Enrollment Period</a>.</li>
+        <li><strong>What it doesn't cover well</strong> — long-term custodial care, like an extended nursing home stay.</li>
+      </ul>
+      <p style="margin-top: 16px;">Medicaid is a joint federal-and-state program for people with limited income and resources, regardless of age. Because states administer their own programs within federal guidelines, Medicaid can look different depending on where you live — including its name in some states.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Who it's for</strong> — people and families under state-specific income thresholds.</li>
+        <li><strong>Who runs it</strong> — states, with federal funding and baseline rules.</li>
+        <li><strong>What it costs</strong> — usually free or close to it, with small copays in some states.</li>
+        <li><strong>Enrollment</strong> — open year-round, unlike Medicare's fixed windows.</li>
+        <li><strong>What it covers well</strong> — long-term care, including nursing homes and home-based care.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
+    <div class="card">
+      <div class="section-label">Side by side</div>
+      <h2>Eligibility and cost, compared</h2>
+      <p style="margin-top: 12px;">The cleanest way to tell them apart: Medicare asks how old you are. Medicaid asks how much you earn.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">MEDICARE</div>
+          <p>Based on age (65+) or qualifying disability. Same eligibility rules nationwide. You'll pay premiums and cost-sharing for most parts.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">MEDICAID</div>
+          <p>Based on income and household size. Rules and thresholds vary by state. Usually free or nearly free for those who qualify.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ THE OVERLAP MOST PEOPLE MISS</h3>
+        <p>Someone can be 65+ and low-income at the same time — which means they can qualify for both programs simultaneously. This dual-eligible status is common, not rare, and it changes how your costs and coverage work together.</p>
+      </div>
+      <p style="margin-top: 16px;">It's also worth noting that Medicaid eligibility isn't limited to seniors. A 30-year-old with a qualifying low income can be on Medicaid without ever touching Medicare, since Medicaid has no age requirement at all. Medicare, on the other hand, almost always requires either reaching 65 or meeting a specific disability standard — income alone doesn't get you onto Medicare.</p>
+    </div>
+
+    <!-- CARD 5: Step-by-step — dual eligibility -->
+    <div class="card">
+      <div class="section-label">Dual eligibility</div>
+      <h2>How Medicare and Medicaid work together</h2>
+      <ol class="step-list">
+        <li><strong>Confirm you meet both sets of criteria.</strong> You'll need to qualify for Medicare (age or disability) and separately qualify for Medicaid (income and resources) in your state.</li>
+        <li><strong>Understand the payment order.</strong> Medicare acts as the primary payer for covered services. Medicaid steps in second, covering costs Medicare doesn't.</li>
+        <li><strong>Look into Medicare Savings Programs.</strong> If you don't fully qualify for Medicaid, programs like QMB or SLMB can still help cover your Medicare premiums and cost-sharing.</li>
+        <li><strong>Check what Medicaid adds.</strong> This often includes long-term nursing home care, transportation to appointments, and other services <a href="/out-of-pocket-maximum" class="inline-link">Medicare's out-of-pocket structure</a> doesn't fully address.</li>
+        <li><strong>Apply through your state Medicaid agency.</strong> Unlike Medicare, Medicaid applications are accepted year-round — there's no fixed enrollment window to wait for.</li>
+        <li><strong>Re-verify eligibility periodically.</strong> Because Medicaid is income-based, states periodically check that you still meet the requirements.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        If you're turning 65, start with Medicare enrollment during your Initial Enrollment Period to avoid penalties. If your income is limited, check your state's Medicaid eligibility separately — the two applications don't happen automatically together. If you're unsure where you stand, your State Health Insurance Assistance Program (SHIP) can walk through both programs with you at no cost.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Can I have both Medicare and Medicaid?</div>
+        <div class="faq-a">Yes. People who qualify for both are called dual eligibles. Medicare typically pays first, and Medicaid helps cover the costs Medicare leaves behind, like premiums, deductibles, and copays.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is Medicare or Medicaid free?</div>
+        <div class="faq-a">Medicare usually involves premiums, deductibles, and coinsurance, though Part A is often premium-free if you've paid Medicare taxes long enough. Medicaid is generally free or very low-cost for those who qualify, with only small copays in some states.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Who is eligible for Medicaid?</div>
+        <div class="faq-a">Medicaid eligibility is based mainly on income and household size, with rules that vary by state. Some states extended eligibility further than others, so the exact income cutoff depends on where you live.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does Medicare cover nursing home care?</div>
+        <div class="faq-a">Medicare only covers short-term skilled nursing care after a qualifying hospital stay. It does not cover long-term custodial nursing home care. Medicaid, by contrast, is the primary payer for long-term nursing home care for those who qualify.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I switch from Medicaid to Medicare, or vice versa?</div>
+        <div class="faq-a">You don't switch between them the way you'd switch plans — eligibility for each program is separate. Many people age into Medicare at 65 while keeping Medicaid if their income still qualifies, becoming dual eligible rather than switching.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/medicare-part-a-vs-part-b" class="related-chip">Part A vs. Part B →</a>
+        <a href="/medicare-advantage-vs-original-medicare" class="related-chip">Advantage vs. Original →</a>
+        <a href="/medigap-plan-g-vs-plan-n" class="related-chip">Medigap Plan G vs. N →</a>
+        <a href="/medicare-part-d-explained" class="related-chip">Part D Explained →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
