@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Insurance Deductible vs. Car Insurance Deductible: What's the Difference? – InsurePlain</title>
+  <meta name="description" content="Home and auto deductibles work differently — one can be a percentage, the other never is. Here's what actually changes between them, in plain English.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/home-vs-auto-deductible">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is a home insurance deductible the same as a car insurance deductible?", "acceptedAnswer": { "@type": "Answer", "text": "No. Home deductibles can be a flat dollar amount or a percentage of your home's insured value, while auto deductibles are almost always a flat dollar amount." } },
+      { "@type": "Question", "name": "Why would my home insurance deductible be a percentage?", "acceptedAnswer": { "@type": "Answer", "text": "Insurers often use percentage deductibles for high-risk perils like wind, hail, hurricanes, or earthquakes — you might owe 1-5% of your home's insured value instead of a flat number." } },
+      { "@type": "Question", "name": "Do I pay my auto deductible every time I file a claim?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, for collision and comprehensive coverage. It applies per claim, not per year, so two separate claims could mean paying it twice." } },
+      { "@type": "Question", "name": "Does liability coverage have a deductible?", "acceptedAnswer": { "@type": "Answer", "text": "No. Liability coverage generally doesn't carry a deductible because it pays for damage or injury you caused to someone else, not repairs to your own property." } },
+      { "@type": "Question", "name": "Should I choose a higher or lower deductible?", "acceptedAnswer": { "@type": "Answer", "text": "A higher deductible usually lowers your premium but raises what you'd owe on a claim. The right choice depends on what you could comfortably pay out of pocket." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Home vs. Auto Deductible</p>
+    <h1>Home vs. Auto Insurance Deductibles<br><em style="font-style:italic;color:var(--accent)">They Don't Work the Same Way</em></h1>
+    <span class="category-tag">Home &amp; Auto</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated August 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>You've probably heard the word "deductible" used the same way for your house and your car, so it's easy to assume they work identically. They don't.</p>
+      <p>A car deductible is nearly always a flat dollar amount — $500, $1,000, whatever you picked when you set up the policy. A home deductible can be that same flat amount, or a percentage of your home's insured value, depending on the type of damage — somewhat like how <a href="/out-of-pocket-maximum" class="inline-link">out-of-pocket maximums</a> work on health plans.</p>
+      <p>That difference sounds small until a hailstorm hits your roof and your "deductible" turns out to be $4,000 instead of the $1,000 you pictured. Here's how each one actually works.</p>
+    </div>
+
+    <!-- CARD 2: PAA — People Also Ask, 3-4 boxes -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Is my home deductible the same number every time I file a claim?</div>
+          <div class="paa-a"><strong>Not necessarily.</strong> A standard deductible plus separate percentage deductibles for wind or hail changes the amount you owe based on the cause.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I have different deductibles for comprehensive and collision on my car?</div>
+          <div class="paa-a"><strong>Yes.</strong> Most policies let you split them — e.g. $250 comprehensive, $1,000 collision.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Does a higher deductible always mean lower insurance costs?</div>
+          <div class="paa-a"><strong>Generally, yes.</strong> More risk shifted to you usually means a lower premium, though savings vary by insurer.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">The core difference</div>
+      <h2>Flat dollar amount vs. percentage-based</h2>
+      <p style="margin-top: 12px;">Auto deductibles are fixed. If your collision deductible is $500 and the repair bill is $3,000, you pay $500 and the insurer covers the rest — that number never changes based on damage severity.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Standard home deductible</strong> — a fixed amount, typically $500–$2,000, for everyday claims like a burst pipe.</li>
+        <li><strong>Percentage-based home deductible</strong> — 1–5% of your home's insured value, often for wind, hail, hurricane, or earthquake claims.</li>
+        <li><strong>Auto comprehensive deductible</strong> — flat amount for non-collision damage like theft or storm damage.</li>
+        <li><strong>Auto collision deductible</strong> — flat amount for accident damage, regardless of fault.</li>
+        <li><strong>Liability deductible</strong> — usually none, on either a <a href="/homeowners-claim-denied" class="inline-link">home</a> or <a href="/car-insurance-claim-denied" class="inline-link">auto</a> policy.</li>
+        <li><strong>Per-claim vs. per-peril</strong> — home can carry more than one deductible type; auto keeps to one flat number per coverage type.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
+    <div class="card">
+      <div class="section-label">Side by side</div>
+      <h2>How each deductible actually plays out</h2>
+      <p style="margin-top: 12px;">Applied to a real claim:</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Home, percentage deductible</div>
+          <p>House insured for $300,000, 2% wind/hail deductible. Hailstorm causes $10,000 in roof damage. You owe $6,000, insurer pays $4,000.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Auto, flat deductible</div>
+          <p>Car has a $1,000 collision deductible. Accident causes $10,000 in damage. You owe $1,000 flat, insurer pays $9,000.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ Where people get caught off guard</h3>
+        <p>Percentage deductibles are based on your home's insured value, not the repair cost. A high dwelling limit means a bigger out-of-pocket number than expected.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: Step-by-step action -->
+    <div class="card">
+      <div class="section-label">Before you file a claim</div>
+      <h2>How to figure out what you actually owe</h2>
+      <ol class="step-list">
+        <li><strong>Pull your declarations page.</strong> Both list every deductible near the coverage limits.</li>
+        <li><strong>Check for peril-specific deductibles.</strong> Look for separate lines for wind, hail, hurricane, or earthquake.</li>
+        <li><strong>Confirm flat vs. percentage.</strong> "2%" means math against your dwelling limit, not the repair estimate.</li>
+        <li><strong>Match the deductible to the coverage type.</strong> Auto policies split comprehensive and collision.</li>
+        <li><strong>Estimate the repair cost first.</strong> Close to your deductible? Filing may not beat a <a href="/insurance-premium-increase" class="inline-link">premium increase</a>.</li>
+        <li><strong>Call your insurer if unclear.</strong> A short call beats a surprise bill.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull up your home and auto declarations pages and find the deductible section on each. If your home policy lists a percentage next to any peril, calculate the real dollar amount against your dwelling coverage limit now — before a damaged roof forces the math on you.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ — 5 questions, must match schema exactly -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Is a home insurance deductible the same as a car insurance deductible?</div>
+        <div class="faq-a">No. Home deductibles can be a flat dollar amount or a percentage of your home's insured value, while auto deductibles are almost always a flat dollar amount.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why would my home insurance deductible be a percentage?</div>
+        <div class="faq-a">Insurers often use percentage deductibles for high-risk perils like wind, hail, hurricanes, or earthquakes — you might owe 1-5% of your home's insured value instead of a flat number.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I pay my auto deductible every time I file a claim?</div>
+        <div class="faq-a">Yes, for collision and comprehensive coverage. It applies per claim, not per year, so two separate claims could mean paying it twice.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does liability coverage have a deductible?</div>
+        <div class="faq-a">No. Liability coverage generally doesn't carry a deductible because it pays for damage or injury you caused to someone else, not repairs to your own property.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Should I choose a higher or lower deductible?</div>
+        <div class="faq-a">A higher deductible usually lowers your premium but raises what you'd owe on a claim. The right choice depends on what you could comfortably pay out of pocket.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
+        <a href="/homeowners-claim-denied" class="related-chip">Homeowners Claim Denied →</a>
+        <a href="/car-insurance-claim-denied" class="related-chip">Car Insurance Claim Denied →</a>
+        <a href="/liability-vs-full-coverage" class="related-chip">Liability vs. Full Coverage →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
