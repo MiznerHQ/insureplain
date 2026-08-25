@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Need Collision Coverage? A Plain-English Guide – InsurePlain</title>
+  <meta name="description" content="Collision coverage explained in plain English: what it pays for, when lenders require it, and how to decide if you actually need it.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/collision-coverage-explained">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What does collision coverage actually pay for?", "acceptedAnswer": { "@type": "Answer", "text": "Collision coverage pays to repair or replace your car if it's damaged in an accident with another vehicle or an object, like a guardrail or a tree, regardless of who caused the crash. It also covers single-car accidents, like sliding off an icy road, up to your car's actual cash value, minus your deductible." } },
+      { "@type": "Question", "name": "Is collision coverage required by law?", "acceptedAnswer": { "@type": "Answer", "text": "No state requires collision coverage by law. Only liability coverage is legally mandated in most states. However, if you're financing or leasing your car, your lender will almost always require collision coverage as a condition of the loan." } },
+      { "@type": "Question", "name": "Do I need collision coverage if my car is paid off?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your car's value and your financial cushion. Once a car is paid off, collision coverage becomes optional. Many drivers keep it if the vehicle still has meaningful resale value, and drop it once the car is worth less than a year or two of premiums combined." } },
+      { "@type": "Question", "name": "What's the difference between collision and comprehensive coverage?", "acceptedAnswer": { "@type": "Answer", "text": "Collision coverage pays for damage from crashes, like hitting another car or object. Comprehensive coverage pays for damage that isn't crash-related, like theft, hail, fire, or hitting an animal. They have separate deductibles and are typically sold together as part of full coverage." } },
+      { "@type": "Question", "name": "How much does collision coverage typically cost?", "acceptedAnswer": { "@type": "Answer", "text": "Collision coverage cost varies widely based on your car's value, your driving record, your location, and your chosen deductible. A higher deductible lowers your premium but increases what you pay out of pocket if you file a claim." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .tagline { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--muted); margin-bottom: 32px; margin-left: 42px; }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <p class="tagline">Insurance, finally explained. No agent required.</p>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Collision Coverage</p>
+    <h1>Do You Need Collision Coverage?<br><em style="font-style:italic;color:var(--accent)">A Plain-English Guide</em></h1>
+    <span class="category-tag">Auto Insurance</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated August 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>Collision coverage is the part of your auto policy that pays to repair or replace your own car after a crash — whether you hit another vehicle, a guardrail, or just slide off the road on your own. It's separate from <a href="/liability-vs-full-coverage" class="inline-link">liability coverage</a>, which only pays for damage you cause to other people's cars and property.</p>
+      <p>Here's the part that trips people up: collision coverage isn't required by any state law. Liability is. But if you're financing or leasing your vehicle, your lender almost certainly requires collision coverage as a condition of the loan, because the car is technically still theirs until it's paid off.</p>
+      <p>Once your car is paid off, the decision becomes yours. That's when most people start asking whether they actually need it — and the honest answer depends on how much your car is worth versus how much you'd have to pay out of pocket if something happened to it.</p>
+      <p>There's no universal right answer here. A driver with a newer car and a tight emergency fund often benefits from keeping collision coverage, since a single accident could otherwise mean an unplanned repair bill running into the thousands. A driver with an older, lower-value car and solid savings may find the math points the other way. The goal of this guide is to walk through exactly how to run that math for your own situation.</p>
+    </div>
+
+    <!-- CARD 2: PAA — People Also Ask, 3-4 boxes -->
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Does collision coverage cover hitting a deer?</div>
+          <div class="paa-a"><strong>No — that falls under comprehensive coverage, not collision.</strong> Animal strikes, along with theft, vandalism, fire, and weather damage, are considered "non-collision" events, even though your car is just as damaged.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">What happens if my car is totaled with collision coverage?</div>
+          <div class="paa-a"><strong>Your insurer pays out the actual cash value of the car, minus your deductible.</strong> That's the current market value, not what you originally paid or what's left on your loan — which is why some drivers carry gap insurance on top.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I add collision coverage anytime?</div>
+          <div class="paa-a"><strong>Yes, in most cases you can add or drop collision coverage whenever you want, outside of open claims.</strong> A quick call or online change with your insurer usually takes effect within a day or two, though rules vary by carrier.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">The basics</div>
+      <h2>What collision coverage actually pays for</h2>
+      <p style="margin-top: 12px;">Collision coverage kicks in any time your car is damaged in an accident, regardless of who's at fault. Once you understand the pattern, it's easier to picture what's covered and what isn't.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Hitting another vehicle</strong> — a fender bender, a rear-end collision, or a parking lot scrape. Your <a href="/liability-vs-full-coverage" class="inline-link">liability coverage</a> pays for the other car; collision pays for yours.</li>
+        <li><strong>Hitting a stationary object</strong> — a guardrail, mailbox, fence, or tree.</li>
+        <li><strong>Single-car accidents</strong> — sliding off an icy road or losing control and rolling over, even with no other vehicle involved.</li>
+        <li><strong>Hit-and-runs</strong> — if the other driver flees and can't be identified, collision coverage still applies to your car.</li>
+        <li><strong>Being hit by an underinsured driver</strong> — if the at-fault driver's liability limits don't cover your full repair cost.</li>
+        <li><strong>Pothole and road-related damage</strong> — depending on your policy, sudden impact damage from potholes can sometimes qualify as a collision claim.</li>
+      </ul>
+    </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
+    <div class="card">
+      <div class="section-label">Required vs. optional</div>
+      <h2>When you're required to have it</h2>
+      <p style="margin-top: 12px;">Whether collision coverage is mandatory for you comes down to one thing: who technically owns the car.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Financed or leased</div>
+          <p>Your lender requires collision (and usually comprehensive) coverage until the loan is paid off. This protects their asset, not just yours.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Owned outright</div>
+          <p>No lender requirement. It's entirely your call whether the cost of coverage is worth it relative to your car's value.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ Watch the deductible interaction</h3>
+        <p>Collision and <a href="/deductible-explained" class="inline-link">comprehensive coverage</a> each carry their own deductible, separate from your liability policy. If your deductible is close to your car's value, you may be paying premiums for coverage that barely pays out anything in a total loss.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: Step-by-step action -->
+    <div class="card">
+      <div class="section-label">Making the call</div>
+      <h2>How to decide if you need it</h2>
+      <ol class="step-list">
+        <li><strong>Check your loan or lease status.</strong> If you're still financing, this decision is made for you — collision is required until payoff.</li>
+        <li><strong>Look up your car's actual cash value.</strong> Sites like Kelley Blue Book give a rough estimate. This is what you'd actually receive in a total loss, per the <a href="/actual-cash-value-vs-replacement-cost" class="inline-link">actual cash value vs. replacement cost</a> rules your policy uses.</li>
+        <li><strong>Compare that value to a year or two of premiums.</strong> If your annual collision premium plus deductible is close to what the car is worth, dropping it may make financial sense.</li>
+        <li><strong>Consider your emergency savings.</strong> If you couldn't cover a full repair or replacement out of pocket, keeping collision coverage protects you from that gap.</li>
+        <li><strong>Factor in how often you drive and where.</strong> High-traffic commutes, street parking, or winter road conditions all raise your practical accident risk.</li>
+        <li><strong>Ask about bundling savings.</strong> Carrying collision alongside comprehensive and liability often comes with a multi-policy discount that changes the math.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull up your policy declarations page and check your current collision deductible and premium. Then look up your car's actual cash value. If the math is close, call your insurer and ask directly what dropping collision would save you — most carriers can quote it on the spot.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ — 5 questions, must match schema exactly -->
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">What does collision coverage actually pay for?</div>
+        <div class="faq-a">Collision coverage pays to repair or replace your car if it's damaged in an accident with another vehicle or an object, like a guardrail or a tree, regardless of who caused the crash. It also covers single-car accidents, like sliding off an icy road, up to your car's actual cash value, minus your deductible.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is collision coverage required by law?</div>
+        <div class="faq-a">No state requires collision coverage by law. Only liability coverage is legally mandated in most states. However, if you're financing or leasing your car, your lender will almost always require collision coverage as a condition of the loan.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need collision coverage if my car is paid off?</div>
+        <div class="faq-a">It depends on your car's value and your financial cushion. Once a car is paid off, collision coverage becomes optional. Many drivers keep it if the vehicle still has meaningful resale value, and drop it once the car is worth less than a year or two of premiums combined.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's the difference between collision and comprehensive coverage?</div>
+        <div class="faq-a">Collision coverage pays for damage from crashes, like hitting another car or object. Comprehensive coverage pays for damage that isn't crash-related, like theft, hail, fire, or hitting an animal. They have separate deductibles and are typically sold together as part of full coverage.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How much does collision coverage typically cost?</div>
+        <div class="faq-a">Collision coverage cost varies widely based on your car's value, your driving record, your location, and your chosen deductible. A higher deductible lowers your premium but increases what you pay out of pocket if you file a claim.</div>
+      </div>
+    </div>
+
+    <!-- CARD 8: Related guides -->
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/liability-vs-full-coverage" class="related-chip">Liability vs. Full Coverage →</a>
+        <a href="/deductible-explained" class="related-chip">Deductibles Explained →</a>
+        <a href="/actual-cash-value-vs-replacement-cost" class="related-chip">ACV vs. Replacement Cost →</a>
+        <a href="/gap-insurance-explained" class="related-chip">Gap Insurance Explained →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
