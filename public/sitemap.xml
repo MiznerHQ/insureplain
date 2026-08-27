@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.insureplain.com/</loc></url>
+  <url><loc>https://www.insureplain.com/guides</loc></url>
   <url><loc>https://www.insureplain.com/actual-cash-value-vs-replacement-cost</loc></url>
   <url><loc>https://www.insureplain.com/appeal-insurance-denial</loc></url>
   <url><loc>https://www.insureplain.com/car-insurance-claim-denied</loc></url>
   <url><loc>https://www.insureplain.com/claims-adjuster-explained</loc></url>
   <url><loc>https://www.insureplain.com/cobra-insurance-cost</loc></url>
+  <url><loc>https://www.insureplain.com/collision-coverage-explained</loc></url>
   <url><loc>https://www.insureplain.com/coordination-of-benefits</loc></url>
   <url><loc>https://www.insureplain.com/copay-vs-coinsurance</loc></url>
   <url><loc>https://www.insureplain.com/deductible-explained</loc></url>
@@ -19,6 +21,7 @@
   <url><loc>https://www.insureplain.com/health-insurance-dropped</loc></url>
   <url><loc>https://www.insureplain.com/health-insurance-subsidy</loc></url>
   <url><loc>https://www.insureplain.com/health-sharing-ministry</loc></url>
+  <url><loc>https://www.insureplain.com/home-vs-auto-deductible</loc></url>
   <url><loc>https://www.insureplain.com/homeowners-claim-denied</loc></url>
   <url><loc>https://www.insureplain.com/how-long-insurance-claim-takes</loc></url>
   <url><loc>https://www.insureplain.com/hsa-vs-fsa</loc></url>
@@ -27,13 +30,17 @@
   <url><loc>https://www.insureplain.com/insurance-exclusion-explained</loc></url>
   <url><loc>https://www.insureplain.com/insurance-premium-increase</loc></url>
   <url><loc>https://www.insureplain.com/insurance-rider-explained</loc></url>
+  <url><loc>https://www.insureplain.com/insurance-waiting-period</loc></url>
   <url><loc>https://www.insureplain.com/liability-vs-full-coverage</loc></url>
   <url><loc>https://www.insureplain.com/life-insurance-after-divorce</loc></url>
   <url><loc>https://www.insureplain.com/life-insurance-stop-paying</loc></url>
   <url><loc>https://www.insureplain.com/long-term-care-insurance</loc></url>
+  <url><loc>https://www.insureplain.com/marketplace-insurance</loc></url>
   <url><loc>https://www.insureplain.com/medicare-advantage-vs-original-medicare</loc></url>
+  <url><loc>https://www.insureplain.com/medicare-part-a-vs-part-b</loc></url>
   <url><loc>https://www.insureplain.com/medicare-part-b-late-enrollment-penalty</loc></url>
   <url><loc>https://www.insureplain.com/medicare-part-d-explained</loc></url>
+  <url><loc>https://www.insureplain.com/medicare-vs-medicaid</loc></url>
   <url><loc>https://www.insureplain.com/medigap-plan-g-vs-plan-n</loc></url>
   <url><loc>https://www.insureplain.com/medigap-underwriting-explained</loc></url>
   <url><loc>https://www.insureplain.com/missed-open-enrollment</loc></url>
@@ -45,6 +52,7 @@
   <url><loc>https://www.insureplain.com/prescription-insurance-not-working</loc></url>
   <url><loc>https://www.insureplain.com/prior-authorization-denied</loc></url>
   <url><loc>https://www.insureplain.com/short-term-health-insurance</loc></url>
+  <url><loc>https://www.insureplain.com/special-enrollment-period</loc></url>
   <url><loc>https://www.insureplain.com/subrogation-explained</loc></url>
   <url><loc>https://www.insureplain.com/surprise-medical-bill</loc></url>
   <url><loc>https://www.insureplain.com/switch-from-medicare-advantage-to-medigap</loc></url>
