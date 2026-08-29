@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – InsurePlain</title>
+  <meta name="description" content="InsurePlain is an independent educational resource that explains insurance terms and concepts in plain English.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/about">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 36px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; About</p>
+    <h1>About InsurePlain</h1>
+
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <p>InsurePlain is an independent educational resource focused on explaining insurance terms, concepts, and common situations in plain English.</p>
+      <p>Insurance policies are often written in language that is difficult to understand. InsurePlain was created to help readers better understand general insurance concepts — such as deductibles, coinsurance, exclusions, and claims processes — so they can have more informed conversations with their insurance provider or a licensed professional.</p>
+    </div>
+
+    <div class="card">
+      <h2>What InsurePlain Is</h2>
+      <p>An educational content site. We publish general information about insurance terminology and concepts based on publicly available information and common industry practices.</p>
+    </div>
+
+    <div class="card">
+      <h2>What InsurePlain Is Not</h2>
+      <p>InsurePlain is not an insurance company, agency, broker, or advisor. We do not sell insurance products, and we are not affiliated with any insurance provider. We do not provide insurance, legal, financial, or medical advice, and nothing on this site should be interpreted as a guarantee, recommendation, or professional opinion regarding your individual situation, policy, or claim.</p>
+    </div>
+
+    <div class="card">
+      <h2>Accuracy of Information</h2>
+      <p>Insurance terms, laws, and regulations vary by state, provider, and individual policy, and are subject to change. While we aim for accuracy, InsurePlain makes no warranties or representations regarding the completeness, reliability, or current accuracy of any content on this site. Readers should always consult their policy documents or a licensed insurance professional for guidance specific to their situation.</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Questions about this site can be sent to <a href="mailto:lordmizner@gmail.com" class="inline-link">lordmizner@gmail.com</a>.</p>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
