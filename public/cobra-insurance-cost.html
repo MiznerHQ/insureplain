@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How Much Does COBRA Insurance Cost a Month? – InsurePlain</title>
-  <meta name="description" content="COBRA insurance often costs $400–$800+ a month per person. Here's exactly how the price is calculated, what drives it up, and how to lower it.">
+  <title>How Much Does COBRA Insurance Actually Cost? – InsurePlain</title>
+  <meta name="description" content="COBRA isn't just 'a bit more expensive' — here's the real math behind the number on your election notice, and when it's actually worth paying.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/cobra-insurance-cost">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Can I get COBRA retroactively if I need care before deciding?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You have 60 days to elect COBRA, and coverage applies retroactively to your last day of employer coverage. If you need care during that decision window, you can elect COBRA afterward and it will cover care received during the gap, as long as you pay the retroactive premiums." } },
+      { "@type": "Question", "name": "Does my former employer have to subsidize any part of the cost?", "acceptedAnswer": { "@type": "Answer", "text": "No. Under standard COBRA rules, you pay 100% of the premium yourself, plus up to a 2% administrative fee, since your employer's previous subsidy stops once you leave the job. Some severance packages include employer-paid COBRA for a set period, but that's a negotiated benefit, not a legal requirement." } },
+      { "@type": "Question", "name": "What happens if I miss a COBRA payment deadline?", "acceptedAnswer": { "@type": "Answer", "text": "You typically get a 30-day grace period after each due date before coverage is terminated. Miss that grace period and your coverage is cancelled retroactively to the last paid date, and you generally can't reinstate it outside a new qualifying event." } },
+      { "@type": "Question", "name": "Is COBRA ever actually cheaper than a marketplace plan?", "acceptedAnswer": { "@type": "Answer", "text": "Occasionally — especially if you're partway through a high deductible year and want to preserve that progress, or if your employer plan offers coverage a marketplace plan wouldn't match. For most people, though, a subsidized marketplace plan costs less." } },
+      { "@type": "Question", "name": "What's 'mini-COBRA' and does my state have it?", "acceptedAnswer": { "@type": "Answer", "text": "Mini-COBRA is a state-level law extending COBRA-style continuation rights to employees of small companies, usually under 20 employees, that federal COBRA doesn't cover. Availability and rules vary by state, so check with your state's department of insurance." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +47,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -59,6 +78,10 @@
     .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
     .questions-list li:last-child { border-bottom: none; }
     .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -84,97 +107,153 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; COBRA Insurance</p>
-    <h1>How Much Does<br><em style="font-style:italic;color:var(--accent)">COBRA Insurance Cost a Month?</em></h1>
-    <span class="category-tag">COBRA Insurance</span>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; COBRA Costs</p>
+    <h1>How Much Does COBRA<br><em style="font-style:italic;color:var(--accent)">Insurance Actually Cost?</em></h1>
+    <span class="category-tag">Coverage Transitions</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>You just lost your job, had your hours cut, or went through a divorce — and a COBRA election notice landed in your mailbox with a monthly premium that made your stomach drop. $612? $1,847? It's the same plan you had last month, so why does it suddenly cost so much more?</p>
-      <p>Here's the answer: it was never actually that cheap. Your employer was quietly covering most of the bill the whole time. COBRA doesn't raise your premium — it just removes the subsidy you never saw.</p>
+      <p>You lost or left a job, and somewhere in the paperwork was a COBRA election notice with a monthly premium that made you do a double take. The number can look like a mistake. It isn't.</p>
+      <p>COBRA doesn't give you a new, cheaper plan — it lets you keep the exact same employer plan you already had, with the exact same coverage. The catch is that your employer was quietly covering a real chunk of that premium the whole time you worked there, and COBRA removes that subsidy entirely.</p>
+      <p>So the "sticker shock" isn't COBRA being overpriced. It's you seeing, for the first time, what your health coverage actually costs without an employer absorbing most of it — and for many people, that number lands somewhere between $400 and $700 a month for individual coverage, or well over $1,000 for a family, depending on the plan.</p>
     </div>
+
+    <!-- CARD 2: PAA -->
     <div class="card">
-      <div class="section-label">The real cost breakdown</div>
-      <h2>What you actually pay under COBRA</h2>
-      <p>Under COBRA, you pay the full premium your employer's group plan actually costs — your old employee share plus the employer share they used to cover — and the plan administrator can add up to a 2% service fee on top.</p>
-      <div class="two-col" style="margin-top: 16px;">
-        <div class="range-box blue">
-          <div class="range-box-label">Individual coverage</div>
-          <p>Typically <strong>$400–$700/month</strong>, depending on the employer's plan tier and your location.</p>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Is COBRA the same insurance I had before?</div>
+          <div class="paa-a"><strong>Yes, exactly the same plan.</strong> Same network, same doctors, same drug formulary, same deductible progress. COBRA is a continuation of your existing coverage, not a new policy.</div>
         </div>
-        <div class="range-box warn">
-          <div class="range-box-label">Family coverage</div>
-          <p>Typically <strong>$1,400–$2,000+/month</strong> — the steepest jump, since it covers every dependent who was on the plan.</p>
+        <div class="paa-box">
+          <div class="paa-q">How long can I stay on COBRA?</div>
+          <div class="paa-a"><strong>Typically up to 18 months</strong> after a job loss or reduction in hours, though certain qualifying events like disability can extend that to 29 or 36 months. Check your election notice for your specific timeline.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Does COBRA cover pre-existing conditions?</div>
+          <div class="paa-a"><strong>Yes, fully.</strong> Since it's a continuation of your existing plan rather than new coverage, there's no new waiting period or exclusion for conditions you already had.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I switch from COBRA to a marketplace plan later?</div>
+          <div class="paa-a"><strong>Yes.</strong> Losing job-based coverage, including the end of COBRA, opens a special enrollment period, so you're not locked into COBRA for its full duration if a marketplace plan becomes the better deal.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Does COBRA cost the same for everyone on the same plan?</div>
+          <div class="paa-a"><strong>Yes, within your employer's group.</strong> COBRA premiums are based on the full group rate for the plan tier you were enrolled in, not your individual health status or claims history, so two people on the same plan pay the same COBRA rate.</div>
         </div>
       </div>
     </div>
+
+    <!-- CARD 3: Main explainer -->
     <div class="card">
-      <div class="section-label">What drives your specific price</div>
-      <h2>Why your number might be higher or lower</h2>
+      <div class="section-label">The real math</div>
+      <h2>What actually drives the COBRA price tag</h2>
+      <p style="margin-top: 12px;">The number on your notice isn't arbitrary — it's built from a handful of specific factors, most of which trace back to the coverage you already had.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>Plan tier</strong> — A high-deductible plan costs less under COBRA than a premium PPO with low deductibles.</li>
-        <li><strong>Group size</strong> — Larger employers negotiate lower group rates, which keeps your COBRA premium lower too.</li>
-        <li><strong>Coverage type</strong> — Individual, individual + spouse, individual + child, or full family — each tier has its own premium.</li>
-        <li><strong>State</strong> — Health insurance costs vary significantly by state due to provider networks and regulation.</li>
-        <li><strong>The 2% admin fee</strong> — Most administrators charge the maximum allowed, so expect it added automatically.</li>
+        <li><strong>Full premium shift</strong> — you now pay the entire premium your employer and you split before, which is the single biggest driver of the <a href="/insurance-premium-increase" class="inline-link">jump in cost</a> you're seeing.</li>
+        <li><strong>2% administrative fee</strong> — federal law allows plans to add up to 2% on top of the full premium to cover COBRA administration.</li>
+        <li><strong>The plan tier you were already on</strong> — a richer plan with a lower <a href="/deductible-explained" class="inline-link">deductible</a> costs more to continue than a leaner high-deductible plan would.</li>
+        <li><strong>Family vs. individual coverage</strong> — continuing coverage for dependents multiplies the premium, since COBRA preserves whatever tier of coverage you had at the time you left.</li>
+        <li><strong>State mini-COBRA rules</strong> — if you're on a state continuation law rather than federal COBRA, pricing structure and maximum duration can differ.</li>
+        <li><strong>Employer severance subsidies</strong> — occasionally an employer will pay some or all of your COBRA premium for a set period as part of a severance package, though this isn't required by law.</li>
+        <li><strong>Your W-2's Box 12, Code DD</strong> — if you want a quick estimate before your official notice arrives, this box on your last W-2 shows the total annual cost of your employer-sponsored coverage; dividing it by 12 gives a rough monthly COBRA baseline.</li>
       </ul>
     </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
     <div class="card">
-      <div class="section-label">How to find your exact number</div>
-      <h2>Don't guess — confirm it</h2>
-      <ol class="step-list">
-        <li><strong>Read your COBRA election notice.</strong> Federal law requires your employer or plan administrator to send this within 14 days of your qualifying event, and it lists the exact monthly premium.</li>
-        <li><strong>Call your former employer's HR or benefits team.</strong> Ask for a written breakdown if the notice is unclear.</li>
-        <li><strong>Compare it to a Marketplace plan.</strong> Use healthcare.gov to see if a subsidized plan would cost less for your situation.</li>
-        <li><strong>Check your state's mini-COBRA rules if you worked for a small employer.</strong> Federal COBRA only applies to employers with 20+ employees — smaller employers may fall under separate state continuation laws with different pricing.</li>
-      </ol>
+      <div class="section-label">Weighing it against alternatives</div>
+      <h2>COBRA vs. a marketplace plan</h2>
+      <p style="margin-top: 12px;">Before paying the full COBRA premium, it's worth comparing it honestly against a marketplace option, since the right answer depends heavily on your situation.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">COBRA makes sense when</div>
+          <p>You're mid-year on a deductible you don't want to reset, your current doctors are out-of-network on marketplace options, or your former employer is subsidizing part of the premium.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Marketplace usually wins when</div>
+          <p>You qualify for a <a href="/health-insurance-subsidy" class="inline-link">subsidy</a> based on your new lower income, since subsidized marketplace premiums are often significantly cheaper than unsubsidized COBRA.</p>
+        </div>
+      </div>
       <div class="timing-box">
-        <h3>⏱ Deadline to know</h3>
-        <p>You have <strong>60 days</strong> from the date of your election notice (or your coverage loss date, whichever is later) to elect COBRA. Miss it and the option disappears for good.</p>
+        <h3>⚠️ You have 60 days to decide</h3>
+        <p>You don't have to elect COBRA immediately. You have 60 days from your coverage-loss date, and electing later still covers you retroactively — so it's worth comparing options rather than signing on day one out of panic.</p>
       </div>
     </div>
+
+    <!-- CARD 5: Step-by-step action -->
+    <div class="card">
+      <div class="section-label">Take action</div>
+      <h2>What to do when you're offered COBRA</h2>
+      <ol class="step-list">
+        <li><strong>Don't panic-sign immediately.</strong> You have 60 days to elect, and coverage is retroactive, so take the time to actually compare your options first.</li>
+        <li><strong>Check for a special enrollment period.</strong> Losing job-based coverage almost always qualifies you for one, opening the door to <a href="/health-insurance-subsidy" class="inline-link">marketplace subsidies</a> you may not have had access to before.</li>
+        <li><strong>Ask HR about severance-paid COBRA.</strong> Some severance packages include a set number of employer-paid months — always confirm before assuming you're paying the full rate.</li>
+        <li><strong>Check your state's mini-COBRA rules</strong> if your employer has fewer than 20 employees, since federal COBRA may not apply to you at all.</li>
+        <li><strong>Compare the real out-of-pocket math</strong>, not just the premium — factor in your <a href="/out-of-pocket-maximum" class="inline-link">out-of-pocket maximum</a> and deductible progress on your current plan before switching.</li>
+        <li><strong>Set a payment reminder immediately</strong> once you elect, since missing the grace period can end coverage permanently outside a new qualifying event.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Don't let the first number you see decide things for you. Confirm the exact premium in writing, then compare it side-by-side against a Marketplace plan for the same coverage period — losing job-based coverage is a qualifying life event that opens a Special Enrollment Period, so you're not stuck choosing COBRA by default.
+        If you just received a COBRA notice, don't sign anything on the spot. Pull up a marketplace quote for comparison first — losing job coverage almost always opens a special enrollment window, and depending on your new income, a subsidized plan could easily beat the full COBRA premium. You have 60 days, so there's no reason to decide today.
       </div>
     </div>
+
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">Is COBRA worth it if I only need coverage for a month or two?</div>
-        <div class="faq-a">Often yes, specifically because it's short-term. COBRA keeps your exact same doctors, prescriptions, and deductible progress with zero gap or new paperwork — which matters most if you're mid-treatment or close to meeting your deductible. For a brief gap, the higher premium is frequently worth the continuity. For a longer gap, a Marketplace plan is usually cheaper.</div>
+        <div class="faq-q">Can I get COBRA retroactively if I need care before deciding?</div>
+        <div class="faq-a">Yes. You have 60 days to elect COBRA, and coverage applies retroactively to your last day of employer coverage. If you need care during that decision window, you can elect COBRA afterward and it will cover care received during the gap, as long as you pay the retroactive premiums.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How long does COBRA coverage last?</div>
-        <div class="faq-a">Typically 18 months after a job loss or reduction in hours, though certain qualifying events (like divorce or a dependent aging out) can extend eligibility up to 36 months.</div>
+        <div class="faq-q">Does my former employer have to subsidize any part of the cost?</div>
+        <div class="faq-a">No. Under standard COBRA rules, you pay 100% of the premium yourself, plus up to a 2% administrative fee, since your employer's previous subsidy stops once you leave the job. Some severance packages include employer-paid COBRA for a set period, but that's a negotiated benefit, not a legal requirement.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can I switch from COBRA to a Marketplace plan later?</div>
-        <div class="faq-a">Yes. You can drop COBRA and enroll in a Marketplace plan during the annual Open Enrollment Period, or sooner if you have another qualifying life event. Just note you generally can't switch outside those windows simply because COBRA got too expensive.</div>
+        <div class="faq-q">What happens if I miss a COBRA payment deadline?</div>
+        <div class="faq-a">You typically get a 30-day grace period after each due date before coverage is terminated. Miss that grace period and your coverage is cancelled retroactively to the last paid date, and you generally can't reinstate it outside a new qualifying event.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Does COBRA cost the same as what I was paying as an employee?</div>
-        <div class="faq-a">No — almost always more, often significantly. As an employee you typically paid only a partial share of the premium. Under COBRA you pay that share plus the portion your employer used to cover, plus up to a 2% administrative fee.</div>
+        <div class="faq-q">Is COBRA ever actually cheaper than a marketplace plan?</div>
+        <div class="faq-a">Occasionally — especially if you're partway through a high deductible year and want to preserve that progress, or if your employer plan offers coverage a marketplace plan wouldn't match. For most people, though, a subsidized marketplace plan costs less.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What's "mini-COBRA" and does my state have it?</div>
+        <div class="faq-a">Mini-COBRA is a state-level law extending COBRA-style continuation rights to employees of small companies, usually under 20 employees, that federal COBRA doesn't cover. Availability and rules vary by state, so check with your state's department of insurance.</div>
       </div>
     </div>
+
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/health-insurance-dropped.html" class="related-chip">Insurance Dropped →</a>
-        <a href="/missed-open-enrollment.html" class="related-chip">Missed Enrollment →</a>
-        <a href="/marketplace-insurance.html" class="related-chip">Marketplace Plans →</a>
-        <a href="/special-enrollment-period.html" class="related-chip">Special Enrollment →</a>
+        <a href="/health-insurance-subsidy" class="related-chip">Health Insurance Subsidy →</a>
+        <a href="/missed-open-enrollment" class="related-chip">Missed Open Enrollment →</a>
+        <a href="/insurance-premium-increase" class="related-chip">Premium Increases →</a>
+        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
       </div>
     </div>
+
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
+
     <footer>
       <span>insureplain.com</span>
-      <span>Insurance terms & policies, finally explained.</span>
+      <span>Insurance terms &amp; policies, finally explained.</span>
     </footer>
   </div>
 </body>
