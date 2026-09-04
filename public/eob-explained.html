@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EOB Explained: What Is an Explanation of Benefits? – InsurePlain</title>
-  <meta name="description" content="Your EOB is not a bill — here's exactly what every section means, why the numbers don't match what you owe, and what to do if something looks wrong.">
+  <title>What Is an EOB? Explanation of Benefits Decoded – InsurePlain</title>
+  <meta name="description" content="Your EOB isn't a bill, but it rarely matches the one you got in the mail. Here's what each line means and why the numbers don't line up.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/eob-explained">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "My EOB says I owe a different amount than the bill from my doctor — which one is right?", "acceptedAnswer": { "@type": "Answer", "text": "Neither one is automatically right, but the EOB is usually more current. Bills are sometimes printed before the insurer finishes processing the claim, so they can lag behind the real numbers. Call your provider's billing office, read them the allowed amount and your responsibility from the EOB, and ask them to reissue a corrected bill that matches it." } },
+      { "@type": "Question", "name": "I got a bill before I got an EOB — do I have to pay it now?", "acceptedAnswer": { "@type": "Answer", "text": "Not yet. Insurers generally recommend waiting for the EOB before paying, since the amount on an early bill often reflects the full billed charge rather than what you actually owe after your plan's discount. Most providers won't penalize you for a short delay while you wait for the EOB to arrive." } },
+      { "@type": "Question", "name": "What does it mean if my EOB shows a service as denied but I never got a denial letter?", "acceptedAnswer": { "@type": "Answer", "text": "The EOB itself often serves as your official denial notice — insurers aren't always required to send a separate letter. Look for a remark code or short reason next to the denied line item; that code explains why, and it's also your starting point if you want to appeal." } },
+      { "@type": "Question", "name": "I have two insurance plans — why did I get two EOBs for the same visit?", "acceptedAnswer": { "@type": "Answer", "text": "When you have primary and secondary coverage, each insurer processes the claim separately and sends its own EOB. The primary plan's EOB shows what it paid; the secondary plan's EOB shows what it covered from whatever the primary plan left over. Your actual balance is usually only accurate once both have processed." } },
+      { "@type": "Question", "name": "I never received an EOB at all — is that normal?", "acceptedAnswer": { "@type": "Answer", "text": "It can happen if the claim is still processing, if your insurer switched to electronic-only delivery and it's sitting in your member portal, or if your coverage ended before the claim was filed. Log into your insurer's portal first, since many plans stopped mailing paper EOBs by default." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +47,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,6 +74,14 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -80,93 +107,145 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
+
     <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; EOB Explained</p>
-    <h1>What Is an EOB?<br><em style="font-style:italic;color:var(--accent)">Your Explanation of Benefits, Decoded</em></h1>
-    <span class="category-tag">Health Insurance</span>
+    <h1>Your Explanation of Benefits<br><em style="font-style:italic;color:var(--accent)">Decoded, Line by Line</em></h1>
+    <span class="category-tag">Claims &amp; Billing</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>You go to the doctor, get treated, and a few weeks later a confusing document shows up in your mailbox or patient portal. It lists charges, adjustments, and amounts — and none of the numbers match what you thought you'd owe.</p>
-      <p>That document is your Explanation of Benefits, or EOB. It is not a bill. It's a summary from your insurance company showing what your provider charged, what your insurer paid, what was adjusted off, and what — if anything — you still owe. Understanding it is the key to catching billing errors before you pay them.</p>
+      <p>A few days or weeks after you see a doctor, an envelope shows up from your insurance company that looks a lot like a bill. It has your name, a dollar amount, and a bunch of codes you don't recognize. It's called an Explanation of Benefits, or EOB, and the very first thing to know is that it is not a bill. Nobody is asking you to pay the number printed on it.</p>
+      <p>What makes EOBs stressful isn't the document itself — it's that the numbers on it almost never match the bill you get separately from your doctor's office. One says you owe $340. The other says $612. Neither one is lying, but nobody explains why they're different, so most people either overpay out of panic or ignore both and hope it sorts itself out.</p>
+      <p>An EOB is your insurance company's paper trail of exactly how a claim was priced, discounted, and split between you and your plan. Once you know which line to look at, the mismatch usually has a simple explanation — and this guide walks through it with real numbers instead of vague reassurance.</p>
     </div>
+
+    <!-- CARD 2: PAA — People Also Ask -->
     <div class="card">
-      <div class="section-label">The key sections of every EOB</div>
-      <h2>What each line means</h2>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Is an EOB a bill I have to pay?</div>
+          <div class="paa-a"><strong>No.</strong> An EOB is a summary from your insurer explaining how a claim was processed. Any amount you actually owe will come as a separate bill from your provider, and it should eventually match what your EOB lists as your responsibility.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">How long after my visit will I get an EOB?</div>
+          <div class="paa-a"><strong>Usually 2 to 6 weeks.</strong> Timing depends on how quickly your provider submits the claim and how backed up your insurer's processing is. Electronic claims tend to generate an EOB faster than paper ones.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">What if my EOB shows $0 owed but I know I paid a copay?</div>
+          <div class="paa-a"><strong>That's normal.</strong> A $0 balance on the EOB usually means the visit was fully covered after your copay, or the copay was collected at check-in and isn't reflected as a separate line. It doesn't mean the visit was free.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I just ignore my EOB?</div>
+          <div class="paa-a"><strong>Not safely.</strong> EOBs are the fastest way to catch billing errors, duplicate charges, or a denied claim before it turns into a collections issue. Skimming each one takes under a minute and can save you real money.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">How to read it</div>
+      <h2>Six lines, decoded</h2>
+      <p style="margin-top: 12px;">Every EOB uses different formatting, but the same six pieces of information show up on almost all of them. Find these on your own EOB and the whole document stops being confusing.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>Amount Billed</strong> — The full price your provider charged before any discounts or insurance adjustments. This number is almost always inflated and is rarely what anyone actually pays.</li>
-        <li><strong>Allowed Amount</strong> — The negotiated rate your insurer has agreed to pay for that service. In-network providers have agreed to accept this lower amount as payment in full.</li>
-        <li><strong>Plan Paid</strong> — What your insurance company actually paid your provider after applying your deductible, copay, and coinsurance rules.</li>
-        <li><strong>Adjustment / Discount</strong> — The difference between the billed amount and the allowed amount. This gets written off — you never owe it.</li>
-        <li><strong>Your Responsibility</strong> — The amount you actually owe. This is what matters. It reflects your deductible, copay, or coinsurance portion of the allowed amount.</li>
-        <li><strong>Deductible Applied</strong> — How much of this claim was applied toward your annual deductible. Once your deductible is met, your share of future claims drops significantly.</li>
-        <li><strong>Remark / Reason Codes</strong> — Short codes explaining why the claim was processed the way it was. If you see a denial or reduction here, these codes tell you why.</li>
+        <li><strong>Billed amount</strong> — what your provider charged before any insurance discount. This number is almost always the highest one on the page, and it is not what you owe.</li>
+        <li><strong>Allowed amount</strong> — the discounted rate your insurer negotiated with that provider. This is the real starting point for your costs, and it connects directly to your <a href="/deductible-explained" class="inline-link">deductible</a> if you haven't met it yet.</li>
+        <li><strong>Plan paid</strong> — the dollar amount your insurance company actually sent to the provider.</li>
+        <li><strong>Your responsibility</strong> — what's left after the plan's payment, split between copay, coinsurance, or deductible depending on your plan's structure. See <a href="/copay-vs-coinsurance" class="inline-link">copay vs. coinsurance</a> if those terms blur together.</li>
+        <li><strong>Remark or adjustment codes</strong> — short codes explaining any reduction, denial, or special handling on a line item. These are the most skipped-over part of the page and the most useful.</li>
+        <li><strong>Applied to deductible / out-of-pocket total</strong> — a running total showing how close you are to your <a href="/out-of-pocket-maximum" class="inline-link">out-of-pocket maximum</a> for the year.</li>
       </ul>
     </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
     <div class="card">
-      <div class="section-label">Common confusion points</div>
-      <h2>Why the numbers look wrong</h2>
-      <div class="two-col" style="margin-top: 12px;">
+      <div class="section-label">Don't mix these up</div>
+      <h2>EOB vs. bill vs. MSN</h2>
+      <p style="margin-top: 12px;">Three documents look similar and get lumped together constantly, but only one of them is actually asking for money.</p>
+      <div class="two-col" style="margin-top: 16px;">
         <div class="range-box blue">
-          <div class="range-box-label">Not a bill</div>
-          <p>The EOB arrives before your provider's bill. Do not pay anything until you receive an actual invoice from the provider — and compare it to your EOB first.</p>
+          <div class="range-box-label">EOB vs. bill</div>
+          <p>The EOB comes from your insurer and explains the claim. The bill comes from your provider and requests payment. They describe the same visit but serve completely different purposes — pay the bill, not the EOB.</p>
         </div>
         <div class="range-box warn">
-          <div class="range-box-label">Numbers don't match</div>
-          <p>If your provider's bill is higher than the "Your Responsibility" amount on your EOB, call your provider. They may have billed you for an amount your insurer already adjusted off.</p>
+          <div class="range-box-label">EOB vs. MSN</div>
+          <p>If you're on Original Medicare, you get a Medicare Summary Notice (MSN) instead of a standard EOB. It covers a whole quarter of claims at once rather than one visit, but functions the same way.</p>
         </div>
       </div>
-      <div class="timing-box" style="margin-top: 16px;">
-        <h3>⚠️ Watch for this</h3>
-        <p>If a service shows as denied on your EOB but your doctor said it was covered, don't pay the bill yet. Call your insurer first — it may be a billing code error that can be resubmitted and paid.</p>
+      <div class="timing-box">
+        <h3>⚠️ If a line item is marked denied</h3>
+        <p>Check the remark code next to it — that's the reason. If you disagree with the reason, most plans give you 180 days from the EOB date to file an appeal. See <a href="/why-did-insurance-deny-my-claim" class="inline-link">why claims get denied</a> and <a href="/appeal-insurance-denial" class="inline-link">how to appeal</a> for the next steps.</p>
       </div>
     </div>
+
+    <!-- CARD 5: Step-by-step action -->
     <div class="card">
-      <div class="section-label">How to read it — step by step</div>
-      <h2>What to do when your EOB arrives</h2>
+      <div class="section-label">When the numbers don't match</div>
+      <h2>What to do, in order</h2>
       <ol class="step-list">
-        <li><strong>Confirm the service is yours.</strong> Check the date, provider name, and procedure. Medical identity theft shows up on EOBs first.</li>
-        <li><strong>Find the "Your Responsibility" line.</strong> That's the only number you may owe — not the billed amount.</li>
-        <li><strong>Check the deductible applied line.</strong> Track this against your annual deductible so you know how close you are to full coverage kicking in.</li>
-        <li><strong>Look for denial or remark codes.</strong> If anything was denied or reduced, find the code and look it up — or paste it into the InsurePlain decoder below.</li>
-        <li><strong>Wait for the provider bill before paying anything.</strong> Compare the bill to your EOB. They should match on the "Your Responsibility" line.</li>
-        <li><strong>If numbers don't match, call your provider first.</strong> Most discrepancies are billing errors, not coverage disputes.</li>
+        <li><strong>Line up the EOB and the bill side by side.</strong> Compare the "your responsibility" line on the EOB directly against the amount due on the bill.</li>
+        <li><strong>If the bill is higher, wait a few days.</strong> Providers sometimes print bills before the claim finishes processing, so the bill can lag behind the EOB's real numbers.</li>
+        <li><strong>Call the provider's billing office, not your insurer, first.</strong> Read them the allowed amount and your responsibility from the EOB and ask them to correct the bill.</li>
+        <li><strong>If a remark code is unclear, call your insurer's member services line.</strong> The number is printed directly on the EOB, and the code explains exactly what happened to that line item.</li>
+        <li><strong>If you have secondary insurance, wait for both EOBs.</strong> Your real balance usually isn't accurate until the secondary plan has also processed the claim.</li>
+        <li><strong>If you never received an EOB, check your insurer's online portal first.</strong> Most carriers default to electronic delivery now, so a "missing" EOB is often just sitting in your member account.</li>
       </ol>
     </div>
+
+    <!-- CARD 6: What to do right now -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Pull out your most recent EOB and find the "Your Responsibility" line. That's the only amount you owe — ignore the billed amount entirely. If you see any denial codes, look them up before paying anything. If your provider's bill doesn't match your EOB, call the provider's billing department and read them the allowed amount from your EOB. Most overcharges get corrected immediately.
+        Pull up your most recent EOB and find the "your responsibility" line — that's the only number that matters for what you'll actually owe. Match it against your provider's bill before you pay anything, and if they don't line up, call the provider's billing office first with the EOB's numbers in hand.
       </div>
     </div>
+
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">Is an EOB the same as a bill?</div>
-        <div class="faq-a">No. An EOB is a summary from your insurance company — it shows what was processed but it is not a request for payment. Your actual bill comes separately from your doctor or hospital. Always wait for the provider bill before paying anything.</div>
+        <div class="faq-q">My EOB says I owe a different amount than the bill from my doctor — which one is right?</div>
+        <div class="faq-a">Neither one is automatically right, but the EOB is usually more current. Bills are sometimes printed before the insurer finishes processing the claim, so they can lag behind the real numbers. Call your provider's billing office, read them the allowed amount and your responsibility from the EOB, and ask them to reissue a corrected bill that matches it.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What if my EOB shows a service as denied?</div>
-        <div class="faq-a">A denial on your EOB doesn't mean you automatically owe the full amount. Call your insurer and ask for the specific reason. Many denials are caused by billing code errors that can be corrected and resubmitted — and then paid.</div>
+        <div class="faq-q">I got a bill before I got an EOB — do I have to pay it now?</div>
+        <div class="faq-a">Not yet. Insurers generally recommend waiting for the EOB before paying, since the amount on an early bill often reflects the full billed charge rather than what you actually owe after your plan's discount. Most providers won't penalize you for a short delay while you wait for the EOB to arrive.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How long do I have to dispute something on my EOB?</div>
-        <div class="faq-a">Most plans give you 180 days from the date of service to file an appeal. Don't wait — if something looks wrong on your EOB, call your insurer as soon as possible to start the dispute process.</div>
+        <div class="faq-q">What does it mean if my EOB shows a service as denied but I never got a denial letter?</div>
+        <div class="faq-a">The EOB itself often serves as your official denial notice — insurers aren't always required to send a separate letter. Look for a remark code or short reason next to the denied line item; that code explains why, and it's also your starting point if you want to appeal.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I have two insurance plans — why did I get two EOBs for the same visit?</div>
+        <div class="faq-a">When you have primary and secondary coverage, each insurer processes the claim separately and sends its own EOB. The primary plan's EOB shows what it paid; the secondary plan's EOB shows what it covered from whatever the primary plan left over. Your actual balance is usually only accurate once both have processed.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">I never received an EOB at all — is that normal?</div>
+        <div class="faq-a">It can happen if the claim is still processing, if your insurer switched to electronic-only delivery and it's sitting in your member portal, or if your coverage ended before the claim was filed. Log into your insurer's portal first, since many plans stopped mailing paper EOBs by default.</div>
       </div>
     </div>
+
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
-        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
-        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
-        <a href="/surprise-medical-bill" class="related-chip">Surprise Bills →</a>
+        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs. Coinsurance →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Why Was My Claim Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal a Denial →</a>
       </div>
     </div>
+
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
+
     <footer>
       <span>insureplain.com</span>
       <span>Insurance terms & policies, finally explained.</span>
