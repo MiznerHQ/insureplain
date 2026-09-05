@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How Long Does an Insurance Claim Take? – InsurePlain</title>
-  <meta name="description" content="How long your insurance claim takes depends on the type of claim — here are the real timelines for auto, home, and health claims, and what slows them down.">
+  <title>How Long Does an Insurance Claim Take? The Real Deadlines – InsurePlain</title>
+  <meta name="description" content="Federal law sets real deadlines for how long a health insurance claim can take — 30, 15, or 72 hours. Here's the actual clock, and what to do if it's missed.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/how-long-insurance-claim-takes">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does the 30-day clock restart if the insurer asks for more information?", "acceptedAnswer": { "@type": "Answer", "text": "No, the clock doesn't restart from zero, but it does pause. Once the insurer sends a written request for additional information, the countdown stops until you or your provider supply what was asked for. You then typically have 45 days to respond, and once your response is received, the insurer's remaining decision days pick back up. This is the single most common reason a claim seems to disappear past the 30-day mark — check your mail and your insurer's online portal for a pending information request before assuming the deadline was ignored." } },
+      { "@type": "Question", "name": "What happens if my claim shows \"in process\" for months with no update?", "acceptedAnswer": { "@type": "Answer", "text": "A claim that shows no movement for months, with no information request on file, is a compliance problem, not a normal delay. At that point you have the right to ask your insurer in writing for the specific reason for the delay and a decision date, and if you don't get a clear answer, you can file a complaint with the U.S. Department of Labor for an employer plan or your state Department of Insurance for a marketplace or individual plan." } },
+      { "@type": "Question", "name": "Are out-of-network claim timelines different from in-network?", "acceptedAnswer": { "@type": "Answer", "text": "The legal deadline is the same either way, but out-of-network claims usually take longer in practice because there's no negotiated rate on file, so the insurer has to manually price the service before it can issue a decision. Out-of-network claims are also more likely to trigger an information request, since providers outside the network don't always submit standardized coding the way in-network providers do." } },
+      { "@type": "Question", "name": "If the insurer misses its own deadline, does my claim get auto-approved?", "acceptedAnswer": { "@type": "Answer", "text": "Usually not automatically, though a small number of states do have prompt-pay laws that treat a claim as approved by default if the insurer blows the deadline without requesting an extension. In most cases, a missed deadline is treated as a denial you have the right to appeal immediately, and it also becomes grounds for a formal complaint about how the claim was handled, separate from the appeal itself." } },
+      { "@type": "Question", "name": "Does calling to check my claim status count as anything, or just wait?", "acceptedAnswer": { "@type": "Answer", "text": "Calling won't speed up the internal review, but it does create a record, which matters if you need to escalate later. Ask for the exact date the claim was received, whether any information request was ever sent, and get a reference or call log number for that conversation — that paper trail is exactly what a state insurance complaint or appeal will ask you to provide." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +47,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,6 +74,14 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -70,13 +97,8 @@
     .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
     .step-list li:last-child { border-bottom: none; }
     .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
-    .timeline-row { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: flex-start; }
-    .timeline-row:last-child { border-bottom: none; }
-    .timeline-type { font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; color: var(--accent); min-width: 110px; padding-top: 2px; }
-    .timeline-detail { font-size: 14px; color: var(--ink); line-height: 1.6; }
-    .timeline-detail span { display: block; font-size: 13px; color: var(--muted); margin-top: 2px; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } .timeline-row { flex-direction: column; gap: 4px; } }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -85,119 +107,142 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Claim Timelines</p>
-    <h1>How Long Does an<br><em style="font-style:italic;color:var(--accent)">Insurance Claim Take?</em></h1>
-    <span class="category-tag">Claims</span>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; How Long a Claim Takes</p>
+    <h1>How Long Does an Insurance Claim<br><em style="font-style:italic;color:var(--accent)">Actually Take?</em></h1>
+    <span class="category-tag">Claims &amp; Payments</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
 
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>You filed a claim and now you're waiting. Nobody is telling you anything. You don't know if it's been a day too long or if this is completely normal.</p>
-      <p>Here's the reality: claim timelines vary a lot depending on the type of claim, how complicated it is, and how fast you respond to your insurer's requests. Most straightforward claims resolve in days to weeks — but complex or disputed claims can drag on for months. Knowing the real timelines puts you in control.</p>
+      <p>Most answers to "how long does a claim take" boil down to a shrug: somewhere between a week and a few months, depending. That's not wrong, but it's incomplete. Federal law actually sets specific decision deadlines for health insurance claims — the range isn't a guess, it's a set of legal clocks that start ticking the moment your provider submits the claim, and they're different depending on what kind of claim it is and what kind of plan you have.</p>
+      <p>The three clocks that matter most: 30 days for a standard claim after you've already received care, 15 days for a claim that needs pre-approval before you get care, and just 72 hours if the claim involves urgent or time-sensitive treatment. Almost nothing you'll find online states these numbers plainly, because most claims content is written for auto insurance, where the rules are entirely different and set by state law instead of federal law.</p>
+      <p>What actually determines your timeline is your plan type — an employer-sponsored plan governed by ERISA follows one set of rules, a plan you bought yourself on the ACA marketplace follows a mix of federal and state rules, and Medicare or Medicaid follow their own separate schedules entirely. If you're between plans — say, transitioning onto <a href="/cobra-insurance-cost" class="inline-link">COBRA</a> after a job change — confirm which plan was actually active on the date of service before you start counting days. Knowing which bucket you're in is the difference between waiting patiently and knowing exactly when you're allowed to push back.</p>
     </div>
 
+    <!-- CARD 2: PAA -->
     <div class="card">
-      <div class="section-label">Real timelines by claim type</div>
-      <h2>How long each type of claim takes</h2>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
       <div style="margin-top: 16px;">
-        <div class="timeline-row">
-          <div class="timeline-type">Auto — Minor</div>
-          <div class="timeline-detail">3 to 10 days<span>Fender benders, minor damage with no injuries. Fast inspection, quick estimate, payment issued.</span></div>
+        <div class="paa-box">
+          <div class="paa-q">Is the 30-day window business days or calendar days?</div>
+          <div class="paa-a"><strong>Calendar days, not business days.</strong> The federal 30-day post-service claim deadline counts every day on the calendar, including weekends. Some state prompt-pay laws for marketplace plans use business days instead, which is one reason the exact deadline can shift by a few days depending on your state.</div>
         </div>
-        <div class="timeline-row">
-          <div class="timeline-type">Auto — Major</div>
-          <div class="timeline-detail">2 to 6 weeks<span>Totaled vehicles, accidents with injuries, or disputed fault. Liability investigation adds time.</span></div>
+        <div class="paa-box">
+          <div class="paa-q">Why does my claim still say "pending" after 30 days?</div>
+          <div class="paa-a"><strong>Almost always because of a paused clock, not a broken one.</strong> If the insurer sent a written request for more information — a corrected code, additional medical records, proof of another insurance policy — the 30-day countdown stops until that information is received.</div>
         </div>
-        <div class="timeline-row">
-          <div class="timeline-type">Home — Minor</div>
-          <div class="timeline-detail">1 to 3 weeks<span>Burst pipes, small fires, vandalism. Adjuster inspection required before any payout.</span></div>
+        <div class="paa-box">
+          <div class="paa-q">Can an insurance company legally take longer than 30 days?</div>
+          <div class="paa-a"><strong>Yes, but only with a valid reason on record.</strong> An insurer can extend the standard deadline once, typically by up to 15 additional days, if it notifies you in writing before the original deadline and explains what it's still waiting on.</div>
         </div>
-        <div class="timeline-row">
-          <div class="timeline-type">Home — Major</div>
-          <div class="timeline-detail">1 to 6 months<span>Catastrophic damage, storm events, total loss. Contractor estimates and extensive documentation required.</span></div>
+        <div class="paa-box">
+          <div class="paa-q">Does an urgent care claim get decided faster?</div>
+          <div class="paa-a"><strong>Yes, dramatically faster.</strong> Claims involving urgent care — where a standard timeline could seriously jeopardize your health — must be decided within 72 hours under federal rules, not 30 days.</div>
         </div>
-        <div class="timeline-row">
-          <div class="timeline-type">Health</div>
-          <div class="timeline-detail">7 to 30 days<span>Standard medical claims process quickly. Disputes, prior auth issues, or appeals add weeks.</span></div>
-        </div>
-        <div class="timeline-row">
-          <div class="timeline-type">Life Insurance</div>
-          <div class="timeline-detail">2 to 8 weeks<span>Requires death certificate and claim form. Contested claims or policy reviews can extend to months.</span></div>
-        </div>
-      </div>
-      <div class="timing-box">
-        <h3>⚠️ State Law Minimums</h3>
-        <p>Most states require insurers to acknowledge your claim within 10–15 days and make a coverage decision within 30–45 days. If your insurer misses these windows, file a complaint with your state insurance commissioner.</p>
       </div>
     </div>
 
+    <!-- CARD 3: Main explainer -->
     <div class="card">
-      <div class="section-label">What slows claims down</div>
-      <h2>The most common causes of delays</h2>
+      <div class="section-label">The federal claim clock</div>
+      <h2>How long each type of claim is legally allowed to take</h2>
+      <p style="margin-top: 12px;">These deadlines come from federal claims-procedure rules that apply to most employer and marketplace health plans. If your <a href="/deductible-explained" class="inline-link">deductible</a> or plan design changed recently, the claim type below still governs the timeline regardless of what you owe out of pocket.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>Missing documentation</strong> — Your insurer is waiting on photos, receipts, police reports, or medical records you haven't submitted yet.</li>
-        <li><strong>Adjuster backlog</strong> — After major storms or disasters, adjusters are overwhelmed and inspections get backed up by weeks.</li>
-        <li><strong>Disputed liability</strong> — When fault isn't clear — especially in auto accidents — both insurers investigate before either pays.</li>
-        <li><strong>Coverage disputes</strong> — Your insurer is reviewing whether your policy actually covers the loss before committing to a payout.</li>
-        <li><strong>Low settlement offer</strong> — If you push back on the initial offer, the negotiation process adds time.</li>
-        <li><strong>Fraud investigation</strong> — Any claim flagged for review enters a slower process while investigators verify the details.</li>
-        <li><strong>Contractor delays</strong> — For property claims, getting repair estimates from busy contractors can hold up the timeline.</li>
+        <li><strong>Post-service claims (30 days)</strong> — the most common type: you already received care, and the provider billed your insurer afterward. The insurer has 30 calendar days to make a decision.</li>
+        <li><strong>Pre-service claims (15 days)</strong> — claims requiring approval before you get care, like a scheduled surgery or imaging that needs prior authorization. The insurer has 15 days to decide.</li>
+        <li><strong>Urgent care claims (72 hours)</strong> — any claim where waiting the standard 15 days could seriously risk your health. These must be decided within 72 hours, and can be even faster if a delay would clearly endanger you.</li>
+        <li><strong>Concurrent care claims (24 hours)</strong> — a request to extend an ongoing course of treatment, like additional hospital days. If it's urgent, the insurer must respond within 24 hours of receiving the request.</li>
+        <li><strong>One 15-day extension</strong> — insurers can extend most deadlines once, by up to 15 days, but only by notifying you in writing before the original deadline expires and stating the specific reason.</li>
+        <li><strong>State prompt-pay overlays</strong> — if you're on a marketplace or individually purchased plan, your state may layer additional prompt-pay requirements on top of the federal floor, which can shorten the practical deadline further.</li>
       </ul>
     </div>
 
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
     <div class="card">
-      <div class="section-label">How to speed up your claim</div>
-      <h2>What you can do right now</h2>
+      <div class="section-label">In-network vs. out-of-network</div>
+      <h2>Why the same 30-day rule can feel very different in practice</h2>
+      <p style="margin-top: 12px;">The legal deadline doesn't change based on network status, but the real-world timeline usually does. What you actually owe once the claim clears depends on your <a href="/copay-vs-coinsurance" class="inline-link">copay vs. coinsurance</a> structure, but that split has no bearing on how long the decision itself takes. Here's why one network status drags longer than the other even under the identical federal rule.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">In-network claim</div>
+          <p>Your provider already has a negotiated rate on file with the insurer and typically files electronically with standardized codes, so the claim usually clears at the faster end of the 30-day window with no information request needed.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Out-of-network claim</div>
+          <p>There's no pre-set price, so the insurer has to manually determine an allowed amount before it can issue a decision. Out-of-network claims are also more likely to trigger a request for additional records, which pauses the clock.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ THE "CLOCK PAUSE" MOST PEOPLE MISS</h3>
+        <p>The moment an insurer sends a written request for more information, the 30-day countdown pauses — it does not restart at zero, and it does not keep running in the background. You then generally have 45 days to respond. Once your information is received, the insurer resumes counting whatever decision days it had left, not a fresh 30. Watch your mail and your insurer's online portal closely; a missed information request is the single most common reason a claim appears stalled.</p>
+      </div>
+    </div>
+
+    <!-- CARD 5: Step-by-step action -->
+    <div class="card">
+      <div class="section-label">When the deadline passes</div>
+      <h2>What to do if your claim is overdue</h2>
       <ol class="step-list">
-        <li><strong>File immediately.</strong> Every day you wait is a day added to the timeline. File the same day the incident happens if possible.</li>
-        <li><strong>Submit complete documentation upfront.</strong> Photos, receipts, police report numbers, medical records — send everything at once, not piecemeal.</li>
-        <li><strong>Respond to every request same day.</strong> When your adjuster asks for something, get it back to them immediately. Delays on your end reset the clock.</li>
-        <li><strong>Follow up in writing weekly.</strong> Email your adjuster every 5–7 days asking for a status update. Creates a paper trail and keeps your claim visible.</li>
-        <li><strong>Get your own repair estimates fast.</strong> Don't wait for the insurer's contractor. Having your own estimates ready speeds up the damage assessment phase.</li>
-        <li><strong>Reference state deadlines.</strong> If your insurer blows past the legally required response window, mention it directly. It usually accelerates things quickly.</li>
+        <li><strong>Confirm the claim was actually received.</strong> Log into your insurer's member portal or call to verify the exact date the claim was received — not the date of service, since a delay in your provider submitting the claim doesn't count against the insurer's clock.</li>
+        <li><strong>Check for an information request you may have missed.</strong> Look for any letter or portal message asking for more documentation. If one exists, the clock is legitimately paused and the delay is on you or your provider, not the insurer.</li>
+        <li><strong>Get the decision date in writing.</strong> If there's no pending information request and the deadline has passed, ask the insurer in writing for the specific reason for the delay and a firm date by which you'll receive a decision.</li>
+        <li><strong>Treat a non-answer as a denial.</strong> If the insurer still won't give you a decision or a date, you can treat the claim as denied for purposes of appeal and begin the process described in our guide on <a href="/appeal-insurance-denial" class="inline-link">how to appeal an insurance denial</a> — you don't have to wait indefinitely for a formal denial letter.</li>
+        <li><strong>File a regulatory complaint if needed.</strong> For an employer-sponsored plan, that's the U.S. Department of Labor's Employee Benefits Security Administration. For a marketplace or individual plan, that's your state's Department of Insurance.</li>
+        <li><strong>Keep every document.</strong> Save the original claim confirmation, any information requests, your call logs with reference numbers, and copies of anything you send back — this record is exactly what a complaint or appeal will ask you to produce.</li>
       </ol>
     </div>
 
+    <!-- CARD 6: What to do right now -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        If your claim feels stuck, send a written follow-up today — email is fine. Ask for a specific status update and expected decision date. If you've been waiting longer than 45 days without a decision, look up your state's insurance commissioner and file a complaint. Insurers take commissioner complaints seriously. You don't have to sit and wait — you have legal rights to a timely response.
+        Pull up your insurer's online portal today and check your claim's exact received date and current status. If it's past 30 days for a standard claim with no information request on file, call and ask directly for the reason and a written decision date — and if you get an <a href="/eob-explained" class="inline-link" style="color:var(--success-text)">EOB</a> that doesn't match what you expected, don't assume it's final until you've confirmed the clock actually ran its course. If this claim is pushing you close to your <a href="/out-of-pocket-maximum" class="inline-link" style="color:var(--success-text)">out-of-pocket maximum</a>, tracking the running total matters even more while you wait on a decision.
       </div>
     </div>
 
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">How long does it take for an insurance claim to pay out?</div>
-        <div class="faq-a">Once your claim is approved, payment typically arrives within 5 to 10 business days by check or direct deposit. The approval process itself is what takes the most time — anywhere from a few days to several weeks depending on claim complexity.</div>
+        <div class="faq-q">Does the 30-day clock restart if the insurer asks for more information?</div>
+        <div class="faq-a">No, the clock doesn't restart from zero, but it does pause. Once the insurer sends a written request for additional information, the countdown stops until you or your provider supply what was asked for. You then typically have 45 days to respond, and once your response is received, the insurer's remaining decision days pick back up. This is the single most common reason a claim seems to disappear past the 30-day mark — check your mail and your insurer's online portal for a pending information request before assuming the deadline was ignored.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What happens if my insurance company takes too long?</div>
-        <div class="faq-a">Every state has laws requiring insurers to respond and decide within specific timeframes — usually 30 to 45 days. If your insurer misses these deadlines, you can file a complaint with your state's Department of Insurance. This often prompts faster action than any other approach.</div>
+        <div class="faq-q">What happens if my claim shows "in process" for months with no update?</div>
+        <div class="faq-a">A claim that shows no movement for months, with no information request on file, is a compliance problem, not a normal delay. At that point you have the right to ask your insurer in writing for the specific reason for the delay and a decision date, and if you don't get a clear answer, you can file a complaint with the U.S. Department of Labor for an employer plan or your state Department of Insurance for a marketplace or individual plan.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can I speed up my insurance claim?</div>
-        <div class="faq-a">Yes. The biggest factors you control are how fast you file, how complete your documentation is, and how quickly you respond to requests. Claims that stall almost always do so because something is missing or waiting on the policyholder's side.</div>
+        <div class="faq-q">Are out-of-network claim timelines different from in-network?</div>
+        <div class="faq-a">The legal deadline is the same either way, but out-of-network claims usually take longer in practice because there's no negotiated rate on file, so the insurer has to manually price the service before it can issue a decision. Out-of-network claims are also more likely to trigger an information request, since providers outside the network don't always submit standardized coding the way in-network providers do.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How long does a home insurance claim take to settle?</div>
-        <div class="faq-a">Simple home claims — burst pipes, minor fire damage — typically resolve in 1 to 3 weeks. Major damage claims, especially after natural disasters, can take 1 to 6 months due to adjuster backlogs, contractor estimates, and extensive documentation requirements.</div>
+        <div class="faq-q">If the insurer misses its own deadline, does my claim get auto-approved?</div>
+        <div class="faq-a">Usually not automatically, though a small number of states do have prompt-pay laws that treat a claim as approved by default if the insurer blows the deadline without requesting an extension. In most cases, a missed deadline is treated as a denial you have the right to appeal immediately, and it also becomes grounds for a formal complaint about how the claim was handled, separate from the appeal itself.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does calling to check my claim status count as anything, or just wait?</div>
+        <div class="faq-a">Calling won't speed up the internal review, but it does create a record, which matters if you need to escalate later. Ask for the exact date the claim was received, whether any information request was ever sent, and get a reference or call log number for that conversation — that paper trail is exactly what a state insurance complaint or appeal will ask you to provide.</div>
       </div>
     </div>
 
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/claims-adjuster-explained" class="related-chip">Claims Adjuster →</a>
-        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
-        <a href="/appeal-insurance-denial" class="related-chip">Appeal a Denial →</a>
-        <a href="/actual-cash-value-vs-replacement-cost" class="related-chip">ACV vs Replacement →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">Appeal an Insurance Denial →</a>
+        <a href="/eob-explained" class="related-chip">What Is an EOB? →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Why Was My Claim Denied? →</a>
+        <a href="/out-of-pocket-maximum" class="related-chip">Out-of-Pocket Maximum →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any claim term, timeline question, or policy concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
