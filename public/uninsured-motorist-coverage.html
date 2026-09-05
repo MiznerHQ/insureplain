@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Is Uninsured Motorist Coverage? – InsurePlain</title>
-  <meta name="description" content="Uninsured motorist coverage explained in plain English — what it covers, what it costs, whether you need it, and how it works when the other driver has no insurance.">
+  <title>Uninsured Motorist Coverage Explained – InsurePlain</title>
+  <meta name="description" content="Uninsured motorist coverage isn't about being uninsured for health care — it's a car insurance add-on. Here's what it covers and how it interacts with your health plan.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/uninsured-motorist-coverage">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does health insurance or uninsured motorist coverage pay first after a car accident?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your state and your policy, but in most cases your health insurance or your auto policy's medical payments/PIP coverage pays your medical bills first, as they come in. Your uninsured motorist (UM) claim is usually settled later, once the extent of your injuries and losses is known, and any health insurance payments already made are typically factored into that settlement." } },
+      { "@type": "Question", "name": "Can my health insurer take part of my uninsured motorist settlement?", "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. Many health plans have subrogation or reimbursement rights, meaning they can seek repayment from your UM settlement for the medical bills they already paid on your behalf. Whether they can, and how much they can recover, depends on your plan type and your state's laws." } },
+      { "@type": "Question", "name": "Does it matter if my health plan is through my employer versus one I bought myself?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many employer-sponsored plans are self-funded and governed by ERISA, a federal law that can give the plan stronger reimbursement rights than state law would normally allow, sometimes overriding state protections. Plans you buy yourself on the marketplace are typically state-regulated and subject to your state's subrogation limits instead." } },
+      { "@type": "Question", "name": "If I don't have health insurance at all, does uninsured motorist coverage cover my medical bills on its own?", "acceptedAnswer": { "@type": "Answer", "text": "Uninsured motorist coverage can pay for accident-related medical bills up to your policy limits even if you have no health insurance, but it isn't designed to replace health coverage. It typically only applies to injuries caused by an uninsured or underinsured driver, has a claim process attached, and won't cover unrelated medical needs." } },
+      { "@type": "Question", "name": "Is uninsured motorist coverage the same thing as being uninsured for health insurance?", "acceptedAnswer": { "@type": "Answer", "text": "No, and this is the most common mix-up. Uninsured motorist coverage is an optional or required add-on to your car insurance policy that protects you if another driver has no insurance. It has nothing to do with your own health insurance status or whether you personally have health coverage." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +47,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,6 +74,14 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -80,113 +107,142 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Car Insurance</p>
-    <h1>What Is Uninsured<br><em style="font-style:italic;color:var(--accent)">Motorist Coverage?</em></h1>
-    <span class="category-tag">Car Insurance</span>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Uninsured Motorist Coverage</p>
+    <h1>Uninsured Motorist Coverage<br><em style="font-style:italic;color:var(--accent)">Isn't What You Think It Is</em></h1>
+    <span class="category-tag">Auto & Health Overlap</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
 
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>Uninsured motorist coverage (UM) is the part of your auto insurance policy that protects you when the driver who hits you has no insurance at all. Instead of trying to collect from a driver who can't pay, you file with your own insurer — and they pay you.</p>
-      <p>About 1 in 8 drivers on U.S. roads carries zero insurance. UM coverage exists specifically for that scenario. Without it, being hit by an uninsured driver can leave you paying your own medical bills and repair costs out of pocket.</p>
+      <p>The name trips people up constantly. "Uninsured motorist coverage" sounds like it should be about <em>you</em> being uninsured — as in, no health insurance. It isn't. It's a car insurance add-on that protects you when the <em>other driver</em> is the one without insurance, or without enough of it.</p>
+      <p>If you searched for this term hoping to understand your own health coverage situation, you're in the wrong place — but stick around, because the two actually intersect in a way almost nobody explains clearly: what happens to your medical bills after a crash when both your car insurance and your health insurance are technically supposed to help pay.</p>
+      <p>That overlap — who pays first, and whether your health insurer can later claim part of your settlement back — is where most explanations of uninsured motorist coverage go quiet. It's the part that actually determines how much money ends up in your pocket.</p>
     </div>
 
+    <!-- CARD 2: PAA -->
     <div class="card">
-      <div class="section-label">The two types of UM coverage</div>
-      <h2>What it actually covers</h2>
-      <div class="two-col" style="margin-top: 16px;">
-        <div class="range-box blue">
-          <div class="range-box-label">UMBI — Bodily Injury</div>
-          <p>Covers your medical bills, lost wages, and pain and suffering when an uninsured driver injures you or your passengers. This is the most important type.</p>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Is uninsured motorist coverage about health insurance?</div>
+          <div class="paa-a"><strong>No.</strong> It's a car insurance coverage that pays when another driver causes an accident and has no insurance (or not enough) to cover your damages. It has nothing to do with whether you personally carry health insurance.</div>
         </div>
-        <div class="range-box green">
-          <div class="range-box-label">UMPD — Property Damage</div>
-          <p>Covers damage to your vehicle when an uninsured driver hits you. Some states require a small deductible ($200–$300). Not available in all states.</p>
+        <div class="paa-box">
+          <div class="paa-q">Do I need uninsured motorist coverage if I already have health insurance?</div>
+          <div class="paa-a"><strong>Usually yes, and they serve different jobs.</strong> Health insurance pays your medical bills regardless of who caused an accident, but it doesn't cover lost wages, pain and suffering, or vehicle damage — and it may want some of that money back later.</div>
         </div>
-      </div>
-      <div class="timing-box" style="margin-top: 16px;">
-        <h3>📋 Underinsured Motorist (UIM) — the close cousin</h3>
-        <p>UIM coverage kicks in when the other driver has insurance but not enough to cover your full damages. If they carry $25,000 in liability but your bills are $80,000, UIM pays the gap. Often sold alongside UM as a package.</p>
+        <div class="paa-box">
+          <div class="paa-q">Will my health insurer find out about my car accident?</div>
+          <div class="paa-a"><strong>Almost always, yes.</strong> Health plans routinely ask accident-related claim questions and cross-check for other coverage, since they have a financial interest in recovering payments from a liability settlement.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can I just skip billing my health insurance and only use uninsured motorist coverage?</div>
+          <div class="paa-a"><strong>You generally can, but it's rarely the faster option.</strong> UM claims are often resolved only after your treatment and losses are fully documented, while health insurance pays claims as they come in.</div>
+        </div>
       </div>
     </div>
 
+    <!-- CARD 3: Main explainer -->
     <div class="card">
-      <div class="section-label">What UM coverage pays for</div>
-      <h2>Specific scenarios it covers</h2>
+      <div class="section-label">The basics</div>
+      <h2>What uninsured motorist coverage actually covers</h2>
+      <p style="margin-top: 12px;">Uninsured motorist (UM) coverage is an optional-in-some-states, required-in-others add-on to your auto policy. It steps in when the driver who hit you either carries no insurance at all, or fled the scene before you could get their information. A related coverage, underinsured motorist (UIM), applies when the at-fault driver has insurance, but not enough to cover what you're owed — see our <a href="/copay-vs-coinsurance" class="inline-link">copay vs. coinsurance breakdown</a> for a similar "shared responsibility" concept on the health side.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>Hit by an uninsured driver</strong> — The core use case. Your UM pays your medical bills and lost wages directly.</li>
-        <li><strong>Hit-and-run accidents</strong> — In most states, UM covers hit-and-run situations where the at-fault driver fled and can't be identified.</li>
-        <li><strong>Passenger injuries</strong> — Your passengers are typically covered under your UMBI if they're injured in your vehicle.</li>
-        <li><strong>Pedestrian or cyclist accidents</strong> — Many policies extend UMBI coverage if you're hit by an uninsured driver while walking or cycling.</li>
-        <li><strong>Vehicle damage</strong> — UMPD covers your car repairs when an uninsured driver is at fault (where available).</li>
+        <li><strong>Bodily injury piece (UMBI)</strong> — pays medical bills, lost wages, and pain and suffering tied to the crash.</li>
+        <li><strong>Property damage piece (UMPD)</strong> — pays to repair or replace your vehicle, where available in your state.</li>
+        <li><strong>Applies regardless of fault</strong> — you're covered even if the uninsured driver disputes what happened.</li>
+        <li><strong>State minimums vary widely</strong> — some states require UM by law, others make it optional or offer it only as an opt-out.</li>
+        <li><strong>It is not health insurance</strong> — it doesn't cover illness, routine care, or anything unrelated to that specific accident.</li>
+        <li><strong>It's not automatic</strong> — you have to carry it on your policy before the accident happens; you can't add it retroactively.</li>
       </ul>
     </div>
 
+    <!-- CARD 4: Deeper explainer -->
     <div class="card">
-      <div class="section-label">Is it required?</div>
-      <h2>States where UM is mandatory</h2>
-      <p>Uninsured motorist coverage is required by law in about half of U.S. states. In other states it's optional but must be offered by your insurer — you have to actively decline it in writing if you don't want it.</p>
+      <div class="section-label">The part everyone skips</div>
+      <h2>Who pays your medical bills first — and who gets paid back</h2>
+      <p style="margin-top: 12px;">Here's the sequence that almost no auto insurer or comparison site walks through: your health insurance (or your auto policy's MedPay/PIP, if you carry it) typically pays your medical bills as they come in, because treatment can't wait for a liability claim to resolve. Your UM claim, on the other hand, usually settles later — once your injuries, lost wages, and total losses are fully documented.</p>
       <div class="two-col" style="margin-top: 16px;">
         <div class="range-box blue">
-          <div class="range-box-label">Required States (examples)</div>
-          <p>New York, Illinois, Maryland, Virginia, North Carolina, Connecticut, Kansas, Oregon — and others. Check your state's DMV or insurance commissioner website for your state's exact rules.</p>
+          <div class="range-box-label">While treatment is happening</div>
+          <p>Health insurance or MedPay/PIP pays providers directly, subject to your <a href="/deductible-explained" class="inline-link">deductible</a> and normal cost-sharing, up to your plan's <a href="/out-of-pocket-maximum" class="inline-link">out-of-pocket maximum</a>.</p>
         </div>
         <div class="range-box warn">
-          <div class="range-box-label">Optional But Offered</div>
-          <p>In states like California, Texas, and Florida, UM is optional. Your insurer must offer it but you can decline. Declining in a state with high uninsured driver rates is a significant risk.</p>
+          <div class="range-box-label">After the UM claim settles</div>
+          <p>Your health plan may seek reimbursement from that settlement for what it already paid — a process called subrogation.</p>
         </div>
       </div>
-    </div>
-
-    <div class="card">
-      <div class="section-label">Do I need it?</div>
-      <h2>When UM coverage is worth it</h2>
-      <p>The honest answer: almost always yes. Here's why the math works in your favor.</p>
-      <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>It's cheap</strong> — UM coverage typically adds $5–$20 per month to your premium depending on your state and limits. That's one of the best value-per-dollar coverages available.</li>
-        <li><strong>1 in 8 drivers is uninsured</strong> — The odds of encountering an uninsured driver in your driving lifetime are significant.</li>
-        <li><strong>Medical bills are expensive</strong> — A single ER visit after an accident can run $10,000–$30,000 or more. UMBI absorbs that cost.</li>
-        <li><strong>Health insurance gaps exist</strong> — Even with health insurance, you may face deductibles, copays, and no coverage for lost wages. UMBI fills those gaps.</li>
-        <li><strong>Hit-and-run protection</strong> — Collision covers your car in a hit-and-run but not your medical bills. UMBI does.</li>
-      </ul>
-      <div class="next-steps" style="margin-top: 16px;">
-        If you're choosing between adding UM or increasing your collision limits, UM is almost always the better call — especially for bodily injury protection.
+      <div class="timing-box">
+        <h3>⚠️ The ERISA wrinkle</h3>
+        <p>If your health coverage is an employer-sponsored, self-funded plan, it's typically governed by ERISA, a federal law. ERISA plans often have stronger reimbursement rights than plans regulated purely by your state, and can sometimes recover from your settlement even when state law would otherwise protect part of it. Marketplace and fully-insured plans usually follow your state's subrogation rules instead, which tend to be more limited.</p>
       </div>
     </div>
 
+    <!-- CARD 5: Step-by-step -->
+    <div class="card">
+      <div class="section-label">Practical steps</div>
+      <h2>What to do after a crash with an uninsured driver</h2>
+      <ol class="step-list">
+        <li><strong>Get medical care first.</strong> Don't delay treatment to sort out who pays — document injuries immediately and let billing follow.</li>
+        <li><strong>File a police report.</strong> Most UM claims require documentation that the other driver lacked insurance or fled the scene.</li>
+        <li><strong>Notify your auto insurer promptly.</strong> Report the claim under your UM/UIM coverage even if you're also billing health insurance.</li>
+        <li><strong>Use your health insurance for ongoing treatment.</strong> Don't wait on the UM claim to resolve before getting care you need.</li>
+        <li><strong>Ask your health plan directly whether it holds subrogation rights.</strong> Request this in writing — it affects how much of any settlement you'll actually keep. If a claim gets denied along the way, our guide on <a href="/why-did-insurance-deny-my-claim" class="inline-link">why insurance denies a claim</a> covers the common reasons.</li>
+        <li><strong>Keep every bill and explanation of benefits.</strong> You'll need these to reconcile what health insurance paid against your final UM settlement — see our <a href="/eob-explained" class="inline-link">EOB explained</a> guide if the paperwork looks unfamiliar.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6: What to do right now -->
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Confirm whether you actually carry UM/UIM coverage — check your declarations page or call your agent. Then ask your health plan (or its member services line) whether it's self-funded/ERISA or fully insured, since that single detail determines how aggressively it can recover money from any settlement you receive later.
+      </div>
+    </div>
+
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">Do I need UM coverage if I have health insurance?</div>
-        <div class="faq-a">Health insurance covers medical bills but not lost wages, pain and suffering, or your deductibles and copays. UMBI covers all of those. They complement each other rather than overlap — having health insurance doesn't make UM redundant.</div>
+        <div class="faq-q">Does health insurance or uninsured motorist coverage pay first after a car accident?</div>
+        <div class="faq-a">It depends on your state and your policy, but in most cases your health insurance or your auto policy's medical payments/PIP coverage pays your medical bills first, as they come in. Your uninsured motorist (UM) claim is usually settled later, once the extent of your injuries and losses is known, and any health insurance payments already made are typically factored into that settlement.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Do I need UM coverage if I have full coverage?</div>
-        <div class="faq-a">"Full coverage" usually means liability + collision + comprehensive. Collision covers your vehicle damage regardless of fault. But collision does not cover your medical bills or lost wages — that's what UMBI does. So yes, UM adds protection that full coverage doesn't include.</div>
+        <div class="faq-q">Can my health insurer take part of my uninsured motorist settlement?</div>
+        <div class="faq-a">Often, yes. Many health plans have subrogation or reimbursement rights, meaning they can seek repayment from your UM settlement for the medical bills they already paid on your behalf. Whether they can, and how much they can recover, depends on your plan type and your state's laws.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What limits should I choose for UM coverage?</div>
-        <div class="faq-a">A common recommendation is to match your UM limits to your liability limits. If you carry 100/300 liability ($100,000 per person / $300,000 per accident), carry the same in UM. The higher the limit, the more protection you have — and the cost difference is usually small.</div>
+        <div class="faq-q">Does it matter if my health plan is through my employer versus one I bought myself?</div>
+        <div class="faq-a">Yes. Many employer-sponsored plans are self-funded and governed by ERISA, a federal law that can give the plan stronger reimbursement rights than state law would normally allow, sometimes overriding state protections. Plans you buy yourself on the marketplace are typically state-regulated and subject to your state's subrogation limits instead.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Does UM cover a hit-and-run?</div>
-        <div class="faq-a">In most states, yes — UMBI covers hit-and-run accidents where the driver fled and cannot be identified. Some states require physical contact with the other vehicle to qualify. Check your policy or ask your insurer about your state's specific rules.</div>
+        <div class="faq-q">If I don't have health insurance at all, does uninsured motorist coverage cover my medical bills on its own?</div>
+        <div class="faq-a">Uninsured motorist coverage can pay for accident-related medical bills up to your policy limits even if you have no health insurance, but it isn't designed to replace health coverage. It typically only applies to injuries caused by an uninsured or underinsured driver, has a claim process attached, and won't cover unrelated medical needs.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is uninsured motorist coverage the same thing as being uninsured for health insurance?</div>
+        <div class="faq-a">No, and this is the most common mix-up. Uninsured motorist coverage is an optional or required add-on to your car insurance policy that protects you if another driver has no insurance. It has nothing to do with your own health insurance status or whether you personally have health coverage.</div>
       </div>
     </div>
 
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/other-driver-no-insurance" class="related-chip">No Insurance Accident →</a>
-        <a href="/liability-vs-full-coverage" class="related-chip">Liability vs Full →</a>
-        <a href="/car-insurance-claim-denied" class="related-chip">Claim Denied →</a>
-        <a href="/gap-insurance-explained" class="related-chip">Gap Insurance →</a>
+        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
+        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs. Coinsurance →</a>
+        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Why Insurance Denies Claims →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any coverage type, policy term, or insurance concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
