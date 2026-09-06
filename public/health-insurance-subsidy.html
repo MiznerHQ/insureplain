@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Is a Health Insurance Subsidy and Do I Qualify? 2026 – InsurePlain</title>
-  <meta name="description" content="A health insurance subsidy lowers your monthly premium on the ACA marketplace. Here's exactly what it is, the 2026 income limits, and how to find out if you qualify.">
+  <title>Health Insurance Subsidy Explained: What You Could Owe Back – InsurePlain</title>
+  <meta name="description" content="A health insurance subsidy isn't free money — if your income estimate is off, you may owe it back. Here's the 2026 income cliff and repayment math competitors skip.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/health-insurance-subsidy">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What happens if I underestimate my income and get too much subsidy?", "acceptedAnswer": { "@type": "Answer", "text": "You'll likely owe back some or all of the excess advance premium tax credit when you file your taxes. Starting with tax year 2026, there's no repayment cap on this amount, regardless of your income level, so an underestimate can mean a large, unexpected tax bill." } },
+      { "@type": "Question", "name": "What happens if I overestimate my income? Do I get money back?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. If your actual income comes in lower than what you estimated, you were likely eligible for a bigger credit than you received in advance. You'll get the difference back as a larger refund or a reduced tax bill when you reconcile on Form 8962." } },
+      { "@type": "Question", "name": "Is there a cap on how much I have to repay?", "acceptedAnswer": { "@type": "Answer", "text": "Not anymore. Through tax year 2025, repayment was capped at a few hundred to a few thousand dollars for households under 400% of the federal poverty level. That cap was eliminated starting with tax year 2026, so any excess advance credit must be repaid in full." } },
+      { "@type": "Question", "name": "What if my income lands right around the 400% FPL line?", "acceptedAnswer": { "@type": "Answer", "text": "That line is a hard cliff, not a slope. One dollar under 400% of the federal poverty level and you keep your credit; one dollar over and it drops to zero, and you'd owe back the full advance amount. If your income is close to this line, it's worth estimating conservatively and updating your Marketplace application the moment your income changes." } },
+      { "@type": "Question", "name": "Do subsidies still work if I'm self-employed with variable income?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but the risk of a repayment surprise is higher because your income is harder to predict. The Marketplace uses your projected annual income, so a strong month or an unexpected contract can push your final number higher than what you estimated. Updating your income estimate mid-year whenever it shifts meaningfully is the main way to avoid a reconciliation surprise." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -21,22 +36,26 @@
     }
     body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
     .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
-    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
     .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
     .logo-mark svg { width: 18px; height: 18px; fill: white; }
     .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
     .logo-text span { color: var(--accent); }
+    .tagline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 32px; }
     .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
     .breadcrumb a { color: var(--accent); text-decoration: none; }
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,10 +74,10 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
-    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
-    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
-    .questions-list li:last-child { border-bottom: none; }
-    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -74,11 +93,6 @@
     .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
     .step-list li:last-child { border-bottom: none; }
     .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
-    .income-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
-    .income-table th { background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 10px 14px; text-align: left; border-bottom: 2px solid var(--accent-border); }
-    .income-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink); }
-    .income-table tr:last-child td { border-bottom: none; }
-    .income-table tr.highlight td { background: var(--success-light); font-weight: 500; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
   </style>
@@ -89,132 +103,139 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Health Insurance Subsidy</p>
-    <h1>What Is a Health Insurance Subsidy<br><em style="font-style:italic;color:var(--accent)">and Do I Qualify?</em></h1>
-    <span class="category-tag">ACA / Marketplace</span>
-    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Income limits and subsidy amounts change annually. Always verify current figures at healthcare.gov or with a licensed insurance professional.</div>
+    <p class="tagline">Insurance, finally explained. No agent required.</p>
 
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Health Insurance Subsidy</p>
+    <h1>What Is a Health Insurance Subsidy<br><em style="font-style:italic;color:var(--accent)">And What You Could Owe Back</em></h1>
+    <span class="category-tag">Health Insurance</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional or tax preparer about your specific situation.</div>
+
+    <!-- CARD 1 -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>A health insurance subsidy is money the federal government pays toward your monthly health insurance premium so you pay less. You don't see the cash — it goes directly to your insurance company on your behalf. Your bill is just lower every month.</p>
-      <p>The official name is the Premium Tax Credit (PTC). It's part of the Affordable Care Act and is only available for plans purchased through the official marketplace at healthcare.gov. If your employer offers coverage or you're on Medicaid, you generally don't qualify.</p>
+      <p>A health insurance subsidy is government help that lowers what you pay for a Marketplace health plan — often the first thing people look into right after they've <a href="/health-insurance-dropped" class="inline-link">lost employer coverage</a>. Most explanations stop there — but a subsidy isn't a gift card. It's an advance on a tax credit, and it gets settled up when you file your taxes.</p>
+      <p>If the income you estimated when you enrolled turns out to be lower than your actual income for the year, you were paid too much subsidy — and starting with 2026 tax returns, you have to pay every dollar of that excess back, with no cap on the amount.</p>
+      <p>The other piece almost nobody puts a number on: the income cliff. The temporary rules that let higher earners qualify expired on January 1, 2026, so the old hard cutoff is back — cross it by even a dollar and your entire subsidy disappears.</p>
     </div>
 
+    <!-- CARD 2 -->
     <div class="card">
-      <div class="section-label">The 2026 income limits</div>
-      <h2>How much can I earn and still qualify?</h2>
-      <p>Eligibility is based on your household income as a percentage of the Federal Poverty Level (FPL). For 2026, you generally qualify if your income falls between 100% and 400% of the FPL — though expanded rules may push that ceiling higher depending on current law.</p>
-      <table class="income-table">
-        <thead>
-          <tr>
-            <th>Household Size</th>
-            <th>100% FPL</th>
-            <th>400% FPL</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>1 person</td><td>~$15,060</td><td>~$60,240</td></tr>
-          <tr class="highlight"><td>2 people</td><td>~$20,440</td><td>~$81,760</td></tr>
-          <tr><td>3 people</td><td>~$25,820</td><td>~$103,280</td></tr>
-          <tr><td>4 people</td><td>~$31,200</td><td>~$124,800</td></tr>
-          <tr><td>5 people</td><td>~$36,580</td><td>~$146,320</td></tr>
-          <tr><td>6 people</td><td>~$41,960</td><td>~$167,840</td></tr>
-        </tbody>
-      </table>
-      <div class="timing-box" style="margin-top: 16px;">
-        <h3>⚠️ The subsidy cliff</h3>
-        <p>If your income goes even $1 over 400% FPL, you could lose the entire subsidy under standard rules. This is called the subsidy cliff. If you're close to the limit, talk to a navigator or broker before the end of the year — there may be ways to manage your reported income.</p>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Do I have to pay back a health insurance subsidy?</div>
+          <div class="paa-a"><strong>You might, and there's no longer a limit on how much.</strong> If your actual income for the year ends up higher than you estimated, you'll owe back the difference between what you received in advance and what you actually qualified for.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">What income makes you eligible for a subsidy in 2026?</div>
+          <div class="paa-a"><strong>Generally 100% to 400% of the federal poverty level.</strong> For 2026 coverage in the 48 contiguous states, that upper limit works out to roughly $62,600 for a single person and $128,600 for a family of four.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Is a subsidy the same as a tax credit?</div>
+          <div class="paa-a"><strong>Yes — "subsidy" and "premium tax credit" describe the same benefit.</strong> When it's paid monthly toward your premium in advance, it's called the advance premium tax credit (APTC); when claimed at tax time, it's the premium tax credit (PTC).</div>
+        </div>
       </div>
     </div>
 
+    <!-- CARD 3 -->
     <div class="card">
-      <div class="section-label">The qualification checklist</div>
-      <h2>Do I qualify?</h2>
-      <p>You need to meet all of these to be eligible:</p>
+      <div class="section-label">The basics</div>
+      <h2>The two types of subsidy</h2>
+      <p style="margin-top: 12px;">There are two separate forms of help available through the <a href="/marketplace-insurance" class="inline-link">health insurance Marketplace</a>, and they work differently.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>Income in range</strong> — Your household income is between 100% and 400% of the Federal Poverty Level (or higher if expanded subsidies apply).</li>
-        <li><strong>No affordable employer coverage</strong> — Your employer either doesn't offer insurance, or the coverage they offer costs more than ~9.02% of your household income for the employee-only plan.</li>
-        <li><strong>Not on Medicare or Medicaid</strong> — If you qualify for either program, you're ineligible for marketplace subsidies.</li>
-        <li><strong>Enrolled through the marketplace</strong> — You must buy your plan through healthcare.gov (or your state's exchange). Off-exchange plans don't qualify.</li>
-        <li><strong>U.S. citizen or lawfully present immigrant</strong> — Undocumented immigrants are not eligible.</li>
-        <li><strong>File a federal tax return</strong> — You must file taxes for the year you receive the subsidy, even if you normally wouldn't have to.</li>
-        <li><strong>Not incarcerated</strong> — People currently in prison do not qualify.</li>
+        <li><strong>Premium tax credit (PTC)</strong> — lowers your monthly premium. Most people take it in advance (APTC) so it's applied directly to each month's bill instead of waiting to claim it on a tax return.</li>
+        <li><strong>Cost-sharing reduction (CSR)</strong> — lowers your deductible, copays, and out-of-pocket maximum. Only available if you pick a Silver plan and your income is between 100% and 250% of the federal poverty level.</li>
+        <li><strong>Eligibility window</strong> — generally 100% to 400% of the federal poverty level for your household size and state.</li>
+        <li><strong>How the amount is set</strong> — based on your household income against the cost of the second-lowest-cost Silver plan (the "benchmark plan") where you live, not a flat dollar amount.</li>
+        <li><strong>Who it applies to</strong> — only plans bought on the Marketplace. If you're comparing coverage after losing a job, this matters for anyone deciding between a Marketplace plan and <a href="/cobra-insurance-cost" class="inline-link">COBRA continuation coverage</a>, since COBRA never carries a subsidy.</li>
+        <li><strong>What you estimate</strong> — your projected income for the coming year, not last year's tax return, which is exactly where the repayment risk starts.</li>
       </ul>
     </div>
 
+    <!-- CARD 4 -->
     <div class="card">
-      <div class="section-label">Two types of subsidies</div>
-      <h2>Premium Tax Credit vs Cost-Sharing Reductions</h2>
-      <div class="two-col" style="margin-top: 12px;">
+      <div class="section-label">The gap competitors skip</div>
+      <h2>The repayment math, in real numbers</h2>
+      <p style="margin-top: 12px;">Through tax year 2025, if you underestimated your income, the amount you had to repay was capped based on your income tier — sometimes as low as a few hundred dollars. That protection is gone.</p>
+      <div class="two-col" style="margin-top: 16px;">
         <div class="range-box blue">
-          <div class="range-box-label">Premium Tax Credit</div>
-          <p>Lowers your monthly premium. Available to anyone between 100–400%+ FPL who qualifies. Applied automatically when you enroll — you never see the money.</p>
+          <div class="range-box-label">Through tax year 2025</div>
+          <p>Repayment capped by income tier — as little as roughly $375 up to about $3,250, depending on how your income compared to the poverty level.</p>
         </div>
-        <div class="range-box green">
-          <div class="range-box-label">Cost-Sharing Reduction</div>
-          <p>Lowers your deductible, copays, and out-of-pocket max. Only available if your income is below 250% FPL <em>and</em> you pick a Silver plan specifically.</p>
+        <div class="range-box warn">
+          <div class="range-box-label">Tax year 2026 onward</div>
+          <p>No cap at all. Every dollar of excess advance credit must be repaid in full, regardless of your income level, under the One Big Beautiful Bill Act.</p>
         </div>
       </div>
-      <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">If your income is below 250% FPL, always compare Silver plans first — the cost-sharing reduction can be worth more than the premium savings from a cheaper Bronze plan.</p>
-    </div>
-
-    <div class="card">
-      <div class="section-label">How to actually get it</div>
-      <h2>Step-by-step</h2>
-      <ol class="step-list">
-        <li><strong>Go to healthcare.gov</strong> (or your state's marketplace if your state runs its own). Create an account.</li>
-        <li><strong>Enter your household information</strong> — size, location, income estimate for the coming year.</li>
-        <li><strong>The site calculates your subsidy automatically.</strong> You'll see plans with your estimated credit already applied to the price.</li>
-        <li><strong>Choose a plan and enroll.</strong> The subsidy goes directly to the insurer — your monthly bill reflects the reduced amount.</li>
-        <li><strong>Reconcile at tax time.</strong> When you file your federal taxes, you'll complete Form 8962. If you underestimated income, you may owe some back. If you overestimated, you get a refund.</li>
-      </ol>
       <div class="timing-box">
-        <h3>📅 Open enrollment timing</h3>
-        <p>The standard marketplace open enrollment window runs November 1 through January 15 each year. Outside that window, you need a qualifying life event (job loss, marriage, birth of a child, etc.) to enroll. Missing open enrollment means waiting a full year.</p>
+        <h3>⚠️ THE 400% CLIFF IS BACK</h3>
+        <p>From 2021 through 2025, there was no upper income limit on subsidies. That enhancement expired January 1, 2026. Now, one dollar over 400% of the federal poverty level and your credit drops to exactly zero — and any advance credit you already received for the year comes back in full. This is a cliff, not a slope: there's no partial phase-out.</p>
       </div>
     </div>
 
+    <!-- CARD 5 -->
+    <div class="card">
+      <div class="section-label">Protect yourself</div>
+      <h2>How to avoid a repayment surprise</h2>
+      <ol class="step-list">
+        <li><strong>Estimate conservatively.</strong> If your income is uncertain — freelance work, overtime, a possible raise — lean toward a slightly higher estimate rather than a lower one.</li>
+        <li><strong>Update your Marketplace application the moment your income changes.</strong> Don't wait until tax season; a mid-year update adjusts your monthly credit going forward instead of building up an owed balance.</li>
+        <li><strong>Watch the 400% line closely if you're near it.</strong> A single bonus or a good freelance month can push you over and eliminate your entire subsidy for the year.</li>
+        <li><strong>Compare it against your other options.</strong> If you were recently dropped from employer coverage, run the numbers on <a href="/cobra-insurance-cost" class="inline-link">what COBRA actually costs</a> against a subsidized Marketplace plan before assuming the subsidized option is automatically cheaper.</li>
+        <li><strong>Factor plan network into the decision, not just price.</strong> A cheaper subsidized plan isn't a deal if your doctors are <a href="/in-network-vs-out-of-network" class="inline-link">out-of-network</a> and you're paying full price for care anyway.</li>
+        <li><strong>Set aside a buffer if you're close to any income threshold.</strong> Treat a potential repayment like a bill you might owe, not a hypothetical.</li>
+      </ol>
+    </div>
+
+    <!-- CARD 6 -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Go to healthcare.gov and use the quick screener — it takes about 3 minutes and tells you immediately if you're likely eligible and how much your credit might be. You don't have to enroll to see your estimate. If you're close to the income limits, report your best estimate of this year's income — you can update it anytime during the year if your situation changes.
+        Log into your Marketplace account and check the income estimate currently on file. If your actual income for the year looks like it'll come in higher than that number, update it now rather than waiting for tax season — it's the single biggest lever you have over what you might owe. If you've recently had a premium change unrelated to income, our guide on <a href="/insurance-premium-increase" class="inline-link" style="color:var(--success-text);text-decoration-color:var(--success-border);">handling a premium increase</a> walks through what to check first.
       </div>
     </div>
 
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">What if my income changes during the year?</div>
-        <div class="faq-a">Report it immediately at healthcare.gov. Your subsidy is based on your projected annual income. If you earn more than expected and don't update it, you'll owe the difference back when you file taxes. If you earn less, you'll get a bigger refund.</div>
+        <div class="faq-q">What happens if I underestimate my income and get too much subsidy?</div>
+        <div class="faq-a">You'll likely owe back some or all of the excess advance premium tax credit when you file your taxes. Starting with tax year 2026, there's no repayment cap on this amount, regardless of your income level, so an underestimate can mean a large, unexpected tax bill.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can I get a subsidy if I'm self-employed?</div>
-        <div class="faq-a">Yes — self-employed people are among the most common subsidy recipients. Your income for subsidy purposes is your net self-employment income after business deductions, not your gross revenue.</div>
+        <div class="faq-q">What happens if I overestimate my income? Do I get money back?</div>
+        <div class="faq-a">Yes. If your actual income comes in lower than what you estimated, you were likely eligible for a bigger credit than you received in advance. You'll get the difference back as a larger refund or a reduced tax bill when you reconcile on Form 8962.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What is the subsidy cliff and how do I avoid it?</div>
-        <div class="faq-a">The subsidy cliff is the income threshold where a small increase in earnings causes you to lose eligibility for the full premium tax credit. Contributing to a traditional IRA, HSA, or SEP-IRA can reduce your modified adjusted gross income and keep you under the limit. A tax professional can help you plan this.</div>
+        <div class="faq-q">Is there a cap on how much I have to repay?</div>
+        <div class="faq-a">Not anymore. Through tax year 2025, repayment was capped at a few hundred to a few thousand dollars for households under 400% of the federal poverty level. That cap was eliminated starting with tax year 2026, so any excess advance credit must be repaid in full.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Do subsidies apply to dental or vision plans?</div>
-        <div class="faq-a">No. The Premium Tax Credit only applies to qualifying health plans — not standalone dental or vision coverage sold through the marketplace.</div>
+        <div class="faq-q">What if my income lands right around the 400% FPL line?</div>
+        <div class="faq-a">That line is a hard cliff, not a slope. One dollar under 400% of the federal poverty level and you keep your credit; one dollar over and it drops to zero, and you'd owe back the full advance amount. If your income is close to this line, it's worth estimating conservatively and updating your Marketplace application the moment your income changes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do subsidies still work if I'm self-employed with variable income?</div>
+        <div class="faq-a">Yes, but the risk of a repayment surprise is higher because your income is harder to predict. The Marketplace uses your projected annual income, so a strong month or an unexpected contract can push your final number higher than what you estimated. Updating your income estimate mid-year whenever it shifts meaningfully is the main way to avoid a reconciliation surprise.</div>
       </div>
     </div>
 
+    <!-- CARD 8: Related -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/missed-open-enrollment" class="related-chip">Missed Enrollment →</a>
-        <a href="/marketplace-insurance" class="related-chip">Marketplace Plans →</a>
-        <a href="/special-enrollment-period" class="related-chip">Special Enrollment →</a>
-        <a href="/deductible-explained" class="related-chip">Deductibles →</a>
-        <a href="/hsa-vs-fsa" class="related-chip">HSA vs FSA →</a>
+        <a href="/marketplace-insurance" class="related-chip">Marketplace Insurance →</a>
+        <a href="/cobra-insurance-cost" class="related-chip">COBRA Insurance Cost →</a>
+        <a href="/insurance-premium-increase" class="related-chip">Premium Increase →</a>
+        <a href="/in-network-vs-out-of-network" class="related-chip">In-Network vs Out →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any subsidy term, marketplace concept, or policy question in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
