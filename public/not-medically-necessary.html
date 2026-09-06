@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Does "Not Medically Necessary" Mean? – InsurePlain</title>
-  <meta name="description" content="Your insurance denied your claim as 'not medically necessary' — here's exactly what that means, why it happens, and the step-by-step process to appeal and win.">
+  <title>"Not Medically Necessary" Denial: What It Means & Appeal Deadlines – InsurePlain</title>
+  <meta name="description" content="Insurer said your claim wasn't 'medically necessary'? Learn if it's really appealable, plus the exact deadline chain: 180 days, 30/60 days, 72 hours, 4 months.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/not-medically-necessary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does a denial letter always correctly state the real reason?", "acceptedAnswer": { "@type": "Answer", "text": "Not always. Insurers sometimes label a denial \"not medically necessary\" when the real issue is a coverage exclusion or missing documentation. Read the specific policy language cited in your denial letter, not just the headline reason, before you decide how to appeal." } },
+      { "@type": "Question", "name": "Can I get an expedited appeal if my situation is urgent but not a life-threatening emergency?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, if waiting for a standard decision would seriously jeopardize your health, function, or ability to regain maximum function. Your insurer makes the initial urgency call, but your doctor can submit a statement supporting expedited status, and you can push back if the insurer wrongly denies it." } },
+      { "@type": "Question", "name": "If I win an external review, does that guarantee future claims for the same treatment get approved?", "acceptedAnswer": { "@type": "Answer", "text": "No. An external review decision is binding for the specific claim or episode under review, not a blanket approval for ongoing treatment. If you need the same service again later, especially after a plan year change, you may need to submit a new prior authorization or claim." } },
+      { "@type": "Question", "name": "What happens if my insurer misses its own appeal deadline?", "acceptedAnswer": { "@type": "Answer", "text": "Under ACA rules, if a plan fails to strictly comply with internal appeal deadlines and procedures, your internal appeal is generally considered exhausted automatically. That means you may be able to skip straight to external review even though the insurer never issued a final decision." } },
+      { "@type": "Question", "name": "Is the appeal process different for Medicare Advantage plans?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Medicare Advantage denials don't go to an Independent Review Organization. Instead, an unfavorable internal appeal escalates to a Qualified Independent Contractor (QIC) review, and from there to an Administrative Law Judge hearing if the amount in dispute meets the federal threshold." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +46,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,6 +73,14 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -81,113 +107,131 @@
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
 
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Claim Denial</p>
-
-    <h1>What Does "Not Medically Necessary"<br><em style="font-style:italic;color:var(--accent)">Actually Mean?</em></h1>
-    <span class="category-tag">Claim Denial</span>
-
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Not Medically Necessary</p>
+    <h1>Insurer Said "Not Medically Necessary"?<br><em style="font-style:italic;color:var(--accent)">Here's What That Actually Means</em></h1>
+    <span class="category-tag">Claims & Denials</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
 
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>You went to the doctor. Your doctor ordered a test, procedure, or treatment. Insurance got the bill — and sent back a denial saying the service was "not medically necessary."</p>
-      <p>This doesn't mean your doctor was wrong. It means your insurance company applied their own internal criteria to your claim and decided it didn't meet their threshold for coverage. Those criteria often differ from your doctor's clinical judgment — and they can be challenged.</p>
+      <p>"Not medically necessary" is one of the most common reasons insurers give for denying a claim — and one of the most misleading, because it gets used as a catch-all label even when the real issue is something else entirely. Your doctor recommended the treatment. Your insurer's internal reviewer, often without ever speaking to your doctor, decided it didn't meet the plan's specific criteria for coverage.</p>
+      <p>That distinction matters more than it sounds like it should. A true medical-necessity denial is one of the strongest categories to appeal — internal appeal success rates run in the 30–40% range, and independent external review overturns roughly half of the cases that reach it. But a denial mislabeled as "medical necessity" when it's actually a coverage exclusion follows a completely different, much narrower path. Getting that distinction wrong is the single biggest reason people give up on appeals they could have won.</p>
+      <p>This guide breaks down how to tell which kind of denial you actually have, and lays out the exact deadline chain — from your first appeal to a binding independent decision — that most explanations leave scattered across three or four separate government pages.</p>
     </div>
 
     <div class="card">
-      <div class="section-label">The insurer's definition vs. your doctor's</div>
-      <h2>Two different standards</h2>
-      <div class="two-col" style="margin-top: 16px;">
-        <div class="range-box warn">
-          <div class="range-box-label">Your insurer's view</div>
-          <p>Based on internal clinical guidelines, coverage policies, and cost criteria. The insurer decides if the service meets a standard they define — not what your doctor thinks is best for you.</p>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Can my doctor's recommendation override a "not medically necessary" denial?</div>
+          <div class="paa-a"><strong>Not automatically, but it's your strongest evidence.</strong> Insurers apply their own clinical criteria, which can be stricter than general medical practice. A detailed letter from your doctor addressing the specific denial reason — not just repeating that treatment is needed — is the core of almost every successful appeal.</div>
         </div>
-        <div class="range-box blue">
-          <div class="range-box-label">Your doctor's view</div>
-          <p>Based on your specific symptoms, history, and clinical judgment. Your doctor ordered the service because they believe it is required for your care — full stop.</p>
+        <div class="paa-box">
+          <div class="paa-q">How often do medical necessity denials actually get overturned?</div>
+          <div class="paa-a"><strong>More often than most people expect.</strong> Federal marketplace data shows internal appeals overturn a meaningful share of denials, and independent external reviews overturn roughly half of the cases that reach that stage. The catch: fewer than 1 in 500 denied claims are ever appealed at all.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Do I need a lawyer to appeal a medical necessity denial?</div>
+          <div class="paa-a"><strong>Usually no, for the first two stages.</strong> Internal appeals and standard external reviews are designed to be done by the patient with a supporting letter from their doctor. A lawyer becomes worth considering if the case involves large dollar amounts, an ERISA employer plan with rigid internal rules, or a denial you believe was made in bad faith.</div>
         </div>
       </div>
-      <p style="margin-top: 16px;">The gap between these two standards is exactly where most "not medically necessary" denials live — and it's exactly where appeals win.</p>
     </div>
 
     <div class="card">
-      <div class="section-label">Why this denial happens</div>
-      <h2>Common reasons insurers use this code</h2>
+      <div class="section-label">The real distinction</div>
+      <h2>Three different denials, one confusing label</h2>
+      <p style="margin-top: 12px;">Insurers sometimes stamp "not medically necessary" on denials that actually fall into a different category — and which category you're in changes your entire appeal strategy. Before you write a single word of your appeal, confirm which one applies by reading the exact policy section cited in your denial letter, not just the summary line. See <a href="/insurance-exclusion-explained" class="inline-link">how coverage exclusions work</a> for the full breakdown of the exclusion path.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>The treatment is considered experimental</strong> — Your insurer's guidelines haven't yet approved a newer procedure your doctor recommends.</li>
-        <li><strong>A cheaper alternative exists</strong> — Insurers may require you to try a lower-cost treatment first before approving a more expensive one (step therapy).</li>
-        <li><strong>Wrong diagnosis code</strong> — A billing error by your provider's office made the service look unrelated to your condition.</li>
-        <li><strong>Frequency limits exceeded</strong> — You received a covered service more often than your plan allows (e.g., physical therapy sessions per year).</li>
-        <li><strong>Inpatient vs. outpatient mismatch</strong> — Your insurer decided the level of care (hospital stay vs. outpatient visit) wasn't justified by your condition.</li>
-        <li><strong>Missing documentation</strong> — Your provider didn't submit enough clinical notes to support the medical necessity of the service.</li>
+        <li><strong>True medical necessity denial</strong> — the service is a covered benefit, but the insurer's reviewer decided your specific case didn't meet their clinical criteria. Fully appealable through internal appeal and external review.</li>
+        <li><strong>Coverage exclusion</strong> — the service is categorically excluded from your policy regardless of medical need (cosmetic procedures, certain weight-loss treatments, some fertility services). Not eligible for the medical-necessity external review path — your argument has to be that the exclusion doesn't apply to your situation.</li>
+        <li><strong>Experimental or investigational</strong> — a separate label from medical necessity, but treated similarly for appeal rights. You'll need clinical trial data or peer-reviewed evidence to support the appeal, not just your doctor's opinion.</li>
+        <li><strong>Insufficient documentation</strong> — the most common and easiest denial to fix. Your provider's notes didn't include enough clinical detail to meet the criteria, even though the treatment itself would qualify.</li>
+        <li><strong>Frequency or duration limit exceeded</strong> — common with physical therapy, imaging, or mental health visits. The insurer's cap was hit, not a judgment about whether you need more care.</li>
+        <li><strong>Algorithm-flagged, never reviewed by a person</strong> — some denials happen automatically based on coding, with no human review of your actual case. A peer-to-peer conversation between your doctor and the plan's medical director often resolves this fastest.</li>
       </ul>
     </div>
 
     <div class="card">
-      <div class="section-label">Your rights</div>
-      <h2>What the law says you can do</h2>
-      <p>Under the Affordable Care Act, you have a legal right to appeal any denied claim — including not medically necessary denials. You also have the right to request an external review by an independent organization. If the external reviewer overturns the denial, your insurer is legally required to pay.</p>
-      <div class="timing-box">
-        <h3>⏱ Deadline warning</h3>
-        <p>Most plans require you to file an internal appeal within 180 days of receiving the denial. Missing this window forfeits your right to contest. Check your denial letter for the exact deadline and don't wait.</p>
+      <div class="section-label">Deadline chain</div>
+      <h2>The four stages, and the exact clock on each one</h2>
+      <p style="margin-top: 12px;">This is the part almost every source splits across separate pages. Here's the full chain in one place, for ACA-regulated plans (Medicare Advantage and some employer plans differ — see the FAQ below).</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Stage 1 — Internal appeal</div>
+          <p>File within <strong>180 days</strong> of your denial notice. Insurer must respond within <strong>30 days</strong> (pre-service) or <strong>60 days</strong> (post-service), or <strong>72 hours</strong> if you qualify for expedited review.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">Stage 2 — External review</div>
+          <p>If the internal appeal is denied, file for external review within <strong>4 months</strong> of that final denial (some states, like California, allow up to 6 months).</p>
+        </div>
       </div>
+      <div class="timing-box">
+        <h3>⚠️ THE DEADLINE THAT GETS MISSED</h3>
+        <p>The 4-month external review window starts from your <em>final internal denial</em>, not your original denial. People who don't realize a second, formal "final" letter is coming often let this clock run out before they even know it started.</p>
+      </div>
+      <p style="margin-top: 16px;"><strong>Stage 3 — External review decision:</strong> a standard review is decided within <strong>45 days</strong>; an expedited review within <strong>72 hours</strong>. It's conducted by an Independent Review Organization with no financial relationship to your insurer, and its decision is legally binding on the plan.</p>
+      <p><strong>Stage 4 — Cost:</strong> the federal external review process is free. State-run programs can charge a fee, but it's capped at <strong>$25</strong> and is typically refunded if you win.</p>
     </div>
 
     <div class="card">
-      <div class="section-label">How to fight back — step by step</div>
-      <h2>The appeal process</h2>
+      <div class="section-label">Action plan</div>
+      <h2>What to do in order</h2>
       <ol class="step-list">
-        <li><strong>Get the denial in writing.</strong> Your insurer must send a written denial explaining the specific reason and the clinical criteria they used. If you only got a phone call, request the written notice.</li>
-        <li><strong>Request the clinical criteria used.</strong> Ask your insurer for a copy of the exact guidelines they applied to deny your claim. This is your legal right and often reveals the gap you need to close.</li>
-        <li><strong>Call your doctor's office.</strong> Tell them the claim was denied as not medically necessary. Ask if there's a documentation issue or billing code error — these are fixable without a formal appeal.</li>
-        <li><strong>Get a letter of medical necessity.</strong> Ask your doctor to write a formal letter explaining why the treatment was clinically required for your specific condition. This is the single most powerful document in any appeal.</li>
-        <li><strong>File a formal internal appeal.</strong> Submit your appeal in writing with the letter of medical necessity, your medical records, and any relevant test results. Send via certified mail and keep copies of everything.</li>
-        <li><strong>Request an expedited appeal if urgent.</strong> If the denial involves ongoing or urgent care, you can request an expedited review — insurers must respond within 72 hours.</li>
-        <li><strong>If the internal appeal fails, request external review.</strong> An independent organization will review your case with no financial ties to your insurer. Their decision is binding.</li>
-        <li><strong>File a complaint with your state insurance commissioner.</strong> This runs parallel to your appeal and often accelerates resolution. Find your state commissioner at naic.org.</li>
+        <li><strong>Read the exact denial reason,</strong> including the specific policy section or clinical criteria cited — not just the one-line summary. This determines which of the six denial types above you're actually dealing with.</li>
+        <li><strong>Request your complete claim file</strong> from the insurer, including the specific clinical guideline used to deny you. You're entitled to this, and it tells you exactly what your appeal needs to overcome.</li>
+        <li><strong>Get a detailed letter from your doctor</strong> that directly rebuts the denial reason, cites treatment guidelines where possible, and documents any alternatives you've already tried and failed. Learn more about <a href="/appeal-insurance-denial" class="inline-link">what a strong appeal letter includes</a>.</li>
+        <li><strong>Request a peer-to-peer review</strong> alongside your formal appeal if your denial letter doesn't already show one happened — this step alone resolves a meaningful share of automated or under-reviewed denials fast.</li>
+        <li><strong>File your internal appeal well before the 180-day deadline,</strong> and mark your calendar the day the denial letter arrives, not when you get around to reading it.</li>
+        <li><strong>If denied again, file for external review within 4 months</strong> of that final letter. Check your <a href="/eob-explained" class="inline-link">Explanation of Benefits</a> and denial letter for the specific reviewer contact information — it varies by state.</li>
       </ol>
     </div>
 
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Don't pay the bill yet. Find the denial code on your Explanation of Benefits (EOB), call your insurer to get the exact clinical criteria they used, and call your doctor's office to flag the denial. A letter of medical necessity from your doctor overturns these denials far more often than people realize. Act before your appeal deadline — it's printed on your denial letter.
+        Find the exact clinical reason on your denial letter today, not the summary phrase. If it references a policy exclusion rather than a clinical criterion, you're on the exclusion track, not the medical-necessity track — <a href="/insurance-exclusion-explained" class="inline-link" style="color:var(--success-text)">check here</a> before you build your appeal around the wrong argument.
       </div>
     </div>
 
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">Can my doctor override a not medically necessary denial?</div>
-        <div class="faq-a">Not directly — but a letter of medical necessity from your doctor is the strongest tool available. It documents their clinical reasoning in detail and is reviewed as part of your formal appeal. Many denials are overturned at this stage.</div>
+        <div class="faq-q">Does a denial letter always correctly state the real reason?</div>
+        <div class="faq-a">Not always. Insurers sometimes label a denial "not medically necessary" when the real issue is a coverage exclusion or missing documentation. Read the specific policy language cited in your denial letter, not just the headline reason, before you decide how to appeal.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What is a not medically necessary denial code?</div>
-        <div class="faq-a">The most common denial codes for this reason are CO-50 (not medically necessary) and CO-57 (no coverage for this diagnosis/procedure combination). Your EOB or remittance advice will show the specific code. You can look up any code using the decoder on our homepage.</div>
+        <div class="faq-q">Can I get an expedited appeal if my situation is urgent but not a life-threatening emergency?</div>
+        <div class="faq-a">Yes, if waiting for a standard decision would seriously jeopardize your health, function, or ability to regain maximum function. Your insurer makes the initial urgency call, but your doctor can submit a statement supporting expedited status, and you can push back if the insurer wrongly denies it.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What does "not medically necessary" mean in medical billing?</div>
-        <div class="faq-a">In billing terms, it means the payer reviewed the diagnosis code submitted alongside the procedure and determined the two don't meet their coverage criteria together. This is sometimes a billing error — the wrong diagnosis code was submitted — and can be corrected by your provider without a formal appeal.</div>
+        <div class="faq-q">If I win an external review, does that guarantee future claims for the same treatment get approved?</div>
+        <div class="faq-a">No. An external review decision is binding for the specific claim or episode under review, not a blanket approval for ongoing treatment. If you need the same service again later, especially after a plan year change, you may need to submit a new prior authorization or claim.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I appeal a not medically necessary denial?</div>
-        <div class="faq-a">Follow the step-by-step process above. The key documents are: the written denial with the specific reason, your insurer's clinical criteria, your medical records, and a letter of medical necessity from your doctor. Submit everything together in writing, send certified mail, and keep copies.</div>
+        <div class="faq-q">What happens if my insurer misses its own appeal deadline?</div>
+        <div class="faq-a">Under ACA rules, if a plan fails to strictly comply with internal appeal deadlines and procedures, your internal appeal is generally considered exhausted automatically. That means you may be able to skip straight to external review even though the insurer never issued a final decision.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is the appeal process different for Medicare Advantage plans?</div>
+        <div class="faq-a">Yes. Medicare Advantage denials don't go to an Independent Review Organization. Instead, an unfavorable internal appeal escalates to a Qualified Independent Contractor (QIC) review, and from there to an Administrative Law Judge hearing if the amount in dispute meets the federal threshold. See <a href="/medicare-advantage-vs-original-medicare" class="inline-link">how Medicare Advantage appeals differ</a> from Original Medicare.</div>
       </div>
     </div>
 
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
-        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
-        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
-        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">Appeal Insurance Denial →</a>
+        <a href="/insurance-exclusion-explained" class="related-chip">Insurance Exclusion Explained →</a>
+        <a href="/prior-authorization-denied" class="related-chip">Prior Authorization Denied →</a>
+        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Why Did Insurance Deny My Claim? →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any denial code, EOB term, or policy concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
