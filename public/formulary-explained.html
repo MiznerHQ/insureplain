@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Is a Formulary and Why Is My Drug Not On It? – InsurePlain</title>
-  <meta name="description" content="A formulary is your insurance plan's approved drug list. Here's what it means, how tiers work, why your medication might not be covered, and how to fight back.">
+  <title>What Is a Drug Formulary? Tiers, Exceptions & the 72-Hour Rule – InsurePlain</title>
+  <meta name="description" content="A formulary is your plan's covered-drug list — but tiers, exceptions, and a 72-hour federal decision clock decide what you actually pay. Here's how it works.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/formulary-explained">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- FAQ SCHEMA — 5 Q&As, must match visible FAQ card exactly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What is a formulary in health insurance?", "acceptedAnswer": { "@type": "Answer", "text": "A formulary is the list of prescription drugs your health plan agrees to cover, organized into cost tiers. Drugs on the list are covered at your plan's normal cost-sharing rate; drugs left off it may not be covered at all unless you request an exception." } },
+      { "@type": "Question", "name": "What happens if my medication isn't on the formulary?", "acceptedAnswer": { "@type": "Answer", "text": "You can pay full price out of pocket, ask your doctor about a formulary alternative that is covered, or have your prescriber file a formulary exception request asking the plan to cover the drug anyway on medical necessity grounds." } },
+      { "@type": "Question", "name": "What's the difference between a tiering exception and a formulary exception?", "acceptedAnswer": { "@type": "Answer", "text": "A tiering exception asks the plan to charge you the lower copay of a cheaper tier for a drug that's already covered. A formulary exception asks the plan to cover a drug that isn't on the list at all. They're filed differently and reviewed under the same timelines but are not interchangeable." } },
+      { "@type": "Question", "name": "How long does a formulary exception take to get approved?", "acceptedAnswer": { "@type": "Answer", "text": "Under federal rules, standard formulary exception requests must get a decision within 72 hours of the plan receiving your prescriber's supporting statement. Expedited requests, where waiting could seriously harm your health, must be decided within 24 hours." } },
+      { "@type": "Question", "name": "What if my formulary exception is denied?", "acceptedAnswer": { "@type": "Answer", "text": "You can file an internal appeal, and if that's denied too, request an independent external review by a third party not affiliated with your insurer. Many plans allow you to request internal and external review at the same time when the request is expedited." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +47,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,6 +74,14 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
+    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
+    .questions-list li:last-child { border-bottom: none; }
+    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -70,18 +97,8 @@
     .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
     .step-list li:last-child { border-bottom: none; }
     .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
-    .tier-row { display: grid; grid-template-columns: 80px 1fr auto; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
-    .tier-row:last-child { border-bottom: none; }
-    .tier-badge { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 20px; text-align: center; }
-    .tier-1 { background: var(--success-light); color: var(--success-text); }
-    .tier-2 { background: var(--accent-light); color: var(--accent); }
-    .tier-3 { background: var(--amber-light); color: var(--amber); }
-    .tier-4 { background: var(--warn-light); color: var(--warn); }
-    .tier-5 { background: #F3E8FF; color: #6B21A8; }
-    .tier-desc { font-size: 14px; color: var(--ink); line-height: 1.5; }
-    .tier-cost { font-family: 'DM Mono', monospace; font-size: 13px; color: var(--muted); white-space: nowrap; }
     footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } .tier-row { grid-template-columns: 70px 1fr; } .tier-cost { display: none; } }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -90,133 +107,140 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Formulary Explained</p>
-    <h1>What Is a Formulary and<br><em style="font-style:italic;color:var(--accent)">Why Is My Drug Not On It?</em></h1>
-    <span class="category-tag">Prescription Coverage</span>
-    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or medical advice. Formularies change annually and vary by plan. Always verify your drug's coverage directly with your insurer or pharmacist.</div>
 
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; What Is a Formulary</p>
+    <h1>What Is a Drug Formulary,<br><em style="font-style:italic;color:var(--accent)">And What Happens When Your Drug Isn't On It</em></h1>
+    <span class="category-tag">PRESCRIPTION DRUGS</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>A formulary is simply your insurance plan's list of approved drugs. If your medication is on it, your insurance helps pay. If it's not, you're often paying the full retail price — which can be hundreds or thousands of dollars per month.</p>
-      <p>Insurance companies build formularies by negotiating with drug manufacturers. Drugs that get better deals end up on the list. Drugs that don't — including many newer brand-name medications — often get left off entirely, or placed in a high-cost tier where your share is still enormous.</p>
+      <p>A formulary is the list of prescription drugs your health plan has agreed to cover, sorted into pricing tiers. Every plan has one, and every plan's list is different — a drug covered cheaply on one plan can be excluded entirely on another, even from the same insurer.</p>
+      <p>Most explainers stop at that definition. They'll tell you formularies exist, tiers exist, and that you can "ask for an exception" if your drug isn't covered — then leave you to figure out the rest at the pharmacy counter, prescription in hand, with no idea what happens next or how long it takes.</p>
+      <p>There are two numbers and one distinction that actually matter here: the federal decision clock your insurer must follow once you file an exception, and the difference between the three separate requests people lump together as "asking for an exception." Knowing which one you need — and how long you're allowed to wait — is the difference between a five-minute pharmacy fix and a month of paying full price.</p>
     </div>
 
+    <!-- CARD 2: PAA -->
     <div class="card">
-      <div class="section-label">How tiers work</div>
-      <h2>The tier system, explained</h2>
-      <p style="margin-bottom: 16px;">Most plans organize their formulary into tiers. Lower tier = lower cost to you. Here's how it typically breaks down:</p>
-      <div class="tier-row">
-        <span class="tier-badge tier-1">Tier 1</span>
-        <div class="tier-desc"><strong>Generic drugs</strong> — the cheapest option. Same active ingredient as brand-name, just no logo.</div>
-        <span class="tier-cost">$0–$15</span>
-      </div>
-      <div class="tier-row">
-        <span class="tier-badge tier-2">Tier 2</span>
-        <div class="tier-desc"><strong>Preferred brand-name drugs</strong> — brand drugs your insurer has negotiated a deal on.</div>
-        <span class="tier-cost">$20–$60</span>
-      </div>
-      <div class="tier-row">
-        <span class="tier-badge tier-3">Tier 3</span>
-        <div class="tier-desc"><strong>Non-preferred brand-name drugs</strong> — brand drugs without a special deal. Your share jumps significantly.</div>
-        <span class="tier-cost">$50–$100+</span>
-      </div>
-      <div class="tier-row">
-        <span class="tier-badge tier-4">Tier 4</span>
-        <div class="tier-desc"><strong>Specialty drugs</strong> — high-cost medications for complex conditions. Often 20–33% coinsurance instead of a flat copay.</div>
-        <span class="tier-cost">$100–$500+</span>
-      </div>
-      <div class="tier-row">
-        <span class="tier-badge tier-5">Tier 5</span>
-        <div class="tier-desc"><strong>Non-formulary / excluded</strong> — not covered at all. You pay full retail price unless you get an exception approved.</div>
-        <span class="tier-cost">Full price</span>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Can my pharmacist tell me if a drug is on my formulary before I try to fill it?</div>
+          <div class="paa-a"><strong>Usually, yes.</strong> Pharmacists can run a test claim to see if a drug is covered and what tier it falls under, though they can't file an exception on your behalf — that has to come from your prescriber.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Does every insurance plan use the same formulary?</div>
+          <div class="paa-a"><strong>No.</strong> Formularies are set individually by each plan, even plans sold by the same insurer. A drug covered under one employer's plan may be excluded under a different plan from the identical company.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Will my formulary change during the year I'm already enrolled?</div>
+          <div class="paa-a"><strong>It can.</strong> Insurers review formularies periodically and may add or remove drugs mid-year, though most plans are required to notify you in advance if a drug you're actively taking is being dropped.</div>
+        </div>
       </div>
     </div>
 
+    <!-- CARD 3: Main explainer -->
     <div class="card">
-      <div class="section-label">Why your drug might not be covered</div>
-      <h2>Common reasons drugs get excluded</h2>
+      <div class="section-label">The tier structure</div>
+      <h2>What each formulary tier actually costs</h2>
+      <p style="margin-top: 12px;">Formularies group covered drugs into tiers, and your <a href="/insurance-premium-increase" class="inline-link">plan's premium</a> has nothing to do with which tier a given drug lands in — that's set by the plan's pharmacy benefit manager, separately, based on cost and availability of alternatives.</p>
       <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>No generic available yet</strong> — Brand-name drugs still under patent often land in Tier 3 or 4 because insurers can't substitute a cheaper version.</li>
-        <li><strong>No negotiated rebate</strong> — The drug manufacturer didn't give your insurer a discount, so they didn't include it.</li>
-        <li><strong>Newer medication</strong> — Drugs approved recently often haven't made it onto formularies yet. GLP-1 medications like Ozempic and Zepbound are a current example — many plans exclude them entirely for weight loss.</li>
-        <li><strong>Step therapy required</strong> — Your plan requires you to try a cheaper drug first before they'll cover the one your doctor prescribed.</li>
-        <li><strong>Prior authorization needed</strong> — The drug is technically on the formulary but requires pre-approval before your insurance will pay.</li>
-        <li><strong>Formulary changed mid-year</strong> — Your plan can update its formulary annually. A drug covered last year may not be covered this year.</li>
+        <li><strong>Tier 1 — Preferred generic</strong> — the cheapest tier, typically a flat copay in the $0–$15 range.</li>
+        <li><strong>Tier 2 — Generic</strong> — non-preferred generics, usually $15–$35 per fill.</li>
+        <li><strong>Tier 3 — Preferred brand</strong> — brand-name drugs the plan favors, often $35–$70 or a percentage coinsurance.</li>
+        <li><strong>Tier 4 — Non-preferred brand</strong> — brand-name drugs with a preferred alternative available, frequently 30–50% coinsurance.</li>
+        <li><strong>Tier 5 — Specialty</strong> — high-cost biologics and specialty drugs, often 25–33% coinsurance with no cap, sometimes running into the hundreds monthly even after coverage.</li>
+        <li><strong>Not listed at all</strong> — the drug isn't on the formulary in any tier, meaning full retail price unless an exception is granted.</li>
       </ul>
+      <p style="margin-top: 12px;">Whatever tier your drug lands in will show up on your <a href="/eob-explained" class="inline-link">explanation of benefits</a> after each fill, which is the easiest way to confirm you're actually being charged the tier you expect.</p>
     </div>
 
+    <!-- CARD 4: Deeper explainer / two-col -->
     <div class="card">
-      <div class="section-label">GLP-1 drugs specifically</div>
-      <div class="two-col">
-        <div class="range-box warn">
-          <div class="range-box-label">Ozempic / Wegovy</div>
-          <p>Most plans cover Ozempic for Type 2 diabetes but exclude Wegovy for weight loss. Same drug, different FDA approval — completely different coverage.</p>
+      <div class="section-label">The three paths, explained separately</div>
+      <h2>Tiering exception vs. formulary exception vs. prior authorization</h2>
+      <p style="margin-top: 12px;">These get blurred into one vague "ask for an exception" step almost everywhere. They're not the same request, and filing the wrong one wastes the clock below — much like confusing <a href="/in-network-vs-out-of-network" class="inline-link">in-network and out-of-network</a> rules can quietly double a bill for reasons that have nothing to do with the drug itself.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">Tiering exception</div>
+          <p>Your drug IS covered, but at an expensive tier. You're asking the plan to charge the lower copay of a cheaper tier because the preferred alternatives don't work for you.</p>
         </div>
         <div class="range-box warn">
-          <div class="range-box-label">Zepbound / Mounjaro</div>
-          <p>Same situation. Mounjaro may be covered for diabetes. Zepbound for weight loss is frequently excluded. Always check which diagnosis code your doctor is billing.</p>
+          <div class="range-box-label">Formulary exception</div>
+          <p>Your drug is NOT on the list at all. You're asking the plan to cover it anyway, usually because every formulary alternative is unsafe or ineffective for you.</p>
         </div>
       </div>
+      <p style="margin-top: 16px;">A <strong>prior authorization</strong> is a separate, third process — a review some drugs require before they're covered even if they're already on the formulary at a normal tier. You can read the full mechanics of that fight in our <a href="/prior-authorization-denied" class="inline-link">prior authorization guide</a>, since it follows its own approval criteria distinct from formulary status.</p>
       <div class="timing-box">
-        <h3>⚠️ What to do if your GLP-1 is excluded</h3>
-        <p>Ask your doctor if your diagnosis qualifies for the diabetes-indicated version of the drug. If you have a documented diabetes or pre-diabetes diagnosis, coverage may apply even if the weight-loss version is excluded.</p>
+        <h3>⚠️ THE FEDERAL DECISION CLOCK</h3>
+        <p>Once your prescriber submits a supporting statement, your plan must decide a <strong>standard</strong> exception request within <strong>72 hours</strong>. If your doctor marks the request <strong>expedited</strong> because waiting could seriously harm your health, the plan must decide within <strong>24 hours</strong>. This timeline applies to both tiering and formulary exceptions.</p>
       </div>
     </div>
 
+    <!-- CARD 5: Step-by-step -->
     <div class="card">
-      <div class="section-label">How to fight a formulary exclusion</div>
-      <h2>Requesting a formulary exception</h2>
+      <div class="section-label">How to actually file one</div>
+      <h2>Requesting a formulary or tiering exception</h2>
       <ol class="step-list">
-        <li><strong>Look up your plan's formulary first.</strong> Log into your insurer's website and search for your drug by name. Confirm it's actually excluded — not just in a high tier.</li>
-        <li><strong>Ask your doctor for a letter of medical necessity.</strong> This letter explains why the specific drug is required and why alternatives won't work for your condition.</li>
-        <li><strong>Submit a formulary exception request.</strong> This is a formal request asking your insurer to cover a non-formulary drug. Your doctor typically submits this directly.</li>
-        <li><strong>Ask about step therapy exceptions.</strong> If your plan requires you to try other drugs first, your doctor can sometimes get this waived by documenting you've already tried alternatives or that alternatives are medically inappropriate.</li>
-        <li><strong>Check the manufacturer's patient assistance program.</strong> Many drug companies offer coupons or assistance programs that reduce your cost to near zero — even without insurance coverage.</li>
-        <li><strong>Appeal if denied.</strong> A denied exception is not final. You have the right to an internal appeal and then an independent external review.</li>
+        <li><strong>Confirm the tier or absence first.</strong> Call your plan or have your pharmacist run a test claim so you know exactly which of the three paths above you need.</li>
+        <li><strong>Get your prescriber to write the supporting statement.</strong> This must explain, in clinical terms, why the formulary alternatives are ineffective, contraindicated, or unsafe for you specifically — a vague "patient prefers this drug" note will not qualify.</li>
+        <li><strong>Decide if it's urgent.</strong> If waiting for the standard timeline could seriously harm your health, say so explicitly and ask your prescriber to mark the request expedited — plans default to the slower 72-hour clock unless you ask.</li>
+        <li><strong>Submit through your plan's process.</strong> Most plans have a specific coverage determination form; using it (rather than a generic letter) avoids processing delays.</li>
+        <li><strong>Track the clock.</strong> Note the date your prescriber's statement was received by the plan — that's when the 72-hour or 24-hour window starts, not the date you first called.</li>
+        <li><strong>If denied, appeal immediately.</strong> You can file an internal appeal and, if that fails, an independent external review — see our <a href="/appeal-insurance-denial" class="inline-link">appeal guide</a> for the exact letter structure and evidence that moves a denial.</li>
       </ol>
     </div>
 
+    <!-- CARD 6: What to do right now -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Log into your insurance plan's website and find the formulary lookup tool — every major insurer has one. Search your exact drug name. If it's not covered or it's in Tier 4 or 5, call your doctor's office today and ask them to start a formulary exception request. Don't just accept the pharmacy's "not covered" message as the final word — it almost never is.
+        If a drug was rejected at the pharmacy counter, don't pay full price yet — call your plan, find out which of the three paths applies, and have your prescriber submit the supporting statement the same day. Ask explicitly whether your situation qualifies for expedited review; the 24-hour clock only starts if someone asks for it. If cost — not coverage — is the real obstacle, it's also worth checking whether a <a href="/health-insurance-subsidy" class="inline-link">subsidy adjustment</a> or a different plan tier at renewal would solve the problem for good.
       </div>
     </div>
 
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">What does "non-formulary" mean?</div>
-        <div class="faq-a">Non-formulary means the drug is not on your insurance plan's approved list. Your plan either won't cover it at all, or will only cover it at a very high cost tier. You can request an exception to get it covered at a lower tier.</div>
+        <div class="faq-q">What is a formulary in health insurance?</div>
+        <div class="faq-a">A formulary is the list of prescription drugs your health plan agrees to cover, organized into cost tiers. Drugs on the list are covered at your plan's normal cost-sharing rate; drugs left off it may not be covered at all unless you request an exception.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can my insurance change my drug's formulary tier mid-year?</div>
-        <div class="faq-a">Generally no — plans are restricted from moving a drug to a higher tier or removing it from the formulary mid-year except in specific circumstances like a drug being recalled or withdrawn from the market. However, your formulary resets every January 1 and can change significantly at renewal.</div>
+        <div class="faq-q">What happens if my medication isn't on the formulary?</div>
+        <div class="faq-a">You can pay full price out of pocket, ask your doctor about a formulary alternative that is covered, or have your prescriber file a formulary exception request asking the plan to cover the drug anyway on medical necessity grounds.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How long does a formulary exception take?</div>
-        <div class="faq-a">Standard exceptions must be decided within 72 hours. If your situation is urgent, request an expedited review — insurers are required to decide within 24 hours. Always ask your doctor to mark the request as urgent if you need the medication quickly.</div>
+        <div class="faq-q">What's the difference between a tiering exception and a formulary exception?</div>
+        <div class="faq-a">A tiering exception asks the plan to charge you the lower copay of a cheaper tier for a drug that's already covered. A formulary exception asks the plan to cover a drug that isn't on the list at all. They're filed differently and reviewed under the same timelines but are not interchangeable.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Is there a cheaper alternative if the exception is denied?</div>
-        <div class="faq-a">Often yes. GoodRx and similar discount programs sometimes price a drug lower than your insurance copay would be anyway. Mark Cuban's Cost Plus Drugs is another option for generics. Always compare the cash price against your insurance cost before assuming insurance is cheaper.</div>
+        <div class="faq-q">How long does a formulary exception take to get approved?</div>
+        <div class="faq-a">Under federal rules, standard formulary exception requests must get a decision within 72 hours of the plan receiving your prescriber's supporting statement. Expedited requests, where waiting could seriously harm your health, must be decided within 24 hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if my formulary exception is denied?</div>
+        <div class="faq-a">You can file an internal appeal, and if that's denied too, request an independent external review by a third party not affiliated with your insurer. Many plans allow you to request internal and external review at the same time when the request is expedited.</div>
       </div>
     </div>
 
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/prior-authorization-denied" class="related-chip">Prior Auth Denied →</a>
-        <a href="/why-did-insurance-deny-my-claim" class="related-chip">Claim Denied →</a>
-        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal →</a>
-        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance →</a>
-        <a href="/not-medically-necessary" class="related-chip">Not Medically Necessary →</a>
+        <a href="/prior-authorization-denied" class="related-chip">Prior Authorization Denied →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">How to Appeal a Denial →</a>
+        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+        <a href="/health-insurance-subsidy" class="related-chip">Health Insurance Subsidy →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any formulary term, tier definition, or drug coverage question in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
