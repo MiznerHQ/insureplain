@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Does In-Network vs Out-of-Network Mean? – InsurePlain</title>
-  <meta name="description" content="In-network means your insurance has a deal with that doctor. Out-of-network means they don't — and you pay a lot more. Here's exactly what it costs and what to do.">
+  <title>In-Network vs. Out-of-Network: What It Actually Costs You – InsurePlain</title>
+  <meta name="description" content="In-network and out-of-network don't just mean 'covered' or 'not covered.' Here's the allowed-amount math, balance billing, and when the No Surprises Act protects you.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.insureplain.com/in-network-vs-out-of-network">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "If I go to the ER out-of-network, am I protected from a big bill?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, yes. Under the federal No Surprises Act, emergency care must be covered as if it were in-network, no matter which hospital you end up at. Your cost-sharing (deductible, copay, coinsurance) is calculated using in-network rates, and the provider generally cannot balance bill you for the difference." } },
+      { "@type": "Question", "name": "My in-network doctor performed surgery at an out-of-network facility — what happens?", "acceptedAnswer": { "@type": "Answer", "text": "The No Surprises Act typically protects you when an out-of-network provider, like an anesthesiologist or assistant surgeon, treats you at an in-network facility without your knowledge. You should only owe your normal in-network cost-share for that provider. The facility itself may bill separately, so it's worth confirming the facility's network status in advance." } },
+      { "@type": "Question", "name": "Can a provider still balance bill me if my plan has no out-of-network benefits at all?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, outside of the situations the No Surprises Act covers. If your plan is an HMO or EPO with no out-of-network coverage, a non-emergency visit to an out-of-network provider can leave you responsible for the entire bill, not just a higher coinsurance share." } },
+      { "@type": "Question", "name": "I got a referral to an out-of-network specialist — will it be covered at the in-network rate?", "acceptedAnswer": { "@type": "Answer", "text": "Not automatically. A referral from your in-network doctor doesn't change the specialist's network status. You typically need your insurer to approve a formal network gap exception in advance, in writing, before the visit counts at the in-network rate." } },
+      { "@type": "Question", "name": "How do I check if a provider is in-network before my appointment, not after?", "acceptedAnswer": { "@type": "Answer", "text": "Call the member services number on your insurance card and ask the representative to confirm network status for that specific provider, location, and plan, then request a reference number for the call. Provider directories and search tools are frequently out of date." } }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -31,12 +46,15 @@
     h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
-    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 24px; }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     p { font-size: 16px; line-height: 1.75; color: var(--ink); }
     p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .range-box { padding: 16px; border-radius: 10px; }
     .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
@@ -55,10 +73,10 @@
     .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
     .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
     .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
-    .questions-list { list-style: none; padding: 0; margin-top: 8px; }
-    .questions-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; gap: 10px; }
-    .questions-list li:last-child { border-bottom: none; }
-    .q-num { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--accent); font-weight: 500; flex-shrink: 0; margin-top: 2px; }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
     .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
     .faq-item:last-child { border-bottom: none; }
     .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
@@ -84,112 +102,141 @@
       <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
       <a href="/" class="logo-text">insure<span>plain</span></a>
     </nav>
-    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; In-Network vs Out-of-Network</p>
-    <h1>What Does In-Network vs<br><em style="font-style:italic;color:var(--accent)">Out-of-Network Mean?</em></h1>
-    <span class="category-tag">Coverage Basics</span>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; In-Network vs. Out-of-Network</p>
+    <h1>In-Network vs. Out-of-Network<br><em style="font-style:italic;color:var(--accent)">What It Actually Costs You</em></h1>
+    <span class="category-tag">Health Insurance</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
 
+    <!-- CARD 1: What's actually happening -->
     <div class="card">
-      <div class="section-label">The plain-English answer</div>
-      <p>In-network means your insurance company has a contract with that doctor, hospital, or lab. They've agreed on discounted rates. You pay less because your insurer and the provider already have a deal.</p>
-      <p>Out-of-network means no contract exists. Your insurer hasn't agreed on rates with that provider. So you pay full price — or close to it — and your insurance may cover very little or nothing at all.</p>
-      <p>That's the whole thing. Network = contract = discount. No network = no contract = you pay.</p>
+      <div class="section-label">What's actually happening</div>
+      <p>In-network means a provider signed a contract with your insurer agreeing to accept a set, discounted rate for their services. Out-of-network means no such contract exists, so the provider can charge whatever they want.</p>
+      <p>That part is easy. What almost nobody explains clearly is what happens to the leftover money when a provider's charge is higher than what your insurer decides is reasonable. That gap has a name — the <strong>allowed amount</strong> — and whether you get stuck paying it depends on your plan type, the situation, and a federal law that changed the rules in 2022.</p>
+      <p>This guide walks through the actual math, when you're protected from the difference, and how to check network status before a bill shows up instead of after.</p>
     </div>
 
+    <!-- CARD 2: PAA -->
     <div class="card">
-      <div class="section-label">What it actually costs you</div>
-      <h2>The real price difference</h2>
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Does out-of-network mean I'm not covered at all?</div>
+          <div class="paa-a"><strong>Not necessarily.</strong> Many plans still pay something toward out-of-network care, just at a lower percentage and often only after a separate, higher deductible. Some plan types, like HMOs and EPOs, pay nothing for non-emergency out-of-network care.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Can my in-network doctor bill me an out-of-network rate?</div>
+          <div class="paa-a"><strong>No, not for their own services.</strong> An in-network provider agreed to the negotiated rate for everything they personally bill. Trouble usually comes from other providers involved in your care, like a lab or anesthesiologist, who may not be in-network even at an in-network facility.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Is a hospital in-network if my doctor is in-network?</div>
+          <div class="paa-a"><strong>Not automatically.</strong> Facilities and the individual providers working inside them are contracted separately. An in-network surgeon can operate at an out-of-network hospital, and an in-network hospital can have out-of-network anesthesiologists on staff.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Will my <a href="/eob-explained" class="inline-link">explanation of benefits</a> show if I was balance billed?</div>
+          <div class="paa-a"><strong>Yes, if you read it closely.</strong> Look for a line separating the "allowed amount" from the provider's billed charge — that difference is what an out-of-network provider may try to collect from you directly.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3: Main explainer -->
+    <div class="card">
+      <div class="section-label">The math behind the bill</div>
+      <h2>How the allowed amount actually works</h2>
+      <p style="margin-top: 12px;">Say an MRI is billed at $2,500. Your insurer decides the reasonable, negotiated cost for that scan is $900 — that $900 is the allowed amount. Here's where in-network and out-of-network split:</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>In-network:</strong> the provider agreed in advance to accept $900 as payment in full. You owe only your coinsurance or copay share of that $900. The remaining $1,600 gets written off — the provider can't come after you for it.</li>
+        <li><strong>Out-of-network, unprotected:</strong> the provider never agreed to $900. Your insurer might still pay a portion of it, say $400, but the provider can legally bill you for the rest — in this example, up to $2,100. That's <strong>balance billing</strong>.</li>
+        <li><strong>Out-of-network, protected by law:</strong> in specific situations covered by the federal No Surprises Act, the provider is barred from balance billing you even though they're out-of-network. You pay only your normal in-network cost-share.</li>
+        <li>Whether you land in the second or third bucket depends entirely on the circumstances of the visit, not on how the bill looks.</li>
+      </ul>
+      <p style="margin-top: 12px;">If a bill like this lands in your mailbox and you're not sure which bucket you're in, our guide to <a href="/surprise-medical-bill" class="inline-link">handling a surprise medical bill</a> walks through what to check first.</p>
+    </div>
+
+    <!-- CARD 4: Deeper explainer / two-col comparison -->
+    <div class="card">
+      <div class="section-label">When you're protected</div>
+      <h2>The No Surprises Act, in plain English</h2>
+      <p style="margin-top: 12px;">Since January 2022, federal law blocks balance billing in three specific situations, no matter what your plan normally covers out-of-network:</p>
       <div class="two-col" style="margin-top: 16px;">
-        <div class="range-box blue">
-          <div class="range-box-label">In-Network</div>
-          <p>You pay your normal copay or coinsurance — typically $20–$50 for a visit, or 10–30% of the bill after your deductible. Your insurer pays the rest at the contracted rate.</p>
+        <div class="range-box green">
+          <div class="range-box-label">Protected</div>
+          <p>Emergency room visits at any hospital. Air ambulance transport. Care from an out-of-network provider (anesthesiologist, radiologist, assistant surgeon) at an in-network facility, when you didn't choose them.</p>
         </div>
         <div class="range-box warn">
-          <div class="range-box-label">Out-of-Network</div>
-          <p>You may pay 40–60% of the bill — or the entire thing. Many plans have a separate, higher out-of-network deductible. Some plans (HMO, EPO) pay $0 out-of-network.</p>
+          <div class="range-box-label">Not protected</div>
+          <p>Choosing an out-of-network doctor or specialist on purpose. Non-emergency care at an out-of-network facility. Ground ambulance rides, which the law doesn't cover.</p>
         </div>
       </div>
-      <div class="timing-box" style="margin-top: 16px;">
-        <h3>⚠️ The deductible trap</h3>
-        <p>Out-of-network charges usually go toward a separate out-of-network deductible — not your regular one. That means even if you've already met your in-network deductible for the year, you start over at zero for out-of-network costs.</p>
+      <div class="timing-box">
+        <h3>⚠️ It's not automatic paperwork</h3>
+        <p>Providers and insurers are supposed to apply these protections without you filing anything. In practice, incorrect bills still go out. If you get billed for something on the "protected" list, that's typically a billing error worth disputing — see our guide on what to do if <a href="/doctor-bill-after-insurance" class="inline-link">a doctor bill shows up after insurance already paid</a>.</p>
       </div>
     </div>
 
+    <!-- CARD 5: Step-by-step -->
     <div class="card">
-      <div class="section-label">Plan type changes everything</div>
-      <h2>HMO vs PPO vs EPO</h2>
-      <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>HMO (Health Maintenance Organization)</strong> — Out-of-network coverage is $0 except in emergencies. You must stay in-network. Period.</li>
-        <li><strong>EPO (Exclusive Provider Organization)</strong> — Same as HMO for out-of-network: $0. No exceptions outside emergencies.</li>
-        <li><strong>PPO (Preferred Provider Organization)</strong> — Covers both in-network and out-of-network, but out-of-network costs significantly more. Most flexible plan type.</li>
-        <li><strong>POS (Point of Service)</strong> — Hybrid. You need a referral from your primary care doctor to see specialists, but out-of-network is covered at a higher cost.</li>
-      </ul>
-      <p style="margin-top: 16px; font-size: 14px; color: var(--muted);">Check your insurance card or the summary of benefits to find your plan type before booking any appointment.</p>
-    </div>
-
-    <div class="card">
-      <div class="section-label">Dentist and dental plans</div>
-      <h2>In-network vs out-of-network for dental</h2>
-      <p>Dental insurance works the same way but the numbers are starker. In-network dentists have agreed to accept lower fees. Out-of-network dentists bill whatever they want — your plan may only reimburse up to a set "usual and customary" fee, leaving you responsible for the gap.</p>
-      <p style="margin-top: 14px;">Example: Your out-of-network dentist charges $300 for a cleaning. Your plan's usual and customary rate is $180. You pay the $120 difference plus your normal coinsurance on top of that.</p>
-      <div class="timing-box" style="margin-top: 16px;">
-        <h3>📋 Always verify before your appointment</h3>
-        <p>Call your dental insurance and ask: "Is [dentist name] in-network for my plan?" Don't rely on the dentist's office — they sometimes have outdated information about which plans they accept.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="section-label">If you accidentally went out-of-network</div>
-      <h2>What to do now</h2>
+      <div class="section-label">Before the appointment</div>
+      <h2>How to confirm network status the right way</h2>
       <ol class="step-list">
-        <li><strong>Check if the provider is truly out-of-network.</strong> Log into your insurance portal and search the provider's NPI number. Sometimes a doctor is in-network even if the hospital they work at is not.</li>
-        <li><strong>Ask for an in-network exception.</strong> If your in-network doctor referred you to an out-of-network specialist, your insurer may be required to apply in-network cost-sharing. This is called a "continuity of care" or "network gap" exception.</li>
-        <li><strong>Check if surprise billing protections apply.</strong> Under the No Surprises Act, you cannot be billed out-of-network rates for emergency care or for out-of-network providers at in-network facilities without your written consent.</li>
-        <li><strong>Negotiate the bill directly.</strong> Out-of-network providers are not bound to your insurer's contracted rates. You can often negotiate a lower amount or request the in-network rate, especially for planned procedures.</li>
-        <li><strong>File an appeal if your claim was denied.</strong> If your insurer denied coverage, appeal in writing with documentation showing why the out-of-network visit was necessary.</li>
+        <li><strong>Call member services, not the provider.</strong> Use the number on your insurance card. Provider directories are frequently outdated by months.</li>
+        <li><strong>Give the exact provider name, specialty, and location</strong> — network status can vary by office location even for the same doctor.</li>
+        <li><strong>Ask specifically about facility fees</strong> if you're scheduling anything at a hospital or surgical center — the facility and the doctor are billed separately.</li>
+        <li><strong>Request a reference number</strong> for the call and write down the date, time, and representative's name.</li>
+        <li><strong>Ask about ancillary providers</strong> — anesthesiologists, pathologists, radiologists — who you likely won't choose yourself but who will bill separately.</li>
+        <li><strong>If anything is out-of-network, ask about a network gap exception</strong> before the appointment, not after. If your insurer denies the claim afterward anyway, our guide to <a href="/appeal-insurance-denial" class="inline-link">appealing an insurance denial</a> covers the next move, and <a href="/how-long-insurance-claim-takes" class="inline-link">how long that review typically takes</a>.</li>
       </ol>
     </div>
 
+    <!-- CARD 6: What to do right now -->
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Before your next appointment, log into your insurance company's website and use their "Find a Doctor" tool to confirm your provider is in-network. If you're already dealing with an out-of-network bill, call your insurer first and ask about exceptions before you pay anything. If you have an HMO or EPO, staying in-network is not optional — it's the difference between a $30 copay and a $3,000 bill.
+        If you have an appointment coming up, call your insurer today and confirm network status in writing before you go — don't rely on the provider's website. If you're choosing a plan during open enrollment, check the network size for the doctors you already use before you compare premiums; a cheaper plan with a thin network can cost more overall. Our <a href="/marketplace-insurance" class="inline-link">marketplace insurance guide</a> covers how to check network size during enrollment.
       </div>
     </div>
 
+    <!-- CARD 7: FAQ -->
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
-        <div class="faq-q">Does out-of-network care count toward my deductible?</div>
-        <div class="faq-a">Sometimes — but usually toward a separate, higher out-of-network deductible, not your regular one. Check your Summary of Benefits and Coverage (SBC) for the exact numbers. Some plans have a combined deductible that applies to both; most don't.</div>
+        <div class="faq-q">If I go to the ER out-of-network, am I protected from a big bill?</div>
+        <div class="faq-a">In most cases, yes. Under the federal No Surprises Act, emergency care must be covered as if it were in-network, no matter which hospital you end up at. Your cost-sharing is calculated using in-network rates, and the provider generally cannot balance bill you for the difference.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What does "out-of-network cost share" mean?</div>
-        <div class="faq-a">Cost share is the portion of the bill you're responsible for after insurance pays its part. Out-of-network cost share is almost always higher than in-network — often 40–60% versus 10–30%. Some plans set it at 100%, meaning they pay nothing out-of-network.</div>
+        <div class="faq-q">My in-network doctor performed surgery at an out-of-network facility — what happens?</div>
+        <div class="faq-a">The No Surprises Act typically protects you when an out-of-network provider, like an anesthesiologist or assistant surgeon, treats you at an in-network facility without your knowledge. You should only owe your normal in-network cost-share for that provider. The facility itself may bill separately, so it's worth confirming the facility's network status in advance.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Can I be balance billed by an out-of-network provider?</div>
-        <div class="faq-a">Yes — with limits. Balance billing means the provider bills you for the difference between what your insurer paid and their full charge. The No Surprises Act (effective 2022) bans balance billing in emergencies and for out-of-network providers at in-network facilities, but it doesn't cover all situations. Scheduled out-of-network visits can still result in balance billing.</div>
+        <div class="faq-q">Can a provider still balance bill me if my plan has no out-of-network benefits at all?</div>
+        <div class="faq-a">Yes, outside of the situations the No Surprises Act covers. If your plan is an HMO or EPO with no out-of-network coverage, a non-emergency visit to an out-of-network provider can leave you responsible for the entire bill, not just a higher coinsurance share.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How do I find out if my doctor is in-network?</div>
-        <div class="faq-a">Use your insurance company's online provider directory and search by the doctor's name and NPI number. Always call your insurer to confirm — directories can be outdated. Also ask the doctor's office to verify your specific plan, not just the insurance company name.</div>
+        <div class="faq-q">I got a referral to an out-of-network specialist — will it be covered at the in-network rate?</div>
+        <div class="faq-a">Not automatically. A referral from your in-network doctor doesn't change the specialist's network status. You typically need your insurer to approve a formal network gap exception in advance, in writing, before the visit counts at the in-network rate.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I check if a provider is in-network before my appointment, not after?</div>
+        <div class="faq-a">Call the member services number on your insurance card and ask the representative to confirm network status for that specific provider, location, and plan, then request a reference number for the call. Provider directories and search tools are frequently out of date.</div>
       </div>
     </div>
 
+    <!-- CARD 8: Related guides -->
     <div class="card">
       <div class="section-label">Related guides</div>
       <div class="related">
-        <a href="/deductible-explained" class="related-chip">Deductible Explained →</a>
-        <a href="/copay-vs-coinsurance" class="related-chip">Copay vs Coinsurance →</a>
-        <a href="/out-of-pocket-maximum" class="related-chip">Out-of-Pocket Max →</a>
-        <a href="/surprise-medical-bill" class="related-chip">Surprise Bills →</a>
+        <a href="/surprise-medical-bill" class="related-chip">Surprise Medical Bill →</a>
+        <a href="/doctor-bill-after-insurance" class="related-chip">Doctor Bill After Insurance →</a>
+        <a href="/eob-explained" class="related-chip">EOB Explained →</a>
+        <a href="/appeal-insurance-denial" class="related-chip">Appeal a Denial →</a>
       </div>
     </div>
 
     <div class="tool-cta">
       <h3>Decode any insurance term instantly</h3>
-      <p>Use our free AI-powered tool to look up any network term, EOB line item, or policy concept in plain English.</p>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
       <a href="/">Open the Decoder →</a>
     </div>
 
