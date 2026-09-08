@@ -17,34 +17,42 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Can I name my minor child as my life insurance beneficiary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Insurers will let you list a minor child as beneficiary on the form, but they cannot legally pay a death benefit directly to someone under 18. If a minor is still named when a claim is filed and no trust or custodian is in place, the funds typically go into a court-supervised guardianship account until the child turns 18, which is slower and more expensive than naming a trust or UTMA custodian in advance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a beneficiary designation override my will?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Life insurance proceeds are a contract between you and the insurer, not a probate asset, so the person named on the policy is paid directly regardless of what your will says. An outdated designation from an ex-spouse or estranged relative can legally override even a notarized, recently updated will."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a beneficiary be disqualified for causing my death?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every state has some version of a slayer statute that automatically disqualifies a beneficiary who is found to have intentionally caused the insured's death, regardless of what the policy says. In that case the payout is treated as if that beneficiary predeceased you, and it passes to the next eligible beneficiary or contingent beneficiary in line."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if my named beneficiary predeceases me and I never updated it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your only primary beneficiary has died and you named a contingent beneficiary, the payout passes to them. If you named no contingent beneficiary, most insurers treat the policy as if you named no one at all, and the death benefit goes to your estate and typically enters probate."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "What happens if I don't name a beneficiary on my life insurance policy?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "If no beneficiary is named, or all named beneficiaries have passed away, the death benefit typically goes to your estate instead. That usually means the payout goes through probate, which can delay distribution and expose the funds to creditors or estate taxes depending on your state."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I name more than one beneficiary on a life insurance policy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, most insurers let you name multiple primary beneficiaries and assign each a specific percentage of the death benefit. You can also name multiple contingent beneficiaries in case a primary beneficiary is unavailable to receive the payout."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does my beneficiary need to know they're listed on my policy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, insurers generally don't require your beneficiary's knowledge or consent for you to name them. However, it's worth telling them so they know to file a claim and can locate the policy details when the time comes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can a beneficiary designation override my will?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In most cases, yes — the beneficiary named directly on the policy typically takes priority over instructions in a will. This is why keeping your beneficiary designations updated after major life events like divorce or remarriage matters as much as updating your will."
         }
       }
     ]
@@ -74,6 +82,7 @@
     h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
     h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
     .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
     .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
     .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
     .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
@@ -132,13 +141,14 @@
     <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Life Insurance</p>
     <h1>What Is a Life Insurance<br>Beneficiary?</h1>
     <span class="category-tag">Life Insurance</span>
-    <p style="font-family:'DM Mono',monospace;font-size:12px;color:var(--muted);margin-bottom:20px;">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated July 2026</p>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
     <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Coverage, pricing, and eligibility depend on your policy terms, insurer, state, and individual circumstances. Always consult a licensed insurance professional about your specific situation.</div>
 
     <div class="card">
       <div class="section-label">What's actually happening</div>
-      <p>You bought a life insurance policy — maybe years ago — and named a beneficiary at the time. Life has changed since then: a marriage, a divorce, a new child, a falling out. Now you're wondering if the person listed on your policy is still who you'd actually want receiving the payout.</p>
-      <p>A beneficiary is simply the person or entity your insurer pays when you die. Who you named, how you named them, and whether you've kept it updated all directly determine where that money goes — sometimes overriding what your will says entirely.</p>
+      <p>Most people fill out the beneficiary section of a life insurance application once, file the paperwork away, and never think about it again. That single form ends up carrying more legal weight than almost anything else you'll sign — it decides, by itself, who gets paid when you die, no matter what any other document says.</p>
+      <p>The problem is that the designation only works the way you assume it does in the simple case: one adult beneficiary, still alive, still the person you'd choose today. Once real life gets more complicated — a minor child, a divorce, an estranged relative you never removed — the form can quietly stop doing what you think it's doing, and most people don't find out until a claim is already being filed.</p>
+      <p>This guide covers what a beneficiary designation legally is, and the specific situations where it fails silently.</p>
     </div>
 
     <div class="card">
@@ -151,46 +161,46 @@
         </div>
         <div class="paa-box">
           <div class="paa-q">WHAT'S THE DIFFERENCE BETWEEN A PRIMARY AND CONTINGENT BENEFICIARY?</div>
-          <div class="paa-a"><strong>A primary beneficiary is first in line to receive the payout; a contingent beneficiary only receives it if the primary is unavailable.</strong> "Unavailable" usually means they passed away before you or cannot be located.</div>
+          <div class="paa-a"><strong>A primary beneficiary is first in line to receive the payout; a contingent beneficiary only receives it if the primary is unavailable.</strong> "Unavailable" usually means they passed away before you, can't be located, or were legally disqualified.</div>
         </div>
         <div class="paa-box">
-          <div class="paa-q">HOW DO I CHANGE MY LIFE INSURANCE BENEFICIARY?</div>
-          <div class="paa-a"><strong>Most insurers let you change your beneficiary by submitting a beneficiary change form</strong>, either through your online account, your agent, or by mailing a signed form directly to the insurer.</div>
+          <div class="paa-q">CAN I NAME A TRUST AS MY BENEFICIARY?</div>
+          <div class="paa-a"><strong>Yes, and it's often the cleanest way to control how funds are distributed</strong> — especially if a minor child, a dependent who also relies on <a href="/long-term-care-insurance" class="inline-link">long-term care coverage</a>, or a blended family is involved. The trust receives the payout directly and distributes it according to terms you set in advance.</div>
         </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="section-label">Types of beneficiaries</div>
-      <h2>Primary vs. contingent — and revocable vs. irrevocable</h2>
-      <p style="margin-top: 12px;">Every policy structures its beneficiaries in tiers, and the terms attached to each name determine how much control you retain over the designation going forward.</p>
+      <div class="section-label">Where designations quietly stop working</div>
+      <h2>Three ways your beneficiary form can fail you</h2>
+      <p style="margin-top: 12px;">Every insurer accepts the form as filled out, even when it's set up in a way that won't actually work when a claim is filed. These are the three most common traps, and none of them show up as an error until someone is trying to collect.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Minors can't be paid directly.</strong> You can legally name a minor child as beneficiary and the insurer will accept the form — but insurers cannot cut a check directly to someone under 18. Without a trust or UTMA custodian named in advance, the payout goes into a court-supervised guardianship account, which is slower, costs money in legal fees, and hands a court oversight of funds you intended for your child.</li>
+        <li><strong>The designation beats your will, every time.</strong> Life insurance proceeds are a direct contract between you and the insurer, not a probate asset — so the policy pays whoever is named on it, regardless of what your will says. A notarized, recently updated will has no power to override an outdated beneficiary form.</li>
+        <li><strong>Divorce doesn't automatically remove an ex.</strong> Whether an ex-spouse is automatically dropped as beneficiary after divorce depends on your state and, for employer-provided group policies, on federal law that can override state rules entirely. That distinction is detailed in our <a href="/life-insurance-after-divorce" class="inline-link">guide to life insurance after divorce</a> — worth reading if you've been through one and haven't touched your designation since.</li>
+        <li><strong>A beneficiary who predeceases you with no backup named.</strong> If your only primary beneficiary dies before you and you never named a contingent beneficiary, the policy is treated as if you named no one — the payout defaults to your estate.</li>
+        <li><strong>Naming a trust for more control.</strong> If you're already using an <a href="/insurance-rider-explained" class="inline-link">insurance rider</a> to customize your coverage, it's worth applying the same intentionality to your beneficiary designation — a trust can hold the funds and release them on your terms instead of a lump sum.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Structure and disqualification</div>
+      <h2>Revocable vs. irrevocable — and when a beneficiary loses the right to collect</h2>
+      <p style="margin-top: 12px;">Beyond primary and contingent, every beneficiary designation also carries a control level that determines whether you can change your mind later.</p>
       <div class="two-col" style="margin-top: 16px;">
         <div class="range-box blue">
-          <div class="range-box-label">Primary beneficiary</div>
-          <p>First in line for the death benefit. You can name one person or split the payout by percentage across multiple primary beneficiaries.</p>
+          <div class="range-box-label">Revocable beneficiary</div>
+          <p>The default for most policies. You can change this beneficiary anytime, without their knowledge or consent, simply by submitting a new form.</p>
         </div>
         <div class="range-box warn">
-          <div class="range-box-label">Contingent beneficiary</div>
-          <p>Receives the payout only if all primary beneficiaries are unavailable. Acts as a backup layer so the money doesn't default to your estate.</p>
+          <div class="range-box-label">Irrevocable beneficiary</div>
+          <p>Must approve any change to the designation, and often any change to the policy itself. This is uncommon and usually tied to a legal agreement, such as a divorce settlement or child support order.</p>
         </div>
       </div>
       <div class="timing-box">
-        <h3>⚠️ REVOCABLE VS. IRREVOCABLE</h3>
-        <p>Most beneficiaries are revocable, meaning you can change them anytime without their consent. An irrevocable beneficiary must approve any changes to the designation or the policy itself — this is less common and usually tied to a legal agreement, like a divorce settlement.</p>
+        <h3>⚠️ SLAYER STATUTE — A TRAP COMPETITORS DON'T MENTION</h3>
+        <p>Every state has some version of a slayer statute: a law that automatically disqualifies a beneficiary who is found to have intentionally caused the insured's death, regardless of what the policy paperwork says. The disqualified beneficiary is treated as if they predeceased you, and the payout passes to the next eligible beneficiary in line — or to your estate if none exists.</p>
       </div>
-    </div>
-
-    <div class="card">
-      <div class="section-label">Why this matters more than people think</div>
-      <h2>Beneficiary designations can override your will</h2>
-      <p style="margin-top: 12px;">Life insurance proceeds generally bypass probate and go directly to whoever is named on the policy — regardless of what your will says. This trips people up after a divorce or remarriage: an ex-spouse named years ago can still legally receive the payout if the designation was never updated.</p>
-      <ul class="symptom-list" style="margin-top: 12px;">
-        <li><strong>No named beneficiary</strong> — the payout typically defaults to your estate and goes through probate, which can delay distribution.</li>
-        <li><strong>Outdated designation</strong> — an ex-spouse, estranged relative, or even a deceased person can still be legally entitled to the payout if never updated.</li>
-        <li><strong>Minor children as beneficiaries</strong> — insurers generally won't pay a death benefit directly to a minor; a guardian or trust is usually required.</li>
-        <li><strong>Naming a trust</strong> — some people name a trust as beneficiary for more control over how and when funds are distributed, especially with minor children involved.</li>
-        <li><strong>Estate planning overlap</strong> — beneficiary designations work alongside broader documents like a <a href="/insurance-rider-explained" class="inline-link">policy rider</a> or your will, but typically take precedence for the payout itself.</li>
-      </ul>
     </div>
 
     <div class="card">
@@ -199,37 +209,42 @@
       <ol class="step-list">
         <li><strong>Log into your policy's online portal</strong> if your insurer offers one — many allow beneficiary changes without any paperwork.</li>
         <li><strong>Request a beneficiary change form</strong> from your agent or insurer if online access isn't available.</li>
-        <li><strong>Decide primary vs. contingent</strong> and how you want the payout split if naming more than one person.</li>
-        <li><strong>Fill out the form completely</strong> — full legal names, dates of birth, and relationship to you are typically required.</li>
-        <li><strong>Submit and confirm</strong> — request written confirmation from the insurer that the change was processed and is on file.</li>
-        <li><strong>Review after major life events</strong> — marriage, divorce, a new child, or a death in the family are all good triggers to double-check your designation.</li>
+        <li><strong>Decide primary vs. contingent</strong>, and whether a trust makes more sense than an individual for a minor or dependent with special needs.</li>
+        <li><strong>Fill out the form completely</strong> — full legal names, dates of birth, and relationship to you are typically required, along with contingent beneficiary details.</li>
+        <li><strong>Submit and confirm in writing</strong> — request written confirmation from the insurer that the change was processed and is on file, not just a verbal confirmation over the phone.</li>
+        <li><strong>Review after every major life event</strong> — marriage, divorce, a new child, or a death in the family are all good triggers to double-check your designation, along with any change to your <a href="/term-life-vs-whole-life" class="inline-link">term or whole life policy</a> itself.</li>
+        <li><strong>Check what happens if you lapse coverage</strong> — a beneficiary designation only matters while the policy is active, so if you're behind on premiums, see <a href="/life-insurance-stop-paying" class="inline-link">what happens if you stop paying</a> before assuming the designation still applies.</li>
       </ol>
     </div>
 
     <div class="card">
       <div class="section-label">What to do right now</div>
       <div class="next-steps">
-        Pull up your current policy documents and confirm exactly who is listed as your primary and contingent beneficiary today. If it's been more than a couple of years, or if your life circumstances have changed since you last checked, contact your insurer directly to update the designation — it's usually a quick form, not a full underwriting process.
+        Pull up your current policy documents and confirm exactly who is listed as primary and contingent beneficiary today — not who you think is listed. If a minor is named with no trust or custodian behind them, if your only primary beneficiary has passed away, or if you've been through a divorce since the form was last updated, contact your insurer directly. Updating a designation is usually a quick form, not a full underwriting process, and it's free.
       </div>
     </div>
 
     <div class="card">
       <div class="section-label">Frequently asked questions</div>
       <div class="faq-item">
+        <div class="faq-q">Can I name my minor child as my life insurance beneficiary?</div>
+        <div class="faq-a">Insurers will let you list a minor child as beneficiary on the form, but they cannot legally pay a death benefit directly to someone under 18. If a minor is still named when a claim is filed and no trust or custodian is in place, the funds typically go into a court-supervised guardianship account until the child turns 18, which is slower and more expensive than naming a trust or UTMA custodian in advance.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does a beneficiary designation override my will?</div>
+        <div class="faq-a">Yes. Life insurance proceeds are a contract between you and the insurer, not a probate asset, so the person named on the policy is paid directly regardless of what your will says. An outdated designation from an ex-spouse or estranged relative can legally override even a notarized, recently updated will.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can a beneficiary be disqualified for causing my death?</div>
+        <div class="faq-a">Yes. Every state has some version of a slayer statute that automatically disqualifies a beneficiary who is found to have intentionally caused the insured's death, regardless of what the policy says. In that case the payout is treated as if that beneficiary predeceased you, and it passes to the next eligible beneficiary or contingent beneficiary in line.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens if my named beneficiary predeceases me and I never updated it?</div>
+        <div class="faq-a">If your only primary beneficiary has died and you named a contingent beneficiary, the payout passes to them. If you named no contingent beneficiary, most insurers treat the policy as if you named no one at all, and the death benefit goes to your estate and typically enters probate.</div>
+      </div>
+      <div class="faq-item">
         <div class="faq-q">What happens if I don't name a beneficiary on my life insurance policy?</div>
         <div class="faq-a">If no beneficiary is named, or all named beneficiaries have passed away, the death benefit typically goes to your estate instead. That usually means the payout goes through probate, which can delay distribution and expose the funds to creditors or estate taxes depending on your state.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Can I name more than one beneficiary on a life insurance policy?</div>
-        <div class="faq-a">Yes, most insurers let you name multiple primary beneficiaries and assign each a specific percentage of the death benefit. You can also name multiple contingent beneficiaries in case a primary beneficiary is unavailable to receive the payout.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Does my beneficiary need to know they're listed on my policy?</div>
-        <div class="faq-a">No, insurers generally don't require your beneficiary's knowledge or consent for you to name them. However, it's worth telling them so they know to file a claim and can locate the policy details when the time comes.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Can a beneficiary designation override my will?</div>
-        <div class="faq-a">In most cases, yes — the beneficiary named directly on the policy typically takes priority over instructions in a will. This is why keeping your beneficiary designations updated after major life events like divorce or remarriage matters as much as updating your will.</div>
       </div>
     </div>
 
@@ -237,9 +252,9 @@
       <div class="section-label">Related guides</div>
       <div class="related">
         <a href="/term-life-vs-whole-life" class="related-chip">Term vs Whole Life →</a>
+        <a href="/life-insurance-after-divorce" class="related-chip">Life Insurance After Divorce →</a>
         <a href="/insurance-rider-explained" class="related-chip">Insurance Riders →</a>
         <a href="/life-insurance-stop-paying" class="related-chip">If You Stop Paying →</a>
-        <a href="/long-term-care-insurance" class="related-chip">Long-Term Care →</a>
       </div>
     </div>
 
