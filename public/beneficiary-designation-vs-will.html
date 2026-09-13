@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beneficiary Designation vs. Will: Which One Actually Wins – InsurePlain</title>
+  <meta name="description" content="A beneficiary designation usually beats a will — but outdated forms, missing updates, and predeceased beneficiaries can still send your money the wrong way.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.insureplain.com/beneficiary-designation-vs-will">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does a beneficiary designation override a will?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, for contract-based assets like life insurance policies, 401(k)s, and IRAs, the beneficiary designation on file with the company controls the payout, regardless of what your will says. Your will only governs assets that don't already have a named beneficiary." } },
+      { "@type": "Question", "name": "What happens if my named beneficiary died before me and I never updated the form?", "acceptedAnswer": { "@type": "Answer", "text": "The payout goes to your contingent (secondary) beneficiary if one is listed. If no contingent beneficiary is named, the funds typically go to your estate and get distributed through probate according to your will or state intestacy law, adding months to the process." } },
+      { "@type": "Question", "name": "Can I update my beneficiary designation without changing my will?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and you should treat them as completely separate documents. Updating your will does not automatically update your beneficiary forms — you have to contact each insurer or plan administrator individually and submit a new designation." } },
+      { "@type": "Question", "name": "Why would an old employer still have my beneficiary form on file?", "acceptedAnswer": { "@type": "Answer", "text": "Group life insurance and retirement plan beneficiary designations stay attached to that specific policy or account even after you leave the job, unless the coverage was cancelled. If you never filed an update before leaving, that outdated form can still control the payout years later." } },
+      { "@type": "Question", "name": "Does divorce automatically remove my ex-spouse as beneficiary?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the asset type and state. Some states have revocation-on-divorce laws for certain accounts, but many life insurance policies are not covered by these laws and require you to file a manual update. Never assume a divorce decree alone changes the beneficiary form." } }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #FFFFFF; --ink: #0D1B2A; --muted: #6B7A8D;
+      --accent: #1B4B8A; --accent-light: #EAF0FA; --accent-border: #B5CEFA;
+      --warn: #993C1D; --warn-light: #FAECE7; --warn-border: #F5C4B3;
+      --success-light: #EAF3DE; --success-border: #C0DD97; --success-text: #27500A;
+      --amber: #92400E; --amber-light: #FEF3C7; --amber-border: #F59E0B;
+      --border: #DDE3EC; --white: #FFFFFF;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: 'DM Sans', sans-serif; min-height: 100vh; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    nav { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; fill: white; }
+    .logo-text { font-family: 'DM Mono', monospace; font-size: 16px; font-weight: 500; color: var(--ink); text-decoration: none; }
+    .logo-text span { color: var(--accent); }
+    .tagline { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-bottom: 32px; margin-left: 42px; }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: 20px; font-family: 'DM Mono', monospace; }
+    .breadcrumb a { color: var(--accent); text-decoration: none; }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; letter-spacing: -0.5px; margin-bottom: 8px; }
+    h2 { font-family: 'DM Serif Display', serif; font-size: clamp(20px, 3vw, 26px); line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 12px; color: var(--ink); }
+    h3 { font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 500; margin-bottom: 8px; color: var(--ink); }
+    .category-tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+    .byline { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--muted); margin-bottom: 20px; }
+    .disclaimer { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 14px 18px; margin-bottom: 36px; font-size: 13px; color: var(--amber); line-height: 1.5; }
+    .card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px; margin-bottom: 20px; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+    p { font-size: 16px; line-height: 1.75; color: var(--ink); }
+    p + p { margin-top: 14px; }
+    .inline-link { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-border); text-underline-offset: 3px; }
+    .inline-link:hover { text-decoration-color: var(--accent); }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .range-box { padding: 16px; border-radius: 10px; }
+    .range-box.warn { background: var(--warn-light); border: 1px solid var(--warn-border); }
+    .range-box.blue { background: var(--accent-light); border: 1px solid var(--accent-border); }
+    .range-box.green { background: var(--success-light); border: 1px solid var(--success-border); }
+    .range-box-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .range-box.warn .range-box-label { color: var(--warn); }
+    .range-box.blue .range-box-label { color: var(--accent); }
+    .range-box.green .range-box-label { color: var(--success-text); }
+    .range-box p { font-size: 14px; line-height: 1.65; }
+    .symptom-list { list-style: none; padding: 0; }
+    .symptom-list li { font-size: 14px; color: var(--ink); line-height: 1.6; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .symptom-list li:last-child { border-bottom: none; }
+    .symptom-list li::before { content: "→ "; color: var(--muted); }
+    .timing-box { background: var(--amber-light); border: 1px solid var(--amber-border); border-radius: 10px; padding: 18px 20px; margin-top: 16px; }
+    .timing-box h3 { font-size: 14px; color: var(--amber); font-family: 'DM Mono', monospace; letter-spacing: 0.5px; margin-bottom: 8px; }
+    .timing-box p { font-size: 14px; color: #78350F; line-height: 1.65; }
+    .next-steps { background: var(--success-light); border: 1px solid var(--success-border); border-radius: 10px; padding: 20px; font-size: 15px; line-height: 1.7; color: var(--success-text); }
+    .paa-box { background: var(--accent-light); border: 1.5px solid var(--accent-border); border-radius: 10px; padding: 16px 20px; margin-bottom: 16px; }
+    .paa-q { font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+    .paa-a { font-size: 15px; color: var(--ink); line-height: 1.65; }
+    .paa-a strong { color: var(--ink); }
+    .faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 16px; font-weight: 500; color: var(--ink); margin-bottom: 8px; }
+    .faq-a { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .tool-cta { background: var(--accent); color: white; border-radius: 12px; padding: 28px; margin-top: 32px; text-align: center; }
+    .tool-cta h3 { font-family: 'DM Serif Display', serif; font-size: 24px; margin-bottom: 8px; color: white; }
+    .tool-cta p { font-size: 14px; opacity: 0.85; margin-bottom: 18px; color: white; }
+    .tool-cta a { display: inline-block; background: white; color: var(--accent); font-weight: 500; text-decoration: none; padding: 12px 28px; border-radius: 8px; font-family: 'DM Mono', monospace; font-size: 14px; }
+    .related { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 4px; }
+    .related-chip { display: block; padding: 12px 16px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; text-decoration: none; font-size: 14px; color: var(--ink); font-family: 'DM Mono', monospace; transition: border-color 0.15s; }
+    .related-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .step-list { list-style: none; padding: 0; margin-top: 12px; counter-reset: steps; }
+    .step-list li { font-size: 15px; color: var(--ink); line-height: 1.65; padding: 12px 0 12px 48px; border-bottom: 1px solid var(--border); position: relative; counter-increment: steps; }
+    .step-list li:last-child { border-bottom: none; }
+    .step-list li::before { content: counter(steps); position: absolute; left: 0; top: 12px; width: 28px; height: 28px; background: var(--accent-light); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); font-family: 'DM Mono', monospace; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    @media (max-width: 480px) { .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <a href="/" class="logo-text">insure<span>plain</span></a>
+    </nav>
+    <div class="tagline">Insurance, finally explained. No agent required.</div>
+
+    <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/guides">Insurance Guides</a> &rsaquo; Beneficiary Designation vs. Will</p>
+    <h1>Beneficiary Designation vs. Will<br><em style="font-style:italic;color:var(--accent)">Which One Actually Wins</em></h1>
+    <span class="category-tag">Life Insurance</span>
+    <p class="byline">Written by the InsurePlain Editorial Team · Reviewed for accuracy · Last updated September 2026</p>
+    <div class="disclaimer">⚠️ <strong>Educational only.</strong> InsurePlain does not provide insurance, legal, or financial advice. Always consult a qualified insurance professional about your specific situation.</div>
+
+    <div class="card">
+      <div class="section-label">What's actually happening</div>
+      <p>If you've searched this question, you've probably already found the short answer: the beneficiary designation wins. Life insurance policies, 401(k)s, IRAs, and most annuities are contracts, and contracts pay out according to the form on file with the company — not according to your will, no matter how recently it was signed or how clearly it states your wishes.</p>
+      <p>That much is true and settled. But it's also where almost every source stops, and it's the point where things actually go wrong for real families. Knowing that the designation "wins" doesn't protect you if the designation itself is outdated, incomplete, or pointing at someone who's no longer alive to receive it.</p>
+      <p>This is the gap InsurePlain exists to close: not just telling you which document controls, but walking through the specific, common ways that document quietly stops matching what you'd actually want — and what to do about it before it becomes your family's problem.</p>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Quick answers</div>
+      <h2>What people ask most</h2>
+      <div style="margin-top: 16px;">
+        <div class="paa-box">
+          <div class="paa-q">Can my will name a different beneficiary than my policy?</div>
+          <div class="paa-a"><strong>Yes, and if it does, the policy wins.</strong> Insurers and plan administrators are legally obligated to pay the person named on their own records, regardless of instructions written elsewhere.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">Do I need a lawyer to update a beneficiary designation?</div>
+          <div class="paa-a"><strong>No.</strong> Most updates happen directly through the insurer's or plan administrator's beneficiary change form, either online or on paper — no attorney required.</div>
+        </div>
+        <div class="paa-box">
+          <div class="paa-q">How often should I check my beneficiary forms?</div>
+          <div class="paa-a"><strong>After every major life event</strong> — marriage, divorce, a new child, a death in the family, or a job change — and as a habit, every couple of years even if nothing's changed.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Why the contract wins</div>
+      <h2>The legal reasoning behind it</h2>
+      <p style="margin-top: 12px;">A life insurance policy is a contract between you and the insurer. When you name a beneficiary, you're instructing the insurer directly on who to pay — separate from, and outside of, your estate. A will, by contrast, only controls property that passes through your estate. Since a policy with a named beneficiary never enters the estate, the will has no legal authority over it.</p>
+      <ul class="symptom-list" style="margin-top: 12px;">
+        <li><strong>Contract beats testament</strong> — the insurer's obligation is to the named beneficiary on file, not to your heirs generally.</li>
+        <li><strong>This applies broadly</strong> — life insurance, 401(k)s, IRAs, payable-on-death bank accounts, and most annuities all work the same way.</li>
+        <li><strong>Your will still matters</strong> — for property that doesn't have a named beneficiary, like a home, a car, or personal belongings.</li>
+        <li><strong>Updating a will changes nothing here</strong> — see <a href="/does-life-insurance-go-through-probate.html" class="inline-link">does life insurance go through probate</a> for how this plays out when there's no valid designation at all.</li>
+        <li><strong>State community-property rules can complicate this</strong> — a spouse may have a legal claim on part of a policy even if they're not the named beneficiary.</li>
+        <li><strong>"Estate" as beneficiary is its own trap</strong> — naming your estate directly routes the payout into probate anyway, defeating the purpose of having a designation.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Where it goes wrong in practice</div>
+      <h2>Two ways a "correct" answer still fails you</h2>
+      <p style="margin-top: 12px;">Knowing the designation wins doesn't help if the designation itself is broken. Here are the two most common ways that happens.</p>
+      <div class="two-col" style="margin-top: 16px;">
+        <div class="range-box blue">
+          <div class="range-box-label">The outdated form</div>
+          <p>You took a job at 24, filled out a beneficiary form for a small group life policy, and never touched it again. Fifteen years, two relationships, and one marriage later, that form still names an ex or a parent — because leaving the job doesn't erase it if the coverage carried forward or a new employer never asked you to re-file.</p>
+        </div>
+        <div class="range-box warn">
+          <div class="range-box-label">The un-cross-referenced will</div>
+          <p>Your will, drafted years after your policy, names your spouse and children as you intend. But it never mentions the policy directly, and nobody checked whether the actual beneficiary form matched. The will reads correctly. The payout doesn't follow it.</p>
+        </div>
+      </div>
+      <div class="timing-box">
+        <h3>⚠️ WHEN THE NAMED BENEFICIARY IS ALREADY GONE</h3>
+        <p>If your primary beneficiary predeceased you and no contingent (backup) beneficiary is listed, the payout typically defaults to your estate — meaning it goes through probate after all, governed by your will or, if you have none, your state's intestacy laws. If your will and your contingent designation name different people, the contingent designation still controls, because it's still part of the contract, not the will.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Fix it before it's a problem</div>
+      <h2>How to audit your own designations</h2>
+      <ol class="step-list">
+        <li><strong>List every account with a beneficiary form.</strong> Life insurance, 401(k)s, old employer plans, IRAs, and any payable-on-death bank accounts.</li>
+        <li><strong>Request a current beneficiary confirmation from each one.</strong> Most insurers and plan administrators will send this on request — don't assume you remember correctly.</li>
+        <li><strong>Compare each form against your current wishes,</strong> not against your will. The two documents are separate and updating one never updates the other.</li>
+        <li><strong>Name a contingent beneficiary on every form,</strong> not just a primary. This closes the predeceased-beneficiary gap covered above.</li>
+        <li><strong>Never name "my estate" as beneficiary</strong> unless you specifically intend for the asset to go through probate.</li>
+        <li><strong>Re-check after every major life event</strong> — see <a href="/life-insurance-after-divorce.html" class="inline-link">life insurance after divorce</a> for why this step gets missed most often.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <div class="section-label">What to do right now</div>
+      <div class="next-steps">
+        Pull up your most recent life insurance and retirement account statements and check the listed beneficiary on each one today — most insurers show this online without needing to call. If anything looks outdated, incomplete, or missing a contingent beneficiary, request the change form directly from the provider this week, not "someday."
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-item">
+        <div class="faq-q">Does a beneficiary designation override a will?</div>
+        <div class="faq-a">Yes, for contract-based assets like life insurance policies, 401(k)s, and IRAs, the beneficiary designation on file with the company controls the payout, regardless of what your will says. Your will only governs assets that don't already have a named beneficiary.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What happens if my named beneficiary died before me and I never updated the form?</div>
+        <div class="faq-a">The payout goes to your contingent (secondary) beneficiary if one is listed. If no contingent beneficiary is named, the funds typically go to your estate and get distributed through probate according to your will or state intestacy law, adding months to the process.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I update my beneficiary designation without changing my will?</div>
+        <div class="faq-a">Yes, and you should treat them as completely separate documents. Updating your will does not automatically update your beneficiary forms — you have to contact each insurer or plan administrator individually and submit a new designation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Why would an old employer still have my beneficiary form on file?</div>
+        <div class="faq-a">Group life insurance and retirement plan beneficiary designations stay attached to that specific policy or account even after you leave the job, unless the coverage was cancelled. If you never filed an update before leaving, that outdated form can still control the payout years later.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Does divorce automatically remove my ex-spouse as beneficiary?</div>
+        <div class="faq-a">It depends on the asset type and state. Some states have revocation-on-divorce laws for certain accounts, but many life insurance policies are not covered by these laws and require you to file a manual update. Never assume a divorce decree alone changes the beneficiary form.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-label">Related guides</div>
+      <div class="related">
+        <a href="/insurance-beneficiary.html" class="related-chip">Insurance Beneficiary Explained →</a>
+        <a href="/does-life-insurance-go-through-probate.html" class="related-chip">Life Insurance & Probate →</a>
+        <a href="/life-insurance-after-divorce.html" class="related-chip">Life Insurance After Divorce →</a>
+        <a href="/term-life-vs-whole-life.html" class="related-chip">Term vs. Whole Life →</a>
+      </div>
+    </div>
+
+    <div class="tool-cta">
+      <h3>Decode any insurance term instantly</h3>
+      <p>Use our free AI-powered tool to look up any term, code, or policy concept in plain English.</p>
+      <a href="/">Open the Decoder →</a>
+    </div>
+
+    <footer>
+      <span>insureplain.com</span>
+      <span>Insurance terms & policies, finally explained.</span>
+    </footer>
+  </div>
+</body>
+</html>
